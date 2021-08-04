@@ -1,0 +1,21 @@
+@import "/src/assets/styles/valiable.scss";
+.header {
+  background-color: transparent !important;
+  padding: 0 20px !important;
+  border-bottom: 0.5px solid rgb(219, 23, 226);
+  & .input {
+    width: 400px !important;
+    background: transparent !important;
+    border-radius: 20px;
+    .ant-input {
+      color: $colorBody;
+      background: transparent !important;
+    }
+    .ant-input-prefix {
+      color: $colorBody;
+    }
+  }
+}
+.ant-input-affix-wrapper:focus, .ant-input-affix-wrapper-focused ,.ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover{
+    border-color:#d33df3 !important;
+}

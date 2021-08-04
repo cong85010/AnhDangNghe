@@ -1,0 +1,66 @@
+@import "/src/assets/styles/valiable.scss";
+
+.Sider {
+  width: 250px !important;
+  max-width: 250px !important;
+  height: 100%;
+  flex: none !important;
+  background-color: transparent !important;
+  & .logo {
+    height: 70px;
+    font-size: 22px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(to right, #121fcf 0%, #cf1512 100%);
+    background: -moz-linear-gradient(to right, #121fcf 0%, #cf1512 100%);
+    background: linear-gradient(to right, #121fcf 0%, #cf1512 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  & .menu {
+    border-right: none;
+    background-color: transparent !important;
+    li {
+      color: $colorBody;
+      &:active {
+        background: transparent !important;
+      }
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        border-right: 3px solid #1890ff;
+        transform: scaleY(0.0001);
+        opacity: 0;
+        transition: 0.3s;
+        opacity: 0;
+        content: "";
+
+      }
+      &::after {
+          position: unset !important;
+      }
+    }
+  }
+}
+.ant-menu-inline .ant-menu-selected::before, .ant-menu-inline .ant-menu-item-selected::before {
+    transform: scaleY(1) !important;
+    opacity: 1 !important;
+}
+
+.card-container  {
+  width: 280px;
+  border-left: 2px solid rgba(199, 199, 199, 0.534) !important;
+  
+  .ant-tabs-tab{
+    margin: 14px 10px !important;
+    color: $colorBody;
+    font-size: 12px;
+    background: transparent !important;
+    border-radius: 20px !important;
+  }
+  
+  .ant-tabs-top > .ant-tabs-nav::before, .ant-tabs-bottom > .ant-tabs-nav::before, .ant-tabs-top > div > .ant-tabs-nav::before, .ant-tabs-bottom > div > .ant-tabs-nav::before{
+    border: none !important;
+}
+}
