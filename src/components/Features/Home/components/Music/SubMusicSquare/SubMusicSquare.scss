@@ -1,0 +1,72 @@
+@import "/src/assets/styles/valiable.scss";
+
+.SubMusicSquare {
+  width: 220px;
+  height: 260px;
+  background: transparent;
+  border: none;
+  .ant-card-meta {
+    padding: 10px 0;
+    height: 60px;
+  }
+  .ant-card-meta-title {
+    color: $colorBody;
+    transition: 0.3s;
+    &:hover {
+      color: $colorBodyHover;
+    }
+  }
+  .SubMusic {
+    overflow: hidden;
+    height: 220px;
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    &__items {
+      visibility: hidden;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      transform: translateY(-50%) scale(0.01);
+      height: 50px;
+      opacity: 0;
+      transition: all 0.3s;
+      .ant-btn-icon-only {
+        color: $colorBody;
+        .anticon {
+          transition: 0.3s;
+          font-size: 27px;
+          &:hover {
+            color: $colorBodyHover;
+          }
+        }
+      }
+      .ft30 {
+        .anticon {
+          transform: scale(1.5);
+        }
+      }
+    }
+    img {
+      width: 100%;
+      height: 220px;
+      transition: 0.3s ease-out;
+    }
+    &:hover img {
+      transform: scale(1.1);
+    }
+    &:hover .SubMusic__items {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(-50%) scale(1);
+    }
+    &:hover .overlay {
+      background: rgba(0, 0, 0, 0.274);
+    }
+  }
+}

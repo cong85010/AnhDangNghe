@@ -1,5 +1,7 @@
 @import 'antd/dist/antd.css';
 @import 'valiable.scss';
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
 
 .flex-center {
     display: flex;
@@ -15,6 +17,7 @@
     font-family: 'PT Sans', sans-serif;
     background-image: url('../images/zma.svg');  
     overflow-x: hidden;
+    color: $colorBody;
   }
   .colorBody {
     color: $colorBody;

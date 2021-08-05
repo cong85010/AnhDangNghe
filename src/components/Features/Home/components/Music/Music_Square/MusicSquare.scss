@@ -1,0 +1,7 @@
+@import '/src/assets/styles/valiable.scss';
+
+.MusicSquare {
+    &__title {
+        color: $colorBody;
+    }
+}
