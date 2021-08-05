@@ -4,4 +4,17 @@
     &__title {
         color: $colorBody;
     }
+    &__button {
+       text-align: end;
+        button {
+            background: transparent;
+            outline: none;
+            border: none;
+            color: $colorBody;
+            font-size: 20px;
+        }
+        .ant-btn-ghost[disabled], .ant-btn-ghost[disabled]:hover, .ant-btn-ghost[disabled]:focus, .ant-btn-ghost[disabled]:active {
+            background: none !important;
+        }
+    }
 }

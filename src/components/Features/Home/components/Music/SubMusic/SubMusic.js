@@ -2,19 +2,20 @@ import { Card } from "antd";
 import Avatar from "antd/lib/avatar/avatar";
 import Meta from "antd/lib/card/Meta";
 import React from "react";
-import imgError from "assets/images/error.jpg";
 import "./SubMusic.scss";
+import Default from "constants/dataDefault";
 
-const SubMusic = ({ data }) => {
+const SubMusic = ({ data, circle = false }) => {
+  
   const {
-    title = "Chưa xác định",
-    url = imgError,
-    auth = "Đang cập nhật",
+    title = Default.Title,
+    url = Default.Url,
+    auth = Default.Auth,
   } = data;
   return (
     <Card className="SubMusic" size="small">
       <Meta
-        avatar={<Avatar shape="square" size="large" src={url} />}
+        avatar={<Avatar shape={circle?'circle':'square'} size="large" src={url} />}
         title={title}
         description={auth}
       />

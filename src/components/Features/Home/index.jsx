@@ -7,6 +7,7 @@ import ListMusic from "./components/Music/Music_Right/ListMusic";
 import Home_Slider from "./components/Slider/Slider";
 import dataDangNghe from 'constants/fakeData';
 import MusicSquare from "./components/Music/Music_Square/MusicSquare";
+import MusicPlay from "./components/Music/MusicPlay/MusicPlay";
 const { Content } = Layout;
 
 export default function HomeRoutes() {
@@ -16,6 +17,7 @@ export default function HomeRoutes() {
   const data = dataDangNghe
 
   return (
+    <>
     <Layout>
       <Home_Sider collapsed={collapsed} />
       <Layout className="site-layout">
@@ -33,5 +35,8 @@ export default function HomeRoutes() {
       </Layout>
       <ListMusic listData_Current={data} listData_History={data}/>
     </Layout>
+          <MusicPlay musicCurent={data}/>
+    </>
+
   );
 }
