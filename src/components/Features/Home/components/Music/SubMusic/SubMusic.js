@@ -5,7 +5,7 @@ import React from "react";
 import "./SubMusic.scss";
 import Default from "constants/dataDefault";
 
-const SubMusic = ({ data, circle = false }) => {
+const SubMusic = ({ data, circle = false, rotate = false }) => {
   
   const {
     title = Default.Title,
@@ -13,7 +13,7 @@ const SubMusic = ({ data, circle = false }) => {
     auth = Default.Auth,
   } = data;
   return (
-    <Card className="SubMusic" size="small">
+    <Card className={`SubMusic ${circle && 'SubMenuCircle'} ${rotate && 'animateRotate'}`} size="small">
       <Meta
         avatar={<Avatar shape={circle?'circle':'square'} size="large" src={url} />}
         title={title}

@@ -1,0 +1,21 @@
+{
+    "dataBanner": [{
+           "url": "/assets/music/Banner/chieudongque.jpg",
+           "title": "Chiều đồng quê",
+           "auth": "H2K",
+           "mp3": "assets/music/Banner/ChieuDongQue-H2K-6720330.mp3"
+       },
+       {
+           "url": "/assets/music/Banner/emhuathenao.jpg",
+           "title": "Em hứa thế nào",
+           "auth": "Như Việt",
+           "mp3": "assets/music/Banner/EmHuaTheNao-NhuViet-7061317.mp3"
+       },
+       {
+           "url": "/assets/music/Banner/masew.jpg",
+           "title": "Hoàn hảo",
+           "auth": "Masew & Bray",
+           "mp3": "assets/music/Banner/HoanHaoMasewRemix-BRayMasew-7037467.mp3"
+       }
+    ]
+}

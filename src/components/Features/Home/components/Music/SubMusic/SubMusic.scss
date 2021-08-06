@@ -16,3 +16,24 @@
         height: 50px;
     }
 }
+.SubMenuCircle {
+
+    .ant-avatar-image {
+        width: 70px;
+        height: 70px;
+        border: 2px solid $colorBodyHover;
+    }
+}
+.animateRotate {
+    .ant-avatar-image {
+        animation: rotation 10s infinite linear;
+    } 
+}
+@keyframes  rotation{
+    0% {
+        transform: rotate(0deg) ;
+    }
+    100% {
+        transform: rotate(359deg) ;
+    }
+}

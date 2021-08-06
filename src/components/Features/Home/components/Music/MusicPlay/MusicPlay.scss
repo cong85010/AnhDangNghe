@@ -1,14 +1,43 @@
+@import '/src/assets/styles/valiable.scss';
 .musicPlay {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #520f85;
+    background-color: #37075d;
     color: #fff;
+    padding: 0 20px;
+    border-top: 1px solid #6706b8;
     .musicPlay--left {
+        display: flex;
+        align-items: center;
         
+        .ant-btn-icon-only {
+            color: $colorBody;
+            margin-left: 10px;
+            .anticon {
+              transition: 0.3s;
+              font-size: 23px;
+              &:hover {
+                color: $colorBodyHover;
+              }
+            }
+          }
     }
     .musicPlay--mid {
         background: transparent !important;
+
+        .rhap_repeat-button, .rhap_main-controls-button,.rhap_volume-button,.rhap_time {
+            color: $colorBody;
+        }
+        .rhap_progress-filled{
+            background: $colorBody;
+        }
+        .rhap_progress-indicator {
+            background: rgb(116, 15, 134);
+        }
+        .rhap_download-progress {
+            background:none !important;
+        }
     }
 }
