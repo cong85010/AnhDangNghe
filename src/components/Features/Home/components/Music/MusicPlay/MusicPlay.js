@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import amNhac from "assets/music/muonroisaocon.mp3";
 import H5AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 import "./MusicPlay.scss";
@@ -40,7 +39,7 @@ export default function MusicPlay({ musicPlay }) {
         </Col>
         <Col span={12}>
           <H5AudioPlayer
-            src={amNhac}
+            src={'https://aredir.nixcdn.com/Believe_Audio19/MuonRoiMaSaoCon-SonTungMTP-7011803.mp3?st=GBFE-67ngNRrevGDcvz6sQ&e=1628283282'}
             showSkipControls={true}
             showJumpControls={false}
             className="musicPlay--mid"

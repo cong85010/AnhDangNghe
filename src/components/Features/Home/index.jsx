@@ -5,19 +5,15 @@ import Home_Header from "./components/Header/Header";
 import './index.scss'
 import ListMusic from "./components/Music/Music_Right/ListMusic";
 import Home_Slider from "./components/Slider/Slider";
-import {dataDangNghe } from 'constants/fakeData';
+import dataDangNghe  from 'constants/fakeData';
 import MusicSquare from "./components/Music/Music_Square/MusicSquare";
 import MusicPlay from "./components/Music/MusicPlay/MusicPlay";
-import dataJson from 'constants/data.json';
-
-
-
 
 const { Content } = Layout;
 export default function HomeRoutes() {
   const [collapsed, setCollapsed] = useState(false);
-  const clickClose = () => setCollapsed(!collapsed)
-  const {dataBanner} = dataJson
+  const clickClose = () => setCollapsed(!collapsed) 
+  const {dataBanner} = []
   const data = dataDangNghe
 
   return (
@@ -33,13 +29,13 @@ export default function HomeRoutes() {
             minHeight: 280,
           }}
         >
-        <Home_Slider dataBanner={dataBanner} />
+        <Home_Slider dataBanner={dataDangNghe} />
         <MusicSquare title ='Top 100 nhac chu tinh' dataTopMusic={data}/>
         </Content>
       </Layout>
       <ListMusic listData_Current={data} listData_History={data}/>
     </Layout>
-          <MusicPlay musicPlay={data[0]}/>
+          <MusicPlay musicPlay={data}/>
     </>
 
   );
