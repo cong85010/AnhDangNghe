@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react';
+import React, { useState, useEffect, useContext } from "react";
 import H5AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 import "./MusicPlay.scss";
@@ -11,18 +11,18 @@ import {
   PlayCircleOutlined,
   DashOutlined,
 } from "@ant-design/icons";
+import { MusicPlayerContext } from "components/contextAPI/context";
 export default function MusicPlay() {
   const [play, setPlay] = useState(false);
-  const [musicPlay, setmusicPlay] = useState({})
-  useEffect(() => {
-    const music = JSON.parse(localStorage.getItem('playToMusic'))
-    console.log(musicPlay.music)
-    if(musicPlay.title !== music.title) {
-      setmusicPlay(music)
-    }
-  }, [])
- 
-  console.log(musicPlay.music)
+  // const [musicPlay, setmusicPlay] = useState({});
+  // useEffect(() => {
+  //   const music = JSON.parse(localStorage.getItem("playToMusic"));
+  //   console.log(musicPlay.music);
+  //   if (musicPlay.title !== music.title) {
+  //     setmusicPlay(music);
+  //   }
+  // }, []);
+  const {musicPlay} = useContext(MusicPlayerContext);
   return (
     <div className="musicPlay">
       <Row>
@@ -55,9 +55,8 @@ export default function MusicPlay() {
             showJumpControls={false}
             className="musicPlay--mid"
             layout="stacked-reverse"
-           
-            onPause ={() => setPlay(!play)}
-            onPlay ={() => setPlay(!play)}
+            onPause={() => setPlay(!play)}
+            onPlay={() => setPlay(!play)}
           />
         </Col>
         <Col span={6}></Col>
