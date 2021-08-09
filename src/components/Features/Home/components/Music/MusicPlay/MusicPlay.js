@@ -1,17 +1,28 @@
-import React, { useState } from "react";
+import React,{useState,useEffect} from 'react';
 import H5AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 import "./MusicPlay.scss";
 import { Button, Col, Row, Tooltip } from "antd";
 import SubMusic from "../SubMusic/SubMusic";
+import Default from "constants/dataDefault";
+
 import {
   HeartOutlined,
   PlayCircleOutlined,
   DashOutlined,
 } from "@ant-design/icons";
-export default function MusicPlay({ musicPlay }) {
+export default function MusicPlay() {
   const [play, setPlay] = useState(false);
-  console.log(play)
+  const [musicPlay, setmusicPlay] = useState({})
+  useEffect(() => {
+    const music = JSON.parse(localStorage.getItem('playToMusic'))
+    console.log(musicPlay.music)
+    if(musicPlay.title !== music.title) {
+      setmusicPlay(music)
+    }
+  }, [])
+ 
+  console.log(musicPlay.music)
   return (
     <div className="musicPlay">
       <Row>
@@ -39,7 +50,7 @@ export default function MusicPlay({ musicPlay }) {
         </Col>
         <Col span={12}>
           <H5AudioPlayer
-            src={'https://aredir.nixcdn.com/Believe_Audio19/MuonRoiMaSaoCon-SonTungMTP-7011803.mp3?st=GBFE-67ngNRrevGDcvz6sQ&e=1628283282'}
+            src={musicPlay.music}
             showSkipControls={true}
             showJumpControls={false}
             className="musicPlay--mid"

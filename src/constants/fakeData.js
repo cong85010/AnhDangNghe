@@ -1,5 +1,5 @@
 
-const dataDangNghe = [
+const dataBanner = [
     {
       title: 'Day la am nhac 1',
       auth: 'Black c',
@@ -41,4 +41,4 @@ const dataDangNghe = [
       url: 'https://photo-zmp3.zadn.vn/banner/1/1/7/3/1173650f5f0928c139f079047f9a3a71.jpg',
     },
   ]
-export default dataDangNghe;
+export default dataBanner;

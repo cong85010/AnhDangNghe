@@ -9,15 +9,18 @@ const SubMusic = ({ data, circle = false, rotate = false }) => {
   
   const {
     title = Default.Title,
-    url = Default.Url,
-    auth = Default.Auth,
+    creator = Default.Auth,
+    avatar = Default.Url,
   } = data;
+  const playToMusic = () => {
+      localStorage.setItem("playToMusic", JSON.stringify(data))
+  }
   return (
-    <Card className={`SubMusic ${circle && 'SubMenuCircle'} ${rotate && 'animateRotate'}`} size="small">
+    <Card onClick={playToMusic} className={`SubMusic ${circle && 'SubMenuCircle'} ${rotate && 'animateRotate'}`} size="small">
       <Meta
-        avatar={<Avatar shape={circle?'circle':'square'} size="large" src={url} />}
+        avatar={<Avatar shape={circle?'circle':'square'} size="large" src={avatar} />}
         title={title}
-        description={auth}
+        description={creator}
       />
     </Card>
   );

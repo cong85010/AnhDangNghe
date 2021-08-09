@@ -1,12 +1,15 @@
 import { Tabs } from "antd";
 import React from "react";
 import SubMusic from "../SubMusic/SubMusic";
+import './ListMusic.scss'
 
 const { TabPane } = Tabs;
 
 export const ListMusic = ({listData_Current, listData_History }) => {
+  console.log(listData_Current)
+
   return (
-    <div className="card-container">
+    <div className="card-container listMusicRight" >
       <Tabs type="card">
         <TabPane tab="Danh sách phát" key="1">
           {listData_Current.map((data, index) => (
