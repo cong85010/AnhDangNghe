@@ -1,4 +1,5 @@
 @import '/src/assets/styles/valiable.scss';
+
 .musicPlay {
     position: fixed;
     left: 0;
@@ -8,6 +9,8 @@
     color: #fff;
     padding: 0 20px;
     border-top: 1px solid #6706b8;
+    transition: 0.7s;
+   
     .musicPlay--left {
         display: flex;
         align-items: center;
@@ -40,4 +43,14 @@
             background:none !important;
         }
     }
+    .musicPlay--right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+}
+.closeMusicPlaying {
+    transform: translateY(100px);
+    
 }

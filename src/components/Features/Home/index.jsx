@@ -9,10 +9,8 @@ import dataBanner from "constants/fakeData";
 import MusicSquare from "./components/Music/Music_Square/MusicSquare";
 import MusicPlay from "./components/Music/MusicPlay/MusicPlay";
 import { dataMusics } from "constants/top100.json";
-import {
-  MusicProvider,
-  MusicPlayerContext,
-} from "components/contextAPI/context";
+import {Top100} from "constants/top100NhacViet.json"
+import { MusicProvider } from "components/contextAPI/context";
 
 const { Content } = Layout;
 
@@ -20,51 +18,96 @@ export default function HomeRoutes() {
   const [collapsed, setCollapsed] = useState(false);
   const clickClose = () => setCollapsed(!collapsed);
   const [danhSachPhat, setdanhSachPhat] = useState([]);
-  const data = dataBanner;
-  const [playing, setPlaying] = useState({
-    title: "Thê Lương",
-    creator: "Phúc Chinh",
-    music:
-      "https://aredir.nixcdn.com/NhacCuaTui1012/TheLuong-PhucChinh-6971140.mp3?st=5B9F9b7YAW_S9WIx5RhrUA&e=1628283282",
-    url: "https://www.nhaccuatui.com/bai-hat/the-luong-phuc-chinh.nmxw6tXZyBQy.html",
-    lyric: "https://lrc-nct.nixcdn.com/2021/03/22/2/8/d/4/1616360845396.lrc",
-    bgImage: "",
-    avatar:
-      "https://avatar-ex-swe.nixcdn.com/song/2021/03/12/e/2/9/e/1615554946033.jpg",
-    coverImage:
-      "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg",
-  });
-  console.log(dataMusics);
-  console.log(danhSachPhat);
+  const [listTop100, setlistTop100] = useState([]);
+  const [ngheGanDay, setngheGanDay] = useState([]);
+  const [playing, setPlaying] = useState({ title: "closeMusicPlaying" });
+  const saveMusic = (music) => {
+    const indexMusic = ngheGanDay.findIndex(
+      (item) => item.music === music.music
+    );
+    if (indexMusic !== -1) {
+      ngheGanDay.splice(indexMusic, 1);
+    }
+    localStorage.setItem("ngheganday", JSON.stringify([music, ...ngheGanDay]));
+    setPlaying(music);
+  };
+console.log(listTop100)
   useEffect(() => {
     if (dataMusics.length !== 0) {
-      setdanhSachPhat (dataMusics.splice(0, 50))
+      setdanhSachPhat(
+        dataMusics.filter((music) => !music.music.includes("f9-stream.nixcdn"))
+      );
     }
-  }, [dataMusics]);
-  const saveMusic = (music) => {
-    setPlaying(music);
-    console.log(music);
+    if (Top100.length !== 0) {
+      setlistTop100(
+        Top100
+      );
+    }
+    setngheGanDay(JSON.parse(localStorage.getItem("ngheganday")) || []);
+  }, [dataMusics, Top100]);
+  useEffect(() => {
+    setngheGanDay(JSON.parse(localStorage.getItem("ngheganday")) || []);
+  }, [playing]);
+  const nextPlayingMusic = () => {
+    const indexMusic = danhSachPhat.findIndex(
+      (music) => music.music === playing.music
+    );
+    indexMusic >= danhSachPhat.length
+      ? setPlaying(danhSachPhat[0])
+      : setPlaying(danhSachPhat[indexMusic + 1]);
   };
+  const prePlayingMusic = () => {
+    const indexMusic = danhSachPhat.findIndex(
+      (music) => music.music === playing.music
+    );
+    indexMusic <= 0
+      ? setPlaying(danhSachPhat[0])
+      : setPlaying(danhSachPhat[indexMusic - 1]);
+  };
+  const nextWillPlayingMusic = () => {
+    if (danhSachPhat.length > 0) {
+      const indexMusic = danhSachPhat.findIndex(
+        (music) => music.music === playing.music
+      );
+      return indexMusic >= danhSachPhat.length
+        ? danhSachPhat[0]
+        : danhSachPhat[indexMusic + 1];
+    }
+    return {};
+  };
+  const handleNewDSP = (newDanhSachPhat) => {
+    saveMusic(newDanhSachPhat[0])
+    setdanhSachPhat(newDanhSachPhat);
+  }
   return (
-    <MusicProvider value={{ musicPlay: playing, saveMusic }}>
+    <MusicProvider value={{ musicPlay: playing, saveMusic, handleNewDSP }}>
       <Layout>
         <Home_Sider collapsed={collapsed} />
-        <Layout className="site-layout">
+        <Layout className={`site-layout ${playing.music && '__100px'}`}>
           <Home_Header collapsed={collapsed} clickClose={clickClose} />
           <Content
             style={{
               margin: "24px 16px",
               padding: 24,
-              minHeight: 280,
             }}
+            className='content--mid'
           >
             <Home_Slider dataBanner={dataBanner} />
-            <MusicSquare title="Top 100 nhac chu tinh" dataTopMusic={data} />
+            <MusicSquare title="Nhạc dành cho bạn" dataTopMusic={listTop100} />
+            <MusicSquare title="Nhạc dành cho bạn" dataTopMusic={listTop100} />
+            <MusicSquare title="Nhạc dành cho bạn" dataTopMusic={listTop100} />
           </Content>
         </Layout>
-        <ListMusic listData_Current={danhSachPhat} listData_History={data} />
+        <ListMusic
+          listData_Current={danhSachPhat}
+          listData_History={ngheGanDay}
+        />
       </Layout>
-      <MusicPlay />
+      <MusicPlay
+        nextPlay={nextPlayingMusic}
+        prePlay={prePlayingMusic}
+        nextWillPlay={nextWillPlayingMusic}
+      />
     </MusicProvider>
   );
 }

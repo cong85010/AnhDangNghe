@@ -1,4 +1,30 @@
 .site-layout {
-    background: transparent !important;
-    border-left: 2px solid rgba(199, 199, 199, 0.534) !important;
+  background: transparent !important;
+  border-left: 2px solid rgba(199, 199, 199, 0.534) !important;
+  height: 100vh;
+  overflow-y: auto;
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.6);
+    background-color: transparent !important;
+  }
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(121, 41, 41);
+    background-image: -webkit-linear-gradient(
+      90deg,
+      rgb(189, 58, 194) 0%,
+      rgb(168, 71, 192) 25%,
+      transparent 100%,
+      rgba(87, 25, 87, 0.26) 75%,
+      transparent
+    );
+  }
+}
+.__100px {
+  height: calc(100vh - 100px);
 }

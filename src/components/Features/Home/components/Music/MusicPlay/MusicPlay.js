@@ -8,23 +8,15 @@ import Default from "constants/dataDefault";
 
 import {
   HeartOutlined,
-  PlayCircleOutlined,
   DashOutlined,
 } from "@ant-design/icons";
 import { MusicPlayerContext } from "components/contextAPI/context";
-export default function MusicPlay() {
+export default function MusicPlay({nextPlay, prePlay, nextWillPlay}) {
   const [play, setPlay] = useState(false);
-  // const [musicPlay, setmusicPlay] = useState({});
-  // useEffect(() => {
-  //   const music = JSON.parse(localStorage.getItem("playToMusic"));
-  //   console.log(musicPlay.music);
-  //   if (musicPlay.title !== music.title) {
-  //     setmusicPlay(music);
-  //   }
-  // }, []);
+  
   const {musicPlay} = useContext(MusicPlayerContext);
   return (
-    <div className="musicPlay">
+    <div className={`musicPlay ${musicPlay.title}`}>
       <Row>
         <Col span={6}>
           <div className="musicPlay--left">
@@ -55,11 +47,18 @@ export default function MusicPlay() {
             showJumpControls={false}
             className="musicPlay--mid"
             layout="stacked-reverse"
-            onPause={() => setPlay(!play)}
-            onPlay={() => setPlay(!play)}
+            onPause={() => setPlay(false)}
+            onPlay={() => setPlay(true)}
+            onClickNext={() => nextPlay()}
+            onClickPrevious={() => prePlay()}
+            onEnded={() => nextPlay()}
           />
         </Col>
-        <Col span={6}></Col>
+        <Col span={6}>
+          <div className="musicPlay--right">
+             <SubMusic  data={nextWillPlay()}/>
+          </div>
+        </Col>
       </Row>
     </div>
   );

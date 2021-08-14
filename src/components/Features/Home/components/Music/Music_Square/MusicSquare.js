@@ -5,6 +5,7 @@ import {LeftOutlined, RightOutlined} from '@ant-design/icons';
 
 import './MusicSquare.scss'
 import { Button } from "antd";
+
 const MusicSquare = ({ title = 'Top 100', dataTopMusic = []}) => {
   const ref = useRef({});
   const [index, setindex] = useState(0)
@@ -16,9 +17,10 @@ const MusicSquare = ({ title = 'Top 100', dataTopMusic = []}) => {
     ref.current.slickPrev();
   };
   console.log(index)
+  
   const settings = {
     className: "section-outstanding__slider",
-    slidesToShow: 5,
+    slidesToShow: 4,
     slidesToScroll: 1,
     arrows: false,
     infinite: false,
@@ -35,7 +37,7 @@ const MusicSquare = ({ title = 'Top 100', dataTopMusic = []}) => {
       {
         breakpoint: 576,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
           rows: 1,
         },
@@ -50,7 +52,7 @@ const MusicSquare = ({ title = 'Top 100', dataTopMusic = []}) => {
         <Button type='ghost' disabled={index === 0} className="button" onClick={previous}>
         <LeftOutlined />
         </Button>
-        <Button type='ghost' disabled={index === dataTopMusic.length - 5} className="button" onClick={next}>
+        <Button type='ghost' disabled={index === dataTopMusic.length - 4} className="button" onClick={next}>
         <RightOutlined />
         </Button>
       </div>

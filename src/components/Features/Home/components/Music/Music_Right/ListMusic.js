@@ -6,7 +6,6 @@ import './ListMusic.scss'
 const { TabPane } = Tabs;
 
 export const ListMusic = ({listData_Current, listData_History }) => {
-  console.log(listData_Current)
 
   return (
     <div className="card-container listMusicRight" >
@@ -20,7 +19,6 @@ export const ListMusic = ({listData_Current, listData_History }) => {
         {listData_History.map((data, index) => (
             <SubMusic key={index} data={data} />
           ))}
-          asdasdd
         </TabPane>
       </Tabs>
     </div>

@@ -1,6 +1,6 @@
 import { Button, Card, Col, Row, Tooltip } from "antd";
 import Meta from "antd/lib/card/Meta";
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import "./SubMusicSquare.scss";
 import Default from "constants/dataDefault";
@@ -9,14 +9,17 @@ import {
   PlayCircleOutlined,
   DashOutlined,
 } from "@ant-design/icons";
+import { MusicPlayerContext } from "components/contextAPI/context";
 const SubMusicSquare = ({ data }) => {
-  const { title = Default.Title, url = Default.Url } = data;
+  const {handleNewDSP} = useContext(MusicPlayerContext);
+  const { title = Default.Title, avatar = Default.Url, songs } = data;
   return (
     <div className="SubMusicSquare">
       <Card
         hoverable
         className="SubMusic"
-        cover={<img alt={title} src={url} />}
+        cover={<img alt={title} src={avatar} />}
+     
       >
         <div className="overlay"></div>
         <div className="SubMusic__items">
@@ -39,6 +42,7 @@ const SubMusicSquare = ({ data }) => {
                   outline="true"
                   type="text"
                   icon={<PlayCircleOutlined />}
+                  onClick={() => handleNewDSP(songs)}
                 />
               </Tooltip>
             </Col>
