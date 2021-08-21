@@ -27,7 +27,7 @@ const Home_Slider = ({ dataBanner }) => {
     setVisible(true);
     setModal(item)
   };
-  const {saveMusic} = useContext(MusicPlayerContext);
+  const {saveMusic, backGrounds} = useContext(MusicPlayerContext);
   const handleOk = () => {
     ('The modal will be closed after two seconds');
     setConfirmLoading(true);
@@ -52,7 +52,7 @@ const Home_Slider = ({ dataBanner }) => {
       </Slider>
       <Modal
         visible={visible}
-        className='HomeSliderModal'
+        className={`HomeSliderModal ${backGrounds.className}`}
         onCancel={handleCancel}
       >
         <p>Bạn có muốn phát bài hát này?</p>

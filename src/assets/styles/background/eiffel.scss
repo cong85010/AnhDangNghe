@@ -1,0 +1,54 @@
+
+.backgroundEiffel {
+  .ant-layout {
+    background-size: cover;
+    background-image: url(https://zmp3-static.zadn.vn/skins/zmp3-v6.1/images/theme-background/eiffel.jpg);
+  }
+  .scroll, .ant-tabs-content-top, .ant-table-body {
+    &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.6);
+      background-color: transparent !important;
+    }
+
+    &::-webkit-scrollbar {
+      width: 5px;
+      background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: rgb(88, 82, 82);
+      background-image: -webkit-linear-gradient(
+        197deg,
+        #aca7ac 0%,
+        #6e6e6e 52%,
+        #c0bebeb4 100%,
+        transparent
+      );
+    }
+  }
+  .musicPlay {
+    background-color: #222222;
+    box-shadow: inset 0px 3px 8px 0 #535353;
+    .ant-avatar-image {
+      border: 2px solid #918f91;
+    }
+  }
+  .SubMenu_Square {
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(134, 134, 134, 0.61);
+    }
+  }
+    .ant-modal-content,
+    .ant-modal-header {
+      background: #3d3b3d !important;
+    }
+    .fixDanhSach.ant-tag-pink {
+      color: #f8f8f8;
+      background: #807f7fcf;
+      border-color: #949393;
+    }
+    .SubMusic.MusicPLaying {
+      background-color: #7a7a7a;
+    }
+}

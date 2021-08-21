@@ -1,0 +1,1898 @@
+{
+  "changeBackground": [
+    {
+      "title": "Mặc định",
+      "className":"backgroundDefault",
+      "src": "https://zmp3-static.zadn.vn/skins/zmp3-v6.1/images/theme-background/zma.svg"
+    },
+    {
+      "title": "Tháp Eiffel",
+      "className": "backgroundEiffel",
+      "src": "https://zmp3-static.zadn.vn/skins/zmp3-v6.1/images/theme-background/eiffel.jpg"
+    }
+  ],
+  "dataDefault": {
+    "title": "Nhưng bài hát nghe nhiều nhất",
+    "avatar": "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/7/9/e/8/79e8ee6cf0e8a2585ab510d4dd9a33e0.jpg",
+    "songs": [
+      {
+        "title": "Thê Lương",
+        "creator": "Phúc Chinh",
+        "music": "https://aredir.nixcdn.com/NhacCuaTui1012/TheLuong-PhucChinh-6971140.mp3?st=5B9F9b7YAW_S9WIx5RhrUA&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/the-luong-phuc-chinh.nmxw6tXZyBQy.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2021/03/22/2/8/d/4/1616360845396.lrc",
+        "bgImage": "",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/03/12/e/2/9/e/1615554946033.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Muộn Rồi Mà Sao Còn",
+        "creator": "Sơn Tùng M-TP",
+        "music": "https://aredir.nixcdn.com/Believe_Audio19/MuonRoiMaSaoCon-SonTungMTP-7011803.mp3?st=GBFE-67ngNRrevGDcvz6sQ&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/muon-roi-ma-sao-con-son-tung-m-tp.6nAqBAZ3nxuV.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2021/05/07/a/9/f/2/1620357842616.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2021/05/12/7/d/c/b/1620802736418_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/04/29/9/1/f/8/1619691182261.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      
+      {
+        "title": "Trắc Trở",
+        "creator": "X2X",
+        "music": "https://f9-stream.nixcdn.com/NhacCuaTui1017/TracTro-X2X-7040184.mp3?st=ZvpSigb8By9eE93EdN04qg&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/trac-tro-x2x.euuuwjUAqLcX.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2021/07/08/6/e/d/5/1625714895877.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2021/03/15/4/7/7/8/1615802750962_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/06/28/8/4/3/c/1624872522478.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      
+      {
+        "title": "Phận Duyên Lỡ Làng",
+        "creator": "Phát Huy T4, Truzg",
+        "music": "https://aredir.nixcdn.com/NhacCuaTui1014/PhanDuyenLoLang-PhatHuyT4Trugz-7004538.mp3?st=hw6Tx-VBe8pzOxTr2g5owA&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/phan-duyen-lo-lang-phat-huy-t4-ft-truzg.ipBDxxA22NUf.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2021/04/19/b/1/b/6/1618802396072.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2021/04/14/b/9/8/b/1618374024681_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/04/14/c/3/3/b/1618383513976.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Sài Gòn Đau Lòng Quá",
+        "creator": "Hứa Kim Tuyền, Hoàng Duyên",
+        "music": "https://aredir.nixcdn.com/NhacCuaTui1013/SaiGonDauLongQua-HuaKimTuyenHoangDuyen-6992977.mp3?st=IYgNZMfo9J7VK6AKqiiMOA&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/sai-gon-dau-long-qua-hua-kim-tuyen-ft-hoang-duyen.2hI4xFTa2lxJ.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2021/03/29/0/3/e/5/1616991024586.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2021/03/30/c/2/0/6/1617079270471_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/03/27/d/2/9/1/1616859493571.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Nếu Có Kiếp Sau",
+        "creator": "Hương Ly",
+        "music": "https://f9-stream.nixcdn.com/NhacCuaTui1017/NeuCoKiepSau-HuongLy-7034940.mp3?st=wtWyj_93IQgZ6Hvhb0eAPw&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/neu-co-kiep-sau-huong-ly.ERV3kZbvf716.html",
+        "lyric": "https://lrc-nct.nixcdn.com/null",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/11/02/c/4/b/1/1604299335097_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/06/18/d/c/e/c/1623989997901.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Vách Ngọc Ngà",
+        "creator": "Anh Rồng",
+        "music": "https://aredir.nixcdn.com/NhacCuaTui1013/VachNgocNga-AnhRong-6984991.mp3?st=mZzYJmFfz_yUvvpAUM8MFA&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/vach-ngoc-nga-anh-rong.Rk1SNs5dI0Nf.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2021/03/31/f/4/c/b/1617161486413.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/12/14/2/5/3/b/1607910088022_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/03/25/0/b/f/e/1616662504016.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Câu Hẹn Câu Thề",
+        "creator": "Đình Dũng, ACV",
+        "music": "https://aredir.nixcdn.com/NhacCuaTui1013/CauHenCauThe-DinhDung-6994741.mp3?st=GhF_CnI2kUc38povC7IpNA&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/cau-hen-cau-the-dinh-dung-ft-acv.DT1Ev3vytaQo.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2021/04/05/9/f/3/8/1617596589191.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/09/22/5/3/5/d/1600744344048_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/03/29/2/2/1/e/1617029681297.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Níu Duyên",
+        "creator": "Lê Bảo Bình",
+        "music": "https://aredir.nixcdn.com/NhacCuaTui1008/NiuDuyen-LeBaoBinh-6872127.mp3?st=Mjt3p24jQEh9NgFq3-c83w&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/niu-duyen-le-bao-binh.WxXR1SGXHAR7.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2020/12/09/c/7/2/e/1607480641266.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2018/01/24/a/3/d/e/1516765405718_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2020/12/07/e/7/5/9/1607308157174.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      
+      {
+        "title": "Phải Chăng Em Đã Yêu?",
+        "creator": "Juky San, RedT",
+        "music": "https://aredir.nixcdn.com/NhacCuaTui1011/PhaiChangEmDaYeu-JukySanRedT-6940932.mp3?st=bWZqeRpPkHGKZ47laKF52A&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/phai-chang-em-da-yeu-juky-san-ft-redt.MRUP1c69kN0R.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2021/03/08/5/c/4/b/1615219017101.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2021/02/17/a/3/2/1/1613561860337_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/02/10/6/5/a/6/1612954164434.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Trên Tình Bạn Dưới Tình Yêu",
+        "creator": "MIN",
+        "music": "https://aredir.nixcdn.com/NhacCuaTui1005/TrenTinhBanDuoiTinhYeu-MIN-6802163.mp3?st=JOj0oroJSLsZyaQfs3UX5g&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/tren-tinh-ban-duoi-tinh-yeu-min.adEZfVuRfAhW.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2020/11/05/9/5/c/9/1604562096053.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/11/05/2/2/0/3/1604563630516_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2020/11/05/4/4/6/c/1604574284072.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Chúng Ta Sau Này",
+        "creator": "T.R.I",
+        "music": "https://aredir.nixcdn.com/NhacCuaTui1010/ChungTaSauNay-TRI-6929586.mp3?st=sZ-SVM9SOWhxRMubaEL1FQ&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/chung-ta-sau-nay-tri.61Wkf72FX7be.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2021/03/08/5/c/4/b/1615219421510.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/08/12/f/2/d/1/1597199590443_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/01/27/5/2/2/b/1611738358661.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Lỡ Say Bye Là Bye",
+        "creator": "Lemese, Changg",
+        "music": "https://aredir.nixcdn.com/NhacCuaTui1010/LoSayByeLaBye-LemeseChangg-6926941.mp3?st=6HRfE2KX7o_5WcZxm0RFPg&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/lo-say-bye-la-bye-lemese-ft-changg.QLdwL2NxwFA5.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2021/03/08/5/c/4/b/1615219651901.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2019/11/08/2/2/a/0/1573196340329_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/01/21/5/c/9/9/1611199600529.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Thế Thái",
+        "creator": "Hương Ly",
+        "music": "https://aredir.nixcdn.com/NhacCuaTui1004/TheThai-HuongLy-6728509.mp3?st=7v0Qey1bsUdQqdNSu7Vw_Q&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/the-thai-huong-ly.73T5LuURl5Bo.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2020/10/13/7/4/f/8/1602557634151.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/11/02/c/4/b/1/1604299335097_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2020/10/12/0/7/e/3/1602477673421.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Anh Không Tha Thứ",
+        "creator": "Đình Dũng, ACV",
+        "music": "https://aredir.nixcdn.com/NhacCuaTui1004/AnhKhongThaThu-DinhDung-6684271.mp3?st=EDl_kabuo_6f_xqWfMTn1Q&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/anh-khong-tha-thu-dinh-dung-ft-acv.CE7Fwqox7j2h.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2020/10/05/3/5/9/1/1601871124164.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/09/22/5/3/5/d/1600744344048_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2020/09/28/4/9/a/7/1601278894694.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Em Không Hiểu",
+        "creator": "Changg, Minh Huy",
+        "music": "https://f9-stream.nixcdn.com/NhacCuaTui1017/EmKhongHieu-ChanggMinhHuy-7043556.mp3?st=gZhi5GAi5gQpprl3iV_xCw&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/em-khong-hieu-changg-ft-minh-huy.gWRtS5SiJInk.html",
+        "lyric": "https://lrc-nct.nixcdn.com/null",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2021/07/26/9/b/a/a/1627272571398_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/07/06/7/a/3/0/1625546620298.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Răng Khôn",
+        "creator": "Phí Phương Anh, RIN9",
+        "music": "https://aredir.nixcdn.com/NhacCuaTui1014/RangKhon-PhiPhuongAnhTheFaceRIN9-7006388.mp3?st=bk86K-7duDacZA5jSQAwEg&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/rang-khon-phi-phuong-anh-ft-rin9.DS5NwsGBlUhU.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2021/04/26/e/3/9/0/1619429354101.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2021/05/24/8/d/6/e/1621842906046_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/04/19/d/1/f/1/1618810475930.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+
+      {
+        "title": "Sài Gòn Hôm Nay Mưa",
+        "creator": "JSOL, Hoàng Duyên",
+        "music": "https://aredir.nixcdn.com/NhacCuaTui1016/SaiGonHomNayMua-JSOLHoangDuyen-7026537.mp3?st=63jZbHJKDfWV8qlVg-lHdw&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/sai-gon-hom-nay-mua-jsol-ft-hoang-duyen.EZwfyBx9IT1N.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2021/07/20/1/0/0/2/1626752585501.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2021/06/29/3/c/a/6/1624943867794_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/05/30/2/6/7/5/1622365032910.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+
+      {
+        "title": "Đường Tôi Chở Em Về",
+        "creator": "Bùi Trường Linh",
+        "music": "https://aredir.nixcdn.com/Unv_Audio164/DuongTaChoEmVe-buitruonglinh-6318765.mp3?st=3yqaKPvmgmDGne6t4o1dBg&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/duong-toi-cho-em-ve-bui-truong-linh.EEZTcFO2Ajfc.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2020/08/25/d/a/e/d/1598338850508.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/11/16/6/5/0/2/1605520530526_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2020/07/02/5/d/c/9/1593687560557.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "3 1 0 7",
+        "creator": "W/n, Duongg, Nâu",
+        "music": "https://aredir.nixcdn.com/NhacCuaTui996/3107-WnDuonggNau-6099150.mp3?st=2Lx1QW6ZK7Z5gjwKKtN45w&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/3-1-0-7-wn-ft-duongg-ft-nau.HkDuAPT28WB5.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2020/02/25/e/7/5/f/1582610331102.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2019/12/10/e/8/9/7/1575970629322_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2020/02/25/6/c/7/7/1582603846517.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+     
+      {
+        "title": "Nàng Thơ",
+        "creator": "Hoàng Dũng",
+        "music": "https://aredir.nixcdn.com/NhacCuaTui1001/NangTho-HoangDung-6413381.mp3?st=wYNJNEx6ByDaxk6QRjSD9Q&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/nang-tho-hoang-dung.Kx3Kbih0rS5z.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2020/08/04/a/7/a/5/1596551789790.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2019/09/19/1/e/f/8/1568871085871_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2020/07/31/c/5/8/9/1596188259603.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      
+      {
+        "title": "Thích Em Hơi Nhiều",
+        "creator": "Wren Evans",
+        "music": "https://aredir.nixcdn.com/Unv_Audio198/ThichEmHoiNhieu-WrenEvans-7034969.mp3?st=KZGAbWXuJZ83CQLREpVdTg&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/thich-em-hoi-nhieu-wren-evans.kUOJILsq8CmU.html",
+        "lyric": "https://lrc-nct.nixcdn.com/null",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2021/06/28/b/2/0/9/1624860911842_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/06/18/d/c/e/c/1623997610871.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+     
+      
+      {
+        "title": "3107-2 (Lofi Version)",
+        "creator": "Duongg, Nâu, W/n",
+        "music": "https://aredir.nixcdn.com/NhacCuaTui1011/31072LofiVersion-DuonggNauWn-6944268.mp3?st=C7adQruH18irbzcmLWDjjg&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/3107-2-lofi-version-duongg-ft-nau-ft-wn.vgw0kJLBVOsQ.html",
+        "lyric": "https://lrc-nct.nixcdn.com/null",
+        "bgImage": "",
+        "avatar": "https://stc-id.nixcdn.com/v11/images/df-singer-300x300.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Cầu Vồng Khuyết",
+        "creator": "Tuấn Hưng",
+        "music": "https://aredir.nixcdn.com/Singer_Audio5/CauVongKhuyet-TuanHung-2557205.mp3?st=d9_zDDjvRja8IGjSlrOdVQ&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/cau-vong-khuyet-tuan-hung.hh8YUwYLhJO2.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2019/04/14/6/b/d/7/1555243499235.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2017/08/28/1/a/1/b/1503913422094_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2017/08/28/1/a/1/b/1503913422094.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "3 1 0 7 -2",
+        "creator": "Duongg, Nâu, W/n",
+        "music": "https://aredir.nixcdn.com/NhacCuaTui1011/31072-DuonggNauWn-6937818.mp3?st=uN4xu-krGesoHq1v42NGdQ&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/3-1-0-7-2-duongg-ft-nau-ft-wn.owBN9o6aAZOe.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2021/05/19/f/d/5/c/1621391240674.lrc",
+        "bgImage": "",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/02/04/5/a/2/5/1612405167313.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Quên Một Người Thật Khó",
+        "creator": "Cao Nam Thành",
+        "music": "https://f9-stream.nixcdn.com/NhacCuaTui1018/QuenNguoiThatKho-CaoNamThanh-7050259.mp3?st=h1D8RFn7VQsEK3VPSU9EYw&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/quen-mot-nguoi-that-kho-cao-nam-thanh.TEMZmuxmGtKT.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2021/07/21/3/f/6/7/1626835590933.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2017/11/19/8/9/b/3/1511100269341_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/07/16/f/4/9/8/1626430957411.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Hẹn Kiếp Sau",
+        "creator": "Khả Hiệp",
+        "music": "https://aredir.nixcdn.com/NhacCuaTui1015/HenKiepSau-KhaHiep-7017276.mp3?st=LsCfPuFmHHXh8d4HVVCRmA&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/hen-kiep-sau-kha-hiep.AkLN9TJJ07Qy.html",
+        "lyric": "https://lrc-nct.nixcdn.com/null",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2021/07/27/d/1/8/0/1627378017801_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/05/10/d/4/2/9/1620640028319.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Gặp Nhau Bên Nhau Là Ý Trời",
+        "creator": "Wind",
+        "music": "https://f9-stream.nixcdn.com/NhacCuaTui1017/GapNhauBenNhauLaYTroi-Wind-7037709.mp3?st=hC7yK10z_S1_L4nZjcvwmg&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/gap-nhau-ben-nhau-la-y-troi-wind.jUYyDGaks4QR.html",
+        "lyric": "https://lrc-nct.nixcdn.com/null",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/10/26/2/3/a/b/1603702784979_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/06/26/c/6/8/0/1624703507463.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Tâm Tình",
+        "creator": "Rum, Chees",
+        "music": "https://f9-stream.nixcdn.com/NhacCuaTui1018/TamTinh-RumChees-7051708.mp3?st=Yk306RR6qlg0lFBtN4BStQ&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/tam-tinh-rum-ft-chees.dnEVj5NBlLZ9.html",
+        "lyric": "https://lrc-nct.nixcdn.com/null",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2017/11/07/a/0/9/6/1510027835728_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/07/20/1/4/a/0/1626763537745.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Muốn Chill Cùng Em",
+        "creator": "T00n, Luke Martins",
+        "music": "https://f9-stream.nixcdn.com/NhacCuaTui1017/MuonChillCungEm-T00nLukeMartins-7043869.mp3?st=Vch5V31qY754tpyN7hdTiA&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/muon-chill-cung-em-t00n-ft-luke-martins.wfiqi5CWXVTj.html",
+        "lyric": "https://lrc-nct.nixcdn.com/null",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/03/12/6/c/1/d/1583996623331_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/07/06/7/a/3/0/1625565258049.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Biệt Phủ",
+        "creator": "VP Bá Vương, TDK",
+        "music": "https://f9-stream.nixcdn.com/NhacCuaTui1018/BietPhu-VPBaVuongTDK-7051311.mp3?st=En0F5hyw8SXz1_KO8weANA&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/biet-phu-vp-ba-vuong-ft-tdk.Kw7w0JLGfLWW.html",
+        "lyric": "https://lrc-nct.nixcdn.com/null",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/05/25/e/4/6/f/1590405023576_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/07/19/5/f/7/4/1626684705691.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Gửi Người Anh Yêu 4",
+        "creator": "Vương Thiên Tuấn",
+        "music": "https://f9-stream.nixcdn.com/NhacCuaTui1018/GuiNguoiAnhYeu4-VuongThienTuan-7050257.mp3?st=kKQOWEAgLX7MhPulW_Lj0w&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/gui-nguoi-anh-yeu-4-vuong-thien-tuan.IWBazLvcV2hK.html",
+        "lyric": "",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/09/23/a/b/d/4/1600843668444_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/07/16/f/4/9/8/1626430808037.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Danh Phận",
+        "creator": "Jang Mi",
+        "music": "https://f9-stream.nixcdn.com/NhacCuaTui1017/DanhPhan-JangMi-7040679.mp3?st=uei73nJlbaJ-N1ChqzUNgg&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/danh-phan-jang-mi.eKLIGmTuae4Y.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2021/07/23/f/5/5/8/1627005931336.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2021/02/25/0/a/4/a/1614246198439_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/06/30/7/5/6/a/1625044639680.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Hồng Trần Vương Sầu Cay",
+        "creator": "Huy Vạc",
+        "music": "https://f9-stream.nixcdn.com/NhacCuaTui1017/HongTranVuongSauCay-HuyVac-7036434.mp3?st=HoNCab4hLRpwxm3ahT9h-Q&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/hong-tran-vuong-sau-cay-huy-vac.a1Sz2F9FKpkO.html",
+        "lyric": "https://lrc-nct.nixcdn.com/null",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/02/27/f/2/1/c/1582798501233_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/06/22/0/3/e/7/1624342801342.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Cục Đá",
+        "creator": "VP Bá Vương, Tài Smile, TDK",
+        "music": "https://f9-stream.nixcdn.com/NhacCuaTui1017/CucDa-VPBaVuongTaiSmileTDK-7043876.mp3?st=dTYaevwasnRNnmg1KooLEA&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/cuc-da-vp-ba-vuong-ft-tai-smile-ft-tdk.b3zoc7PadbtQ.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2021/08/03/5/a/d/2/1627958232141.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/05/25/e/4/6/f/1590405023576_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/07/06/7/a/3/0/1625566041719.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Cùng Một Bầu Trời",
+        "creator": "Khánh Đơn, Khánh Trung",
+        "music": "https://f9-stream.nixcdn.com/NhacCuaTui1017/CungMotBauTroi-KhanhDonKhanhTrung-7043210.mp3?st=DA3bQOFeKm1_OY4ZbVG6Vg&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/cung-mot-bau-troi-khanh-don-ft-khanh-trung.dHheBZjbHd2k.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2021/07/23/f/5/5/8/1627008187261.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2016/01/25/4/1/1/7/1453715818225_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/07/05/0/4/f/4/1625469284189.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Sài Gòn Ốm",
+        "creator": "Phúc Bồ, Hoàng Tôn, Juky San, JC Hưng, Bảo Kun",
+        "music": "https://f9-stream.nixcdn.com/NhacCuaTui1019/SaiGonOm-PhucBoHoangTonJukySanJCHungBaoKun-7054775.mp3?st=aPfWo3pFejJ_oZoiVwrF4Q&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/sai-gon-om-phuc-bo-ft-hoang-ton-ft-juky-san-ft-jc-hung-ft-bao-kun.DCNdnPMU7kRB.html",
+        "lyric": "https://lrc-nct.nixcdn.com/null",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2016/10/17/4/2/a/d/1476698339496_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/07/26/b/6/e/e/1627282022985.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Ở Nhà",
+        "creator": "Vicky Nhung",
+        "music": "https://f9-stream.nixcdn.com/NhacCuaTui1018/ONha-VickyNhung-7047436.mp3?st=FRknqaoERec22dDEweR8zA&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/o-nha-vicky-nhung.FycfoXf6Rkty.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2021/07/22/0/e/4/1/1626927323330.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/09/09/2/2/4/8/1599620037001_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/07/12/9/2/b/6/1626081290353.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Yêu Lại Từ Đầu",
+        "creator": "Khắc Việt",
+        "music": "https://aredir.nixcdn.com/NhacCuaTui154/YeuLaiTuDau-KhacViet_354qr.mp3?st=cwAekMYkBIt2HbLRd5BmxQ&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/yeu-lai-tu-dau-khac-viet.oU0qaWPWljVh.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2017/01/17/5/3/4/3/1484643016250.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/05/27/6/9/5/0/1590565041302_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2019/09/12/c/9/7/4/1568255951832.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Tự Buông",
+        "creator": "Lý Tuấn Kiệt",
+        "music": "https://f9-stream.nixcdn.com/NhacCuaTui1018/TuBuong-LyTuanKiet-7047729.mp3?st=Ymv_clOgLSPklpSz3DJ4ng&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/tu-buong-ly-tuan-kiet.LlQKmAHE9FyV.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2021/07/22/0/e/4/1/1626923287153.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2016/10/19/1/5/d/e/1476865750236_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/07/13/d/1/2/3/1626149960543.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Hoa Nở Không Màu",
+        "creator": "Hoài Lâm",
+        "music": "https://aredir.nixcdn.com/NhacCuaTui999/HoaNoKhongMau1-HoaiLam-6281704.mp3?st=2bmyTV_fsYvmz49XmO6L0A&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/hoa-no-khong-mau-hoai-lam.qbK16hjg5TdZ.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2021/03/08/5/c/4/b/1615219889085.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/05/27/6/9/5/0/1590568952971_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2020/05/15/c/f/3/0/1589532035884.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Chắc Họ Có Thương Em",
+        "creator": "Kiun Gia Tuấn",
+        "music": "https://f9-stream.nixcdn.com/NhacCuaTui1017/ChacHoCoThuongEm-KiunGiaTuan-7038201.mp3?st=yOFgmeEtIFTV8_foB4Chnw&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/chac-ho-co-thuong-em-kiun-gia-tuan.t0MMhX3bZPuJ.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2021/07/20/1/0/0/2/1626747309650.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/10/20/a/0/d/f/1603169187914_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/06/28/8/4/3/c/1624854982856.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Đừng Hẹn Kiếp Sau",
+        "creator": "Đình Dũng, ACV",
+        "music": "https://aredir.nixcdn.com/NhacCuaTui1015/DungHenKiepSau1-DinhDungACV-7010665.mp3?st=-2qgq1kP-x98-T6GkHStQQ&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/dung-hen-kiep-sau-dinh-dung-ft-acv.EYUPzP2H8ChP.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2021/05/09/1/6/7/d/1620535411947.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/09/22/5/3/5/d/1600744344048_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/04/27/f/2/1/d/1619515696259.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Hết Duyên Thì Người Đi",
+        "creator": "Kalee Hoàng, Đông Ca",
+        "music": "https://f9-stream.nixcdn.com/NhacCuaTui1018/HetDuyenThiNguoiDi-KaleeHoangDongCa-7053380.mp3?st=RVVFidTbdAMMNtgKNBmksQ&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/het-duyen-thi-nguoi-di-kalee-hoang-ft-dong-ca.mfIJ2v9LMP9c.html",
+        "lyric": "https://lrc-nct.nixcdn.com/null",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2021/01/04/e/f/b/c/1609742824669_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/07/23/0/9/2/3/1627016600403.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Ngày Mai Sẽ Tốt Thôi",
+        "creator": "Kalee Hoàng",
+        "music": "https://f9-stream.nixcdn.com/NhacCuaTui1018/NgayMaiSeTotThoi-KaleeHoang-7053017.mp3?st=mELrTAhYUgonC6-KuyF0eQ&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/ngay-mai-se-tot-thoi-kalee-hoang.0hn4l1Y4gm2v.html",
+        "lyric": "https://lrc-nct.nixcdn.com/null",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2021/01/04/e/f/b/c/1609742824669_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/07/22/7/9/0/7/1626945478776.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Từng Yêu Đến Thế?",
+        "creator": "Kalee Hoàng, Huy Le",
+        "music": "https://f9-stream.nixcdn.com/NhacCuaTui1018/TungYeuDenThe-KaleeHoangHuyLe-7053009.mp3?st=ZFFeWwO5zbmHxK2tOOVmrA&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/tung-yeu-den-the-kalee-hoang-ft-huy-le.y2kCT20o1nzL.html",
+        "lyric": "https://lrc-nct.nixcdn.com/null",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2021/01/04/e/f/b/c/1609742824669_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/07/22/7/9/0/7/1626945096349.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Tội",
+        "creator": "Bằng Cường",
+        "music": "https://f9-stream.nixcdn.com/NhacCuaTui1018/Toi-BangCuong-7047968.mp3?st=-8QZBOFDDXkYoTkCKz1DQw&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/toi-bang-cuong.JPqk1I6WlkrJ.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2021/07/22/0/e/4/1/1626922978034.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/08/03/3/f/4/5/1596425768647_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/07/13/d/1/2/3/1626178436077.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Người Đừng Đổi Thay",
+        "creator": "Bằng Cường",
+        "music": "https://f9-stream.nixcdn.com/NhacCuaTui1018/NguoiDungDoiThay-BangCuong-7051683.mp3?st=9j677tzEj6jxUqN_3hBi0Q&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/nguoi-dung-doi-thay-bang-cuong.rvY7QYlETERm.html",
+        "lyric": "https://lrc-nct.nixcdn.com/null",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/08/03/3/f/4/5/1596425768647_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/07/20/1/4/a/0/1626759624627.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Chẳng Thể Sống Thiếu Em",
+        "creator": "Kalee Hoàng, Cường",
+        "music": "https://f9-stream.nixcdn.com/NhacCuaTui1018/ChangTheSongThieuEm-KaleeHoangCuong-7053005.mp3?st=pXibE8L63qIEU_sBbWm8Kg&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/chang-the-song-thieu-em-kalee-hoang-ft-cuong.unnug07Umw71.html",
+        "lyric": "https://lrc-nct.nixcdn.com/null",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2021/01/04/e/f/b/c/1609742824669_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/07/22/7/9/0/7/1626944949657.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Cố Giang Tình",
+        "creator": "X2X",
+        "music": "https://aredir.nixcdn.com/Sony_Audio72/CoGiangTinh-X2X-6257264.mp3?st=3qKS_kx2abDgDmepbFoRHA&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/co-giang-tinh-x2x.xyWHnC5qxlbd.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2020/04/01/a/e/1/1/1585708442390.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2021/03/15/4/7/7/8/1615802750962_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2020/03/31/4/6/f/c/1585621945561.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Tình Yêu Lung Linh",
+        "creator": "Tuấn Hưng",
+        "music": "https://aredir.nixcdn.com/NhacCuaTui239/TinhYeuLungLinh-TuanHung_bk.mp3?st=mznmEhM2Y9ml32i_ANpU3A&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/tinh-yeu-lung-linh-tuan-hung.dskfxTAMZacm.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2017/11/03/8/e/e/8/1509683591754.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2017/08/28/1/a/1/b/1503913422094_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2017/08/28/1/a/1/b/1503913422094.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Xa Tầm Với",
+        "creator": "Hoàng Anh Duy",
+        "music": "https://f9-stream.nixcdn.com/NhacCuaTui1017/XaTamVoi-HoangAnhDuy-7038194.mp3?st=51cLgkWOQESbgFv4OpU_tg&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/xa-tam-voi-hoang-anh-duy.IiMT8iZeXVDo.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2021/07/08/6/e/d/5/1625717261799.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/06/03/d/4/e/5/1591169993485_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/06/28/8/4/3/c/1624853479978.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Tháng Mấy Em Nhớ Anh?",
+        "creator": "Hà Anh Tuấn",
+        "music": "https://aredir.nixcdn.com/NhacCuaTui1014/ThangMayEmNhoAnh-HaAnhTuan-6995531.mp3?st=UXNTKxbTkdMUack8ijSfOw&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/thang-may-em-nho-anh-ha-anh-tuan.tV4swZ9ekyZS.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2021/04/01/8/f/f/4/1617275972934.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2018/06/27/e/8/8/5/1530074198530_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/04/01/e/2/b/5/1617248289520.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Đố Anh Đoán Được",
+        "creator": "Bích Phương, 1989s Entertainment",
+        "music": "https://aredir.nixcdn.com/NhacCuaTui1016/DoAnhDoanDuoc-BichPhuong1989sEntertainment-7024661.mp3?st=jfXKsuTlDa6Md_d_1jC6lA&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/do-anh-doan-duoc-bich-phuong-ft-1989s-entertainment.vFSEX3eiczQU.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2021/07/21/3/f/6/7/1626830355218.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2021/06/28/b/2/0/9/1624861449651_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/05/26/a/4/3/5/1622010601718.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Ta Là Của Nhau",
+        "creator": "Đông Nhi, Ông Cao Thắng",
+        "music": "https://aredir.nixcdn.com/NhacCuaTui924/TaLaCuaNhau-DongNhiOngCaoThang-4113753.mp3?st=vtRkDQCPWtlkK3aaRrCQMQ&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/ta-la-cua-nhau-dong-nhi-ft-ong-cao-thang.L0G5DzIXoFf3.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2015/10/08/d/0/7/0/1444269911742.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2018/12/14/f/f/f/e/1544795511047_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2019/09/11/6/d/c/4/1568183645028.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Tháng Năm (Special Performance)",
+        "creator": "Soobin Hoàng Sơn, SlimV",
+        "music": "https://aredir.nixcdn.com/NhacCuaTui1016/ThangNamSpecialPerformance-SoobinHoangSonSlimV-7020121.mp3?st=AJFJtHd8dhepRR2Pcw_mRw&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/thang-nam-special-performance-soobin-hoang-son-ft-slimv.IwPyhctfVIP7.html",
+        "lyric": "https://lrc-nct.nixcdn.com/null",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2019/09/05/d/9/5/e/1567670108816_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2019/09/05/d/9/5/e/1567670108816.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Chẳng Thể Sống Thiếu Em (Lofi Version)",
+        "creator": "Kalee Hoàng, Cường",
+        "music": "https://f9-stream.nixcdn.com/NhacCuaTui1019/ChangTheSongThieuEmLofiVersion-KaleeHoangCuong-7056014.mp3?st=KcLLoC8vTPSrPqE2SBtJLw&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/chang-the-song-thieu-em-lofi-version-kalee-hoang-ft-cuong.ibqSreB1agua.html",
+        "lyric": "https://lrc-nct.nixcdn.com/null",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2021/01/04/e/f/b/c/1609742824669_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/07/28/0/a/3/1/1627442274445.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Hãy Trao Cho Anh",
+        "creator": "Sơn Tùng M-TP, Snoop Dogg",
+        "music": "https://aredir.nixcdn.com/NhacCuaTui985/HayTraoChoAnh-SonTungMTPSnoopDogg-6010660.mp3?st=V6kQ90ONAwY0P1k5HQUwTQ&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/hay-trao-cho-anh-son-tung-m-tp-ft-snoop-dogg.vtEybe9NxLw7.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2019/07/01/4/3/b/e/1561988730815.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2021/05/12/7/d/c/b/1620802736418_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2019/07/03/7/5/b/e/1562137543919.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Mãi Mãi Bên Nhau",
+        "creator": "Noo Phước Thịnh",
+        "music": "https://aredir.nixcdn.com/Sony_Audio76/MaiMaiBenNhau-NooPhuocThinh-6456927.mp3?st=HeHQrQni5zM21OsJzHDRkA&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/mai-mai-ben-nhau-noo-phuoc-thinh.vu4LPajdrOQR.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2015/07/21/b/f/c/e/1437461628517.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/09/14/0/2/8/0/1600055795446_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2019/09/11/6/d/c/4/1568184053333.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Điều Ngọt Ngào Nhất",
+        "creator": "Cao Thái Sơn",
+        "music": "https://aredir.nixcdn.com/Singer_Audio5/DieuNgotNgaoNhat-CaoThaiSon-2449094.mp3?st=CXCQel-TU7GgixI5EgdztA&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/dieu-ngot-ngao-nhat-cao-thai-son.5mSujbEjmniv.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2015/01/15/8/3/f/3/1421288738934.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2017/07/05/a/c/0/f/1499225305436_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2017/07/05/a/c/0/f/1499225305436.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Dĩ Vãng Cuộc Tình",
+        "creator": "Tuấn Hưng",
+        "music": "https://aredir.nixcdn.com/NhacCuaTui109/DiVangCuocTinh-TuanHung_r5z4.mp3?st=LzOYN9vrvw9TtXdVA4SOug&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/di-vang-cuoc-tinh-tuan-hung.10MoSCJhUSdh.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2013/12/17/3/e/8/0/1387222307806.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2017/08/28/1/a/1/b/1503913422094_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2017/08/28/1/a/1/b/1503913422094.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Sài Gòn Hôm Nay Mưa (Lofi Version)",
+        "creator": "JSOL, Hoàng Duyên, 1 9 6 7",
+        "music": "https://f9-stream.nixcdn.com/NhacCuaTui1017/SaiGonHomNayMuaLofiVersion-JSOLHoangDuyen1967-7034643.mp3?st=t4ktAkoe3joA9hf1XAX7-w&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/sai-gon-hom-nay-mua-lofi-version-jsol-ft-hoang-duyen-ft-1-9-6-7.NG5fVJ5qMlmE.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2021/06/25/b/9/1/5/1624591097589.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2021/06/29/3/c/a/6/1624943867794_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2021/06/29/3/c/a/6/1624943867794.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Hiện Đại",
+        "creator": "Khắc Việt",
+        "music": "https://aredir.nixcdn.com/NhacCuaTui1016/HienDai-KhacViet-7022864.mp3?st=OUd0nDyBbHURQZ7069narg&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/hien-dai-khac-viet.PtjLT1SNRrmn.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2021/07/21/3/f/6/7/1626833094099.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/05/27/6/9/5/0/1590565041302_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/05/22/f/1/c/b/1621648577854.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Dối Lòng",
+        "creator": "Tuấn Hưng",
+        "music": "https://aredir.nixcdn.com/NhacCuaTui960/DoiLong-TuanHung-5385147.mp3?st=HszVyOVpLxNQ7pozA6czVQ&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/doi-long-tuan-hung.R6aEUeQBgIfV.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2019/04/22/a/6/2/3/1555913063523.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2017/08/28/1/a/1/b/1503913422094_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2017/08/28/1/a/1/b/1503913422094.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Kẻ Cắp Gặp Bà Già",
+        "creator": "Hoàng Thùy Linh, Binz",
+        "music": "https://aredir.nixcdn.com/Sony_Audio67/DiamondCutDiamond-HoangThuyLinhBINZ-6153594.mp3?st=Kwn0j9IavluIe1rYOpo8PQ&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/ke-cap-gap-ba-gia-hoang-thuy-linh-ft-binz.TiYIAkGdU8ad.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2019/10/21/5/4/4/2/1571630367160.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2019/10/23/5/b/0/b/1571802458800_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2019/10/18/2/0/b/1/1571381118105.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Cứ Chill Thôi",
+        "creator": "Chillies, Suni Hạ Linh, Rhymastic",
+        "music": "https://aredir.nixcdn.com/Warner_Audio33/CuChillThoi-ChilliesSuniHaLinhRhymastic-6330366.mp3?st=EyETBztwvKEsB-R5qOjpKg&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/cu-chill-thoi-chillies-ft-suni-ha-linh-ft-rhymastic.I0ZXAn60MifT.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2020/08/11/f/c/e/1/1597115627201.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/07/22/f/1/f/9/1595414808364_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2020/07/13/a/f/7/f/1594611971401.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Buồn Làm Chi Em Ơi",
+        "creator": "Hoài Lâm",
+        "music": "https://aredir.nixcdn.com/NhacCuaTui1000/BuonLamChiEmOi1-HoaiLam-6297318.mp3?st=OcMm56bALTMqN8StuXrajQ&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/buon-lam-chi-em-oi-hoai-lam.utdMYQZ1ntVp.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2020/07/06/0/6/c/e/1594026785668.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/05/27/6/9/5/0/1590568952971_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2020/06/12/5/b/c/b/1591950830200.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Cần Gì Hơn?",
+        "creator": "Tiên Tiên, JustaTee",
+        "music": "https://aredir.nixcdn.com/NhacCuaTui996/CanGiHon-TienTienJustaTee-6236038.mp3?st=RCnHW4o7MU57WiLOfOIQPg&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/can-gi-hon-tien-tien-ft-justatee.zLxzzuaqmtyS.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2020/04/24/9/6/4/2/1587715825528.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2017/05/19/e/7/4/2/1495168123269_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2020/03/10/8/e/3/9/1583831167157.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Gác Lại Âu Lo",
+        "creator": "Da LAB, Miu Lê",
+        "music": "https://aredir.nixcdn.com/NhacCuaTui1001/GacLaiAuLo-DaLABMiuLe-6360815.mp3?st=pZTjsPkVdzCxajZc2rR63A&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/gac-lai-au-lo-da-lab-ft-miu-le.1uWWUf6ZAHC4.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2020/08/03/1/b/b/4/1596444020821.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/08/03/3/f/4/5/1596425146149_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2020/07/24/f/6/5/1/1595564868985.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Ngày Tận Thế",
+        "creator": "Tóc Tiên, Da LAB, Touliver",
+        "music": "https://aredir.nixcdn.com/NhacCuaTui995/NgayTanThe-TocTienDaLABTouliver-6226260.mp3?st=FccJ8rhREl-Q5DxOVLS6sQ&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/ngay-tan-the-toc-tien-ft-da-lab-ft-touliver.v4le5ZF0dej8.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2020/02/24/2/2/4/f/1582507447060.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/02/20/a/d/6/4/1582180833496_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2020/02/20/2/0/7/e/1582174982811.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Ước Mơ Của Mẹ (The Heroes Version)",
+        "creator": "CARA",
+        "music": "https://aredir.nixcdn.com/Unv_Audio198/UocMoCuaMeTheHeroesVersion-CARA-7042616.mp3?st=xDTzf-QSt6ISw8J7JgFvoQ&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/uoc-mo-cua-me-the-heroes-version-cara.C8Xh47uPBbnB.html",
+        "lyric": "https://lrc-nct.nixcdn.com/null",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/09/08/4/9/c/3/1599539664977_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/07/04/5/5/5/b/1625391469108.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Cô Đơn Dành Cho Ai (Lofi Version)",
+        "creator": "Lee Ken, Nal",
+        "music": "https://f9-stream.nixcdn.com/NhacCuaTui1019/CoDonDanhChoAiLofiVersion-LeeKenNal-7059350.mp3?st=ugMS-WFUe2fOl_KFBPkbHQ&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/co-don-danh-cho-ai-lofi-version-lee-ken-ft-nal.mUe9n1hDjo22.html",
+        "lyric": "",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2017/02/07/7/0/f/3/1486435488320_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2017/02/07/7/0/f/3/1486435488320.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Tình Yêu Màu Hồng",
+        "creator": "Hồ Văn Quý, Xám",
+        "music": "https://aredir.nixcdn.com/NhacCuaTui1009/TinhYeuMauHong-HoVanQuyXam-6914636.mp3?st=pHi4CN0qcD4a4j7RTqJH7Q&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/tinh-yeu-mau-hong-ho-van-quy-ft-xam.eJ4UnTgbMGlM.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2021/03/08/5/c/4/b/1615218817951.lrc",
+        "bgImage": "",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/01/07/6/a/b/e/1610006675703.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Tình Anh",
+        "creator": "Đình Dũng",
+        "music": "https://aredir.nixcdn.com/NhacCuaTui1000/TinhAnh-DinhDung-6286282.mp3?st=BVQoSaS2mgKWmabZPjFLxg&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/tinh-anh-dinh-dung.25AQhlbrrX8F.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2020/10/21/d/2/7/6/1603249244672.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/09/22/5/3/5/d/1600744344048_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/09/22/5/3/5/d/1600744344048.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Dễ Đến Dễ Đi",
+        "creator": "Quang Hùng MasterD",
+        "music": "https://aredir.nixcdn.com/NhacCuaTui1005/DeDenDeDi3-QuangHungMasterD-6791841.mp3?st=_yeLyJwTIABqm-BnXM7lBg&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/de-den-de-di-quang-hung-masterd.EOtJ5ddcidNb.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2021/03/25/3/b/0/1/1616633924359.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2019/07/30/6/0/5/f/1564481664878_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2020/11/01/2/e/b/0/1604211220367.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Những Kẻ Mộng Mơ",
+        "creator": "Noo Phước Thịnh",
+        "music": "https://aredir.nixcdn.com/Sony_Audio50/NhungKeMongMo-NooPhuocThinh-5723943.mp3?st=lsIyqR8nTwFWZz1E_iqaCg&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/nhung-ke-mong-mo-noo-phuoc-thinh.zJV2gFUIIzzQ.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2018/10/20/e/0/9/d/1540032779920.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/09/14/0/2/8/0/1600055795446_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2018/10/18/2/1/b/b/1539827958150.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Để Mị Nói Cho Mà Nghe",
+        "creator": "Hoàng Thùy Linh",
+        "music": "https://aredir.nixcdn.com/Sony_Audio67/DeMiNoiChoMaNghe-HoangThuyLinh-6153588.mp3?st=Lws3KOmOt1beaifHtPigHQ&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/de-mi-noi-cho-ma-nghe-hoang-thuy-linh.cxycw7eSvV7t.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2019/06/24/b/f/7/2/1561363557566.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2019/10/23/5/b/0/b/1571802458800_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2019/06/20/5/9/0/b/1560999333698.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Laylalay",
+        "creator": "Jack - J97",
+        "music": "https://aredir.nixcdn.com/NhacCuaTui1014/Laylalay-JackG5R-7003742.mp3?st=_ic9ftv5agqwCTt5IaNaxQ&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/laylalay-jack-j97.n8VupC0HXKgY.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2021/04/13/6/7/1/3/1618283210428.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2021/04/12/1/1/7/2/1618223507852_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/04/13/9/7/d/5/1618248252948.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Từng Yêu",
+        "creator": "Phan Duy Anh",
+        "music": "https://aredir.nixcdn.com/NhacCuaTui983/TungYeu-PhanDuyAnh-5989256.mp3?st=1iS7uf6445418MXo8x8CsA&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/tung-yeu-phan-duy-anh.tnvcYCYt7lmv.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2019/06/13/a/1/0/5/1560383958108.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2019/08/13/7/d/5/0/1565688488776_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2019/07/03/7/5/b/e/1562146897414.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Yêu Sai Người",
+        "creator": "Lý Tuấn Kiệt",
+        "music": "https://f9-stream.nixcdn.com/NhacCuaTui1017/YeuSaiNguoi-LyTuanKiet-7037403.mp3?st=fFDgjUXjnlWB6fC85owTfA&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/yeu-sai-nguoi-ly-tuan-kiet.wWQL1QEnXvBA.html",
+        "lyric": "https://lrc-nct.nixcdn.com/2021/07/20/1/0/0/2/1626747248355.lrc",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2016/10/19/1/5/d/e/1476865750236_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/06/25/e/6/6/d/1624609387941.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Bỏ Em Vào Balo",
+        "creator": "Tân Trần",
+        "music": "https://f9-stream.nixcdn.com/NhacCuaTui1017/BoEmVaoBalo-TanTran-7032056.mp3?st=UXSGLUll_PJ08_B3NcrCJw&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/bo-em-vao-balo-tan-tran.HJeEJ2jENGBk.html",
+        "lyric": "https://lrc-nct.nixcdn.com/null",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2018/10/09/2/0/8/a/1539059336207_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2018/10/09/2/0/8/a/1539059336207.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Đoạn Tuyệt Nàng Đi (Lofi Version)",
+        "creator": "Phát Huy T4, KProx",
+        "music": "https://aredir.nixcdn.com/NhacCuaTui1015/DoanTuyetNangDiLofiVersion-PhatHuyT4KProx-7011827.mp3?st=eCfkiTdpLOMi5IbWmzMVZQ&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/doan-tuyet-nang-di-lofi-version-phat-huy-t4-ft-kprox.BZqxPLSOerxC.html",
+        "lyric": "https://lrc-nct.nixcdn.com/null",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2021/04/14/b/9/8/b/1618374024681_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2021/04/14/b/9/8/b/1618374024681.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      },
+      {
+        "title": "Chỉ Là Không Cùng Nhau (Live)",
+        "creator": "Tăng Phúc, Trương Thảo Nhi",
+        "music": "https://aredir.nixcdn.com/NhacCuaTui1014/ChiLaKhongCungNhauLive-TangPhucTruongThaoNhi-6994969.mp3?st=BpIU6WyhWXU7zDzKBXL3uw&e=1628283282",
+        "url": "https://www.nhaccuatui.com/bai-hat/chi-la-khong-cung-nhau-live-tang-phuc-ft-truong-thao-nhi.Ea8hu2FHnRf9.html",
+        "lyric": "https://lrc-nct.nixcdn.com/null",
+        "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2019/11/20/d/f/9/a/1574242685613_600.jpg",
+        "avatar": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2019/11/20/d/f/9/a/1574242685613.jpg",
+        "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/05/04/3/b/6/d/1620100988545_500.jpg"
+      }
+    ]
+  },
+    "Top100": [
+      {
+        "id":"top-100-rap-viet",
+        "title": "Top 100 Rap Việt",
+        "avatar": "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/7/1/7/2/7172e5eef050a364accf3109a0f7477a.jpg",
+        "songs": [
+          {
+            "title": "Nghe Như Tình Yêu",
+            "creator": "HIEUTHUHAI",
+            "music": "https://f9-stream.nixcdn.com/NhacCuaTui1018/NgheNhuTinhYeu-HIEUTHUHAI-7045463.mp3?st=MCq04N7VoKvXRnFExb8iYg&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/nghe-nhu-tinh-yeu-hieuthuhai.OMa8rluN5oE5.html",
+            "lyric": "https://lrc-nct.nixcdn.com/null",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/11/04/5/6/e/8/1604463992558_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/07/09/5/5/8/2/1625837174082.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Gái Độc Thân",
+            "creator": "Tlinh",
+            "music": "https://aredir.nixcdn.com/Unv_Audio198/GaiDocThan-tlinh-7041472.mp3?st=7nPBhhUCWV-FjEFw1KJxzQ&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/gai-doc-than-tlinh.HlOOgRhjoIfX.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2021/08/03/5/a/d/2/1627954766296.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/08/17/0/6/7/1/1597656286964_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/07/02/a/b/5/2/1625191334669.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Tay To",
+            "creator": "MCK, RPT PhongKhin",
+            "music": "https://f9-stream.nixcdn.com/NhacCuaTui1018/TayTo-MCKRPTRPTPhongKhin-6984700.mp3?st=iHbVtoaJv8oC38WjZ3AZww&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/tay-to-mck-ft-rpt-phongkhin.UEzjr123qFFt.html",
+            "lyric": "https://lrc-nct.nixcdn.com/null",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/11/16/6/5/0/2/1605491409204_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/07/09/5/5/8/2/1625828311511.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Giấc Mơ Rất Thơ",
+            "creator": "Mer, thaison!",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui1016/GiacMoRatTho-MerVietNamthaison-7019613.mp3?st=4rcvVPaNHxQO5_7DCzcecw&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/giac-mo-rat-tho-mer-ft-thaison.C0InRLlVNvV4.html",
+            "lyric": "https://lrc-nct.nixcdn.com/null",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2021/04/05/3/9/a/7/1617621341097_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/05/14/d/d/1/9/1620949744376.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Nhớ Người Hay Nhớ",
+            "creator": "Khói, Sofia, Châu Đăng Khoa",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui1010/NhoNguoiHayNho-KhoiSofiaVietNamChauDangKhoa-6928383.mp3?st=zX0m48e7oa-aerY49UnMkQ&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/nho-nguoi-hay-nho-khoi-ft-sofia-ft-chau-dang-khoa.xz3g41V4XDQs.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2021/03/08/5/c/4/b/1615219339562.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/10/27/e/b/6/8/1603769786589_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/01/25/b/2/c/6/1611544717441.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Gu",
+            "creator": "Freaky, Seachains",
+            "music": "https://aredir.nixcdn.com/Unv_Audio198/Gu-FreakySeachains-7029816.mp3?st=fW8FsWujN6VPYwmJ0djiGg&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/gu-freaky-ft-seachains.3wZhYrfmdRAV.html",
+            "lyric": "https://lrc-nct.nixcdn.com/null",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/08/13/a/9/8/e/1597287164260_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/06/03/6/0/a/8/1622721624066.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Đừng Gọi Anh Dậy",
+            "creator": "Phúc Du, 1989s Entertainment",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui1016/DungGoiAnhDay-PhucDu1989sEntertainment-7029805.mp3?st=5j-o9j0WI4r8SEQOW5yvlA&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/dung-goi-anh-day-phuc-du-ft-1989s-entertainment.6xlM7LuE7WmP.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2021/07/20/1/0/0/2/1626748472000.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/06/29/0/9/e/a/1593396258015_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/06/04/e/d/5/4/1622781868711.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Uầyyy",
+            "creator": "MCK, RPT JasonDilla, RPT Orijinn, RPT L.A.K.E, Duke, Spideyboy, RPT T.C, Groovie Lã Thắng, RPT Gonzo",
+            "music": "https://f9-stream.nixcdn.com/NhacCuaTui1018/Uayyy-MCKRPTRPTJasonDillaRPTOrijinnRPTLAKERPTDukeSpideyboyRPTTCGroovieLaThangRPTGonzo-7036147.mp3?st=MUqNzntoCIgCTrwu1VqTOA&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/uayyy-mck-ft-rpt-jasondilla-ft-rpt-orijinn-ft-rpt-lake-ft-duke-ft-spideyboy-ft-rpt-tc-ft-groovie-la-thang-ft-rpt-gonzo.vlPtZ5OrS3VE.html",
+            "lyric": "https://lrc-nct.nixcdn.com/null",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/11/16/6/5/0/2/1605491409204_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/07/09/5/5/8/2/1625829335553.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Cô Ta",
+            "creator": "Lil Shady, Kyo",
+            "music": "https://f9-stream.nixcdn.com/NhacCuaTui1018/CoTa-LilShadyKyoVietNam-7051212.mp3?st=YVNfhfp1p6r-L5bOUTqO2w&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/co-ta-lil-shady-ft-kyo.cWfx5dsTB40g.html",
+            "lyric": "https://lrc-nct.nixcdn.com/null",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2014/08/06/7/b/7/c/1407278635002_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/07/19/5/f/7/4/1626678137535.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Muốn Được Cùng Em",
+            "creator": "Freaky",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui1005/MuonDuocCungEm-Freaky-6792500.mp3?st=xAy9MRIrtV9pRM0TwhLzBA&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/muon-duoc-cung-em-freaky.XwooM1LyhPMW.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2020/11/11/b/7/5/9/1605056922966.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/08/13/a/9/8/e/1597287164260_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2020/11/03/d/a/8/9/1604395141673.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "XTC Remix",
+            "creator": "Groovie Lã Thắng, Tlinh, MCK",
+            "music": "https://f9-stream.nixcdn.com/NhacCuaTui1018/XTCRemix-TlinhGroovieLaThangMCKRPT-7004626.mp3?st=-RgNULWFdy_7tV4tMF-xGw&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/xtc-remix-groovie-la-thang-ft-tlinh-ft-mck.ce0HCg21DqK5.html",
+            "lyric": "https://lrc-nct.nixcdn.com/null",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/09/03/3/6/1/2/1599108409398_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/07/09/5/5/8/2/1625828099530.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Alaba Trap",
+            "creator": "Tommy Tèo, MCK",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui1015/AlabaTrap-TommyTeoMCKRPT-6998714.mp3?st=OFlK6Y49HzntfrBTh_eXjA&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/alaba-trap-tommy-teo-ft-mck.CGAUfP63ny3h.html",
+            "lyric": "https://lrc-nct.nixcdn.com/null",
+            "bgImage": "",
+            "avatar": "https://stc-id.nixcdn.com/v11/images/df-singer-300x300.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Sang Xịn Mịn",
+            "creator": "Gill, Kewtiie",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui1015/SangXinMin-GillKewtiie-7014031.mp3?st=SzRuo_GzRK_NaChOzPe29Q&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/sang-xin-min-gill-ft-kewtiie.UAWGIr9OC7bz.html",
+            "lyric": "https://lrc-nct.nixcdn.com/null",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2021/06/04/a/0/9/3/1622788297770_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2021/06/04/a/0/9/3/1622788297770.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Real Love",
+            "creator": "JustaTee, Kimmese",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui204/RealLove-JustaTee-Kimmese_3p3a9.mp3?st=rINJ9TQAm9P2D0x7diWhhA&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/real-love-justatee-ft-kimmese.glbLzjd09Tf3.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2014/01/03/c/2/9/d/1388740815792.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2019/07/22/f/e/a/2/1563758181487_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2019/07/22/f/e/a/2/1563758181487.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Walk On Da Street (Cukak Remix)",
+            "creator": "16 Typh, 16 BrT",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui1015/WalkOnDaStreetCukakRemix-16Typh16BrT-7007869.mp3?st=Kf0bZ2hItS82sYssKeUvsw&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/walk-on-da-street-cukak-remix-16-typh-ft-16-brt.FyWygqW01jMg.html",
+            "lyric": "https://lrc-nct.nixcdn.com/null",
+            "bgImage": "",
+            "avatar": "https://stc-id.nixcdn.com/v11/images/df-singer-300x300.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Một Nhà",
+            "creator": "Da LAB",
+            "music": "https://aredir.nixcdn.com/Sony_Audio55/MotNha-DaLAB-5798631.mp3?st=Xpk0b43hT-PAmlKaTu-dvw&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/mot-nha-da-lab.lCr2JWr7FUFv.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2015/05/27/9/6/f/8/1432717427397.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/08/03/3/f/4/5/1596425146149_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2017/11/22/d/7/2/7/1511342082405.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          }
+        ]
+      },
+      {
+        "id":"top-100-rap-hot",
+        "title": "Top 100 Rap hot",
+        "avatar": "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/6/b/6/1/6b61578d3ea104a9b7899a98aa6da31f.jpg",
+  
+        "songs": [
+          {
+            "title": "Quan Tài Hư",
+            "creator": "Young Milo",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui1014/QuanTaiHu-YoungMilo-6996488.mp3?st=v2XfPK49GJS8nyjkEJieRw&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/quan-tai-hu-young-milo.1a2kTV1DGAlU.html",
+            "lyric": "https://lrc-nct.nixcdn.com/null",
+            "bgImage": "",
+            "avatar": "https://stc-id.nixcdn.com/v11/images/df-singer-300x300.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Trước Khi Tuổi Trẻ Này Đóng Lối",
+            "creator": "Ngắn, Dick, Xám",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui1016/TruocKhiTuoiTreNayDongLoi-NganDickXamBCTM-7029690.mp3?st=blvSLfWfLAsvZAgA2tl9cA&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/truoc-khi-tuoi-tre-nay-dong-loi-ngan-ft-dick-ft-xam.uELJ2QT6iTex.html",
+            "lyric": "https://lrc-nct.nixcdn.com/null",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/12/04/2/2/f/a/1607070068247_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/06/03/6/0/a/8/1622712323634.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Hết Nhạc Con Về",
+            "creator": "Duy B, Not Afraid, RZ Mas",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui1014/HetNhacConVe-DuyBNotAfraidRZMas-7006927.mp3?st=lglYcNAfloO_nyOMHYewyA&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/het-nhac-con-ve-duy-b-ft-not-afraid-ft-rz-mas.lMPE37vhM4WA.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2021/05/06/5/e/1/b/1620262303496.lrc",
+            "bgImage": "",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/04/20/6/8/7/1/1618928456736.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Crying Over You",
+            "creator": "JustaTee, Binz",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui845/CryingOverYou-JustaTeeBinz-2866818.mp3?st=WH_Rtz7BsfYoTFs2bh_zSw&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/crying-over-you-justatee-ft-binz.omVXz99lP8hI.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2013/12/06/2/0/d/1/1386316823462.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2019/07/22/f/e/a/2/1563758181487_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2019/07/22/f/e/a/2/1563758181487.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "84 Bars (Explicit)",
+            "creator": "Jombie, Sinkra",
+            "music": "https://f9-stream.nixcdn.com/NhacCuaTui1017/84Bars-JombieSinkra-7041554.mp3?st=dbbzEeH0jnW7P_sn9w-GQw&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/84-bars-explicit-jombie-ft-sinkra.a3QffZZFptTR.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2021/07/08/6/e/d/5/1625708436910.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2014/02/26/6/5/1/b/1393400883937_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/07/02/a/b/5/2/1625204133932.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Già Cùng Nhau Là Được",
+            "creator": "Tùng TeA, PC",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui971/GiaCungNhauLaDuoc-TeaPC-5743181.mp3?st=Z1YdUD2VtPBl6nFnrFgA9A&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/gia-cung-nhau-la-duoc-tung-tea-ft-pc.DY5luosQYTx5.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2018/11/20/9/f/8/c/1542688024189.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/06/12/c/1/7/7/1591956367276_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2018/11/26/8/e/9/4/1543213836132.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Cypher Nhà Làm",
+            "creator": "Low G, Teddie J, Chí, ResQ",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui1015/CypherNhaLam-LowGTeddieJChiResQ-7017144.mp3?st=suxAmICFWAIw5iw_8NIWHw&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/cypher-nha-lam-low-g-ft-teddie-j-ft-chi-ft-resq.DkeBUNTT3rZ3.html",
+            "lyric": "https://lrc-nct.nixcdn.com/null",
+            "bgImage": "",
+            "avatar": "https://stc-id.nixcdn.com/v11/images/df-singer-300x300.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Mộng Bờ Tây",
+            "creator": "Jombie, The Night, DANHKA, Bean",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui1015/MongBoTay-JombieTheNightDANHKABean-7008290.mp3?st=DlGLTolj-Eq8ho6WhfLBYQ&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/mong-bo-tay-jombie-ft-the-night-ft-danhka-ft-bean.TPm7F426DlOj.html",
+            "lyric": "https://lrc-nct.nixcdn.com/null",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2014/02/26/6/5/1/b/1393400883937_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2014/02/26/6/5/1/b/1393400883937.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Những Ngày Sau",
+            "creator": "EN",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui1015/NhungNgaySau-EN-7006600.mp3?st=8bx_r1iDm24G2lYi_bQ-uA&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/nhung-ngay-sau-en.g2lgFtUwsaSw.html",
+            "lyric": "https://lrc-nct.nixcdn.com/null",
+            "bgImage": "",
+            "avatar": "https://stc-id.nixcdn.com/v11/images/df-singer-300x300.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Dân Chơi Xóm",
+            "creator": "MCK, JustaTee",
+            "music": "https://aredir.nixcdn.com/Warner_Audio65/DanChoiXomFeatRptMckJustatee-RAPVIET-6821316.mp3?st=NvNgiSG-ytRYyBX4qpvabQ&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/dan-choi-xom-mck-ft-justatee.aEPLFBvzEy0B.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2021/01/05/8/7/6/4/1609829183572.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/11/16/6/5/0/2/1605491409204_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2020/11/18/1/e/7/8/1605673795406.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Sao Cũng Được",
+            "creator": "Binz",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui961/SaoCungDuocGuitarVersion-Binz-5411337.mp3?st=85HBg1QltioISUksaxsAkQ&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/sao-cung-duoc-binz.mak9XhsARrp8.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2018/08/29/5/0/1/6/1535514279363.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2019/09/12/c/3/c/7/1568253936065_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2018/03/10/7/0/c/b/1520688037080.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Buôn Hàng",
+            "creator": "Young Milo",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui1015/BuonHang-YoungMilo-6998711.mp3?st=mLv5v2i7EzB8mQbX25DbIQ&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/buon-hang-young-milo.1ZKNwXxdBxM8.html",
+            "lyric": "https://lrc-nct.nixcdn.com/null",
+            "bgImage": "",
+            "avatar": "https://stc-id.nixcdn.com/v11/images/df-singer-300x300.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Trúng Mánh Rồi",
+            "creator": "T Team",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui1009/TrungManhRoi-TTeam-6893325.mp3?st=hSkeJ1oHkOKCvku30FcnZA&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/trung-manh-roi-t-team.fFHEzSRVjuUX.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2020/12/26/b/a/4/a/1608982084503.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/06/30/6/3/b/0/1593517138273_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2020/12/22/d/0/d/1/1608631097792.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Cô Đơn Trong Màn Đêm Tối",
+            "creator": "Green, SuDra",
+            "music": "https://f9-stream.nixcdn.com/NhacCuaTui1018/CoDonTrongManDemToi-GreenSuDra-7047724.mp3?st=FrVrC8SiAmVfEpisZyuU3w&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/co-don-trong-man-dem-toi-green-ft-sudra.yIrHMFZCfrKQ.html",
+            "lyric": "https://lrc-nct.nixcdn.com/null",
+            "bgImage": "",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/07/13/d/1/2/3/1626149121072.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Ghé Qua",
+            "creator": "Dick, Tofu, PC",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui955/GheQua-DickTofuPC-5308038.mp3?st=9M8E47P0xgMuKaYCKa3iyQ&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/ghe-qua-dick-ft-tofu-ft-pc.NfKsj9b9KZ08.html",
+            "lyric": "https://lrc-nct.nixcdn.com/null",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/07/23/7/f/c/2/1595489721448_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/07/23/7/f/c/2/1595489721448.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Matcha",
+            "creator": "Ron Phan, Freaky",
+            "music": "https://f9-stream.nixcdn.com/NhacCuaTui1018/Matcha-RonPhanFreaky-7046570.mp3?st=mn-Te8hOjmcD8NXufW_Wvg&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/matcha-ron-phan-ft-freaky.IsdoYGL3un2J.html",
+            "lyric": "https://lrc-nct.nixcdn.com/null",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/09/28/1/1/c/f/1601258338473_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/07/10/7/8/6/e/1625925075763.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Tình Nhân Ơi",
+            "creator": "Superbrothers, Orange, Binz",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui974/TinhNhanOi-SuperbrothersOrangeBinz-5831772.mp3?st=IBKQ_bknaU9Bqun3Or4nzQ&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/tinh-nhan-oi-superbrothers-ft-orange-ft-binz.2kDqw2cKwBVN.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2019/01/03/e/d/9/2/1546472085264.lrc",
+            "bgImage": "",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2018/12/23/4/7/2/d/1545578861465.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Hoàn Hảo (Masew Remix)",
+            "creator": "B Ray, Masew",
+            "music": "https://f9-stream.nixcdn.com/NhacCuaTui1017/HoanHaoMasewRemix-BRayMasew-7037467.mp3?st=95jQeaZNEii3o7T6V7s76Q&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/hoan-hao-masew-remix-b-ray-ft-masew.OuT05hfYx8ar.html",
+            "lyric": "https://lrc-nct.nixcdn.com/null",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/05/27/6/9/5/0/1590562104987_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/05/27/6/9/5/0/1590562104987.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "SOFAR",
+            "creator": "Binz",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui966/SoFar-Binz-5521790.mp3?st=HKS4NxGUeYELxPIx9QAxDA&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/sofar-binz.dOdRJKutva6R.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2018/11/09/3/a/f/5/1541739658758.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2019/09/12/c/3/c/7/1568253936065_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2018/07/09/d/c/c/0/1531116649518.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Nhảy",
+            "creator": "T Team",
+            "music": "https://f9-stream.nixcdn.com/NhacCuaTui1017/Nhay-TTeam-7042948.mp3?st=2XEfpaBvF9e5WcpvOv3Yig&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/nhay-t-team.gogDibRrBhMB.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2021/07/23/f/5/5/8/1627007499532.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/06/30/6/3/b/0/1593517138273_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/07/05/0/4/f/4/1625457398715.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Ex's Hate Me",
+            "creator": "B Ray, Masew, AMEE",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui977/ExsHateMe-BRayMasewAMee-5878683.mp3?st=ag9wMIjWQDYzu6Jx0SLwZg&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/exs-hate-me-b-ray-ft-masew-ft-amee.EEQuiAXZ6Dos.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2019/02/16/4/1/4/1/1550295026824.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/05/27/6/9/5/0/1590562104987_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2019/02/13/7/c/9/3/1550063179723.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          }
+        ]
+      },
+      {
+        "id":"top-100-rap-xin",
+        "title": "Top 100 rap xịn",
+        "avatar": "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/7/e/a/3/7ea3bcf19dbda2e651c65b31c1765e57.jpg",
+        "songs": [
+          {
+            "title": "Cho Anh Một Chút Hy Vọng",
+            "creator": "Haukong, Flymingo",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui1015/ChoAnhMotChutHyVong-HaukongFlymingo-7012678.mp3?st=z6oJl5EVyIp7bjjC-6YZDQ&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/cho-anh-mot-chut-hy-vong-haukong-ft-flymingo.4akkKksPWtH5.html",
+            "lyric": "https://lrc-nct.nixcdn.com/null",
+            "bgImage": "",
+            "avatar": "https://stc-id.nixcdn.com/v11/images/df-singer-300x300.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Lời Đường Mật",
+            "creator": "Lyly, HIEUTHUHAI",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui1005/LoiDuongMat-LylyHIEUTHUHAI-6802155.mp3?st=gAdiuj_ipzBol3XQuMJTAg&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/loi-duong-mat-lyly-ft-hieuthuhai.VxElKxG7k4UK.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2020/11/15/6/b/1/9/1605424313596.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/11/06/7/2/4/6/1604652414322_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2020/11/05/4/4/6/c/1604552476279.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "The Last Finale",
+            "creator": "B Ray",
+            "music": "https://f9-stream.nixcdn.com/NhacCuaTui1017/TheLastFinale-BRay-7044287.mp3?st=aoTSRX8ztcRgmTjvuSW_Ig&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/the-last-finale-b-ray.sy5udrTHvuu7.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2021/08/04/c/c/c/8/1628044178721.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/05/27/6/9/5/0/1590562104987_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/07/07/d/5/b/5/1625649348193.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Phía Sau Em",
+            "creator": "Kay Trần, Binz",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui903/PhiaSauEm-KayTranBinz-4073724.mp3?st=41KuITWiTynxAqI8AOl9VA&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/phia-sau-em-kay-tran-ft-binz.Eded1V1yGn8n.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2018/07/12/d/c/f/b/1531373555619.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2021/07/05/7/5/8/a/1625467381647_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2018/07/11/6/b/a/3/1531324811184.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Siren",
+            "creator": "TGSN, Tlinh, RZ Mas",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui1016/Siren-TGSNTlinhRZMas-7024366.mp3?st=-_O6TgwnNgNS-0B1qAtrtA&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/siren-tgsn-ft-tlinh-ft-rz-mas.iBUZ6VN102Mq.html",
+            "lyric": "https://lrc-nct.nixcdn.com/null",
+            "bgImage": "",
+            "avatar": "https://stc-id.nixcdn.com/v11/images/df-singer-300x300.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Buông Hàng (Ballad Version)",
+            "creator": "Young Milo",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui1015/BuongHangBalladVersion-YoungMilo-7004976.mp3?st=2eaQT6eceifGQmUKSMpEBA&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/buong-hang-ballad-version-young-milo.ItBI19OdwgpD.html",
+            "lyric": "",
+            "bgImage": "",
+            "avatar": "https://stc-id.nixcdn.com/v11/images/df-singer-300x300.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Va Vào Giai Điệu Này",
+            "creator": "MCK",
+            "music": "https://aredir.nixcdn.com/Warner_Audio65/VaVaoGiaiDieuNayFeatRptMck-RAPVIET-6804702.mp3?st=1Yr3vYaZxO31I9O9LhUIlw&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/va-vao-giai-dieu-nay-mck.il8eZNqPKyCm.html",
+            "lyric": "https://lrc-nct.nixcdn.com/null",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/11/16/6/5/0/2/1605491409204_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2020/11/09/7/b/1/a/1604908068648.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "They Said",
+            "creator": "Binz, Touliver",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui955/TheySaid-TouliverBinz-5302431.mp3?st=pJUNfneKsw2OmKuWKRNIhw&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/they-said-binz-ft-touliver.LVP0nj3mI7Ry.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2017/12/11/4/2/c/f/1512961515362.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2019/09/12/c/3/c/7/1568253936065_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2017/12/08/8/0/2/3/1512706766880.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Ghệ Đẹp",
+            "creator": "Cain, LCKing",
+            "music": "https://aredir.nixcdn.com/Believe_Audio6/GheDep-CainLCKing-6501774.mp3?st=SSkNPExQgJA60rynDHTt3w&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/ghe-dep-cain-ft-lcking.gKqqPsQszjMq.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2021/05/25/3/f/d/7/1621910887932.lrc",
+            "bgImage": "",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2020/08/14/b/4/5/5/1597398115829.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Gene",
+            "creator": "Binz, Touliver",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui982/Gene-BinzTouliver-5961947.mp3?st=MuX6LSYjFamgwYZkpd7jyQ&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/gene-binz-ft-touliver.uHVH2dQwWak6.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2019/05/13/6/f/a/d/1557749403350.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2019/09/12/c/3/c/7/1568253936065_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2019/05/12/a/9/0/c/1557657445381.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Banger",
+            "creator": "Kanna, ANHGIA",
+            "music": "https://f9-stream.nixcdn.com/NhacCuaTui1017/Banger-KannaANHGIA-7036134.mp3?st=XwdDBXIDY9GzF9DkOfePLw&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/banger-kanna-ft-anhgia.RTJnS0xxyvV0.html",
+            "lyric": "https://lrc-nct.nixcdn.com/null",
+            "bgImage": "",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/06/21/f/8/4/8/1624260301820.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Làm Gì Phải Hốt",
+            "creator": "JustaTee, Hoàng Thùy Linh, Đen",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui994/LamGiPhaiHot-JustaTeeDenHoangThuyLinh-6198647.mp3?st=XrBGUT0KSkF8eLsWbh9v5w&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/lam-gi-phai-hot-justatee-ft-hoang-thuy-linh-ft-den.tczRiWaOiLZl.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2020/01/13/7/6/1/3/1578915024735.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2019/07/22/f/e/a/2/1563758181487_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2020/01/13/c/8/a/c/1578906352799.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Gu",
+            "creator": "Freaky, Seachains",
+            "music": "https://f9-stream.nixcdn.com/Unv_Audio199/Gu-FreakySeachains-7049774.mp3?st=7jo-aPfhEllhhAIgFxQJ3Q&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/gu-freaky-ft-seachains.lwLXyybaZUHr.html",
+            "lyric": "",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/08/13/a/9/8/e/1597287164260_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/07/15/2/2/1/4/1626350441788.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Tối",
+            "creator": "Dkayz, Brian",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui1012/Toi-DkayzBrian-6962530.mp3?st=0UVZlc6xcaBQvk3b6koGdQ&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/toi-dkayz-ft-brian.ZMLccYSn3dEo.html",
+            "lyric": "https://lrc-nct.nixcdn.com/null",
+            "bgImage": "",
+            "avatar": "https://stc-id.nixcdn.com/v11/images/df-singer-300x300.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          }
+        ]
+      },
+      {
+        "id":"top-100-rap-noi-nhu-con",
+        "title": "Top 100 Rap nổi như cồn",
+        "avatar": "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/2/4/6/3/2463b4bb0b0cbe17508c2cc63e77f807.jpg",
+        "songs": [
+          {
+            "title": "Đìu Anh Luôn Giữ Kín Trong Tym",
+            "creator": "MCK, Tlinh, 2Pillz",
+            "music": "https://f9-stream.nixcdn.com/Unv_Audio199/DiuAnhLuonGiuKinTrongTym-MCKtlinh2Pillz-7049553.mp3?st=nuHU1XRwWYpL3AqsmH8__g&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/diu-anh-luon-giu-kin-trong-tym-mck-ft-tlinh-ft-2pillz.HF06OZfZRbIP.html",
+            "lyric": "https://lrc-nct.nixcdn.com/null",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/11/16/6/5/0/2/1605491409204_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/07/15/2/2/1/4/1626349707285.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Tình Yêu Là Thế",
+            "creator": "2Can, Ngắn, Dick",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui1016/TinhYeuLaThe-2CanNganDick-7021935.mp3?st=cCtdl5ZPmiHR-kPXjVyUvw&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/tinh-yeu-la-the-2can-ft-ngan-ft-dick.ugsJ6N5oEIKq.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2021/07/01/0/e/0/f/1625108744369.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/10/10/0/d/4/5/1602334506555_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/05/20/b/a/0/1/1621477802818.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Do For Love",
+            "creator": "B Ray, AMEE",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui995/DoForLove-AMeeBRay-6221980.mp3?st=VU5pcZacX_JXAR55btQk2A&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/do-for-love-b-ray-ft-amee.bZD1VVSYpOpS.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2020/02/14/d/5/3/8/1581664582300.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/05/27/6/9/5/0/1590562104987_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2020/02/11/d/4/5/a/1581406608326.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Em Đừng Đi",
+            "creator": "Sơn Tùng M-TP",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui197/EmDungDi-M-TP_3j3w3.mp3?st=-PUqm6_n8XKlUH-pnKy6Uw&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/em-dung-di-son-tung-m-tp.TAtrRD5143.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2019/06/06/e/a/d/6/1559804197670.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2021/05/12/7/d/c/b/1620802736418_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2021/05/12/7/d/c/b/1620802736418.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Tiền Nhiều Để Làm Gì",
+            "creator": "G.Ducky",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui1006/TienNhieuDeLamGi2-GDucky-6737970.mp3?st=h4M7Mt1cq05yrKsm4eGwOg&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/tien-nhieu-de-lam-gi-gducky.xHhJObUh8RCV.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2020/10/23/b/8/a/f/1603437343472.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/10/26/2/3/a/b/1603679585730_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2020/10/21/c/c/2/b/1603264092869.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Energy Cypher",
+            "creator": "Phaos, Phuc Van",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui1016/EnergyCypher-PhaosPhucVan-7018845.mp3?st=A1TTMQ4-FVd-pw28nldUug&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/energy-cypher-phaos-ft-phuc-van.p1XMeGmAcoOC.html",
+            "lyric": "",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2019/09/20/c/3/a/d/1568965323132_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/05/12/f/d/8/c/1620808250834.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "On Stream",
+            "creator": "QNT",
+            "music": "https://f9-stream.nixcdn.com/NhacCuaTui1017/OnStream-QNT-7035588.mp3?st=Ow5vUV0CyJLkif9BzaxQpg&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/on-stream-qnt.W8scXALrc6OA.html",
+            "lyric": "https://lrc-nct.nixcdn.com/null",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/10/06/6/4/6/0/1601958380209_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/06/18/d/c/e/c/1624006525902.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "On The Way",
+            "creator": "Koo",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui1016/OnTheWay-Koo-7021599.mp3?st=WAUFSLaMtndnp3rYQHNtDA&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/on-the-way-koo.SBPVJt9Y8Dc9.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2021/07/01/0/e/0/f/1625107662203.lrc",
+            "bgImage": "",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/05/18/b/0/3/a/1621330672499.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Bạc Xỉu",
+            "creator": "MC 12",
+            "music": "https://f9-stream.nixcdn.com/NhacCuaTui1017/BacXiu-MC12-7040159.mp3?st=xgleKJodSlvSYOtFJiVc1g&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/bac-xiu-mc-12.w65z2j2v90OK.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2021/07/08/6/e/d/5/1625715178730.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/11/09/d/1/4/9/1604894149476_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/06/28/8/4/3/c/1624871386700.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Karma",
+            "creator": "Willistic, Young Milo",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui1016/Karma-WillisticYoungMilo-7022872.mp3?st=KnURGvzEeMuIo2PeYxGZ-A&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/karma-willistic-ft-young-milo.hvvHVhjb5cVW.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2021/07/21/3/f/6/7/1626834561536.lrc",
+            "bgImage": "",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/05/22/f/1/c/b/1621649333378.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "100 Years LOVE",
+            "creator": "NamDuc",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui996/100YearsLOVESingle-NamDuc-6207759.mp3?st=4WtPQUoBuI7lCpKDICZWpg&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/100-years-love-namduc.w8bNshpQFyAP.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2020/02/24/2/2/4/f/1582514688549.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2021/05/12/7/d/c/b/1620801358923_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2020/02/24/3/c/8/3/1582540943646.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Anh Biết",
+            "creator": "Xám, D.Blue",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui988/AnhBiet-XamDBlue-6057101.mp3?st=QcFSD0nWocwZfYnh65oZYA&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/anh-biet-xam-ft-dblue.CtLak9kc1K0c.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2019/09/29/e/9/f/2/1569754782126.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2019/02/22/b/c/d/f/1550831220628_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2019/02/22/b/c/d/f/1550831220628.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Xích Thêm Chút Remix",
+            "creator": "Groovie Lã Thắng, Tlinh, MCK",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui1015/XichThemChutXTCRemix-GroovieLaThangTlinhMCKRPT-7014929.mp3?st=KdybAFAGtO-XSs7kFyRq_w&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/xich-them-chut-remix-groovie-la-thang-ft-tlinh-ft-mck.UlfY6PjMZ69X.html",
+            "lyric": "https://lrc-nct.nixcdn.com/null",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/09/03/3/6/1/2/1599108409398_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/09/03/3/6/1/2/1599108409398.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Đá Lông Nheo",
+            "creator": "Gusty",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui1016/DaLongNheo-Gusty-7029663.mp3?st=OPwHm6TUed6gpoU-ypohOg&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/da-long-nheo-gusty.cG47J8l43p3j.html",
+            "lyric": "https://lrc-nct.nixcdn.com/null",
+            "bgImage": "",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/06/03/6/0/a/8/1622704918541.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Dừng Lại Được Không",
+            "creator": "Danh Zoram",
+            "music": "https://f9-stream.nixcdn.com/NhacCuaTui1018/DungLaiDuocKhong-DanhZoram-7049994.mp3?st=UQhG-dzpk6Q7trCyDPCG7Q&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/dung-lai-duoc-khong-danh-zoram.guu2SAH0P6as.html",
+            "lyric": "",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2021/01/13/f/7/8/9/1610504784611_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/07/16/f/4/9/8/1626409073391.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "City Light",
+            "creator": "DMYB",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui1016/CityLight-DMYB-7026076.mp3?st=JZV5de-DM_qwvHivWc8J8w&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/city-light-dmyb.iT8iey6jq0LW.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2021/07/20/1/0/0/2/1626759270184.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2021/03/01/f/d/e/3/1614582189456_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/05/28/a/5/3/8/1622193524971.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Gọi Hạ",
+            "creator": "DMYB, MUN",
+            "music": "https://f9-stream.nixcdn.com/NhacCuaTui1018/GoiHa-DMYBMun-7053520.mp3?st=EEj-R3VVK7bg_GlCaaJ7xQ&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/goi-ha-dmyb-ft-mun.nkXDxfbY7RD5.html",
+            "lyric": "https://lrc-nct.nixcdn.com/null",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2021/03/01/f/d/e/3/1614582189456_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/07/23/0/9/2/3/1627032076897.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Con Trai Cưng",
+            "creator": "B Ray, Masew",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui970/ConTraiCung-BRayMasew-5731758.mp3?st=3A8e3DWE6ZI5_O4Ubqc00A&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/con-trai-cung-b-ray-ft-masew.YxnwP2AyCLB7.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2018/11/26/c/e/7/2/1543216840473.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/05/27/6/9/5/0/1590562104987_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2018/11/07/6/0/0/d/1541588672637.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Cay Độc",
+            "creator": "Lil Shady",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui1016/CayDoc-LilShady-7021939.mp3?st=T_HUIhvzfc-ELjEUTgGdlg&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/cay-doc-lil-shady.sRRtIA6TlYYK.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2021/07/01/0/e/0/f/1625108222924.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2014/08/06/7/b/7/c/1407278635002_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/05/20/b/a/0/1/1621480114388.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Vice City",
+            "creator": "CM1X, NALO",
+            "music": "https://f9-stream.nixcdn.com/NhacCuaTui1017/ViceCity-CM1XNALO-7040451.mp3?st=tjukpKtetLc0CulS5SW0ug&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/vice-city-cm1x-ft-nalo.32PiYx8UO6BT.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2021/07/08/6/e/d/5/1625714122180.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/07/16/1/e/6/7/1594881879589_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/06/29/9/1/6/e/1624941226788.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Giàu Vì Bạn, Sang Vì Vợ",
+            "creator": "MCK",
+            "music": "https://aredir.nixcdn.com/Warner_Audio63/GiauViBanSangViVoFeatRptMck-RAPVIET-6792005.mp3?st=EsJMHcCnZXJw1YppDxlsGQ&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/giau-vi-ban-sang-vi-vo-mck.u2N2GmWd87AT.html",
+            "lyric": "https://lrc-nct.nixcdn.com/null",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/11/16/6/5/0/2/1605491409204_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2020/11/02/1/5/b/e/1604301910511.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Nến Và Hoa",
+            "creator": "Rhymastic",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui968/NenVaHoa-Rhymastic-5597962.mp3?st=ofZ_tBrltM9GEJkKXJoNpw&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/nen-va-hoa-rhymastic.Yrm7jM9SnFuU.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2018/08/25/9/0/2/d/1535164978251.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2019/10/01/d/7/6/8/1569917056188_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2018/09/08/2/f/f/7/1536397844669.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Bài Ca Tuổi Trẻ",
+            "creator": "JGKiD (Da LAB), KraziNoyze, Emcee L (Da LAB), Da LAB, Vũ Bùi Thu Thủy, Mel G",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui921/BaiCaTuoiTre-DaLABLinhCaoMelG-4452195.mp3?st=uStM_AsRT5s8cQwbKP9tMg&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/bai-ca-tuoi-tre-jgkid-da-lab-ft-krazinoyze-ft-emcee-l-da-lab-ft-da-lab-ft-vu-bui-thu-thuy-ft-mel-g.RsTHyjZgwsm1.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2017/03/14/e/5/b/d/1489445180470.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/11/27/c/3/0/a/1606472973133_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2018/07/09/d/c/c/0/1531124811438.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "I'MA BOSS",
+            "creator": "Bảo Uyên",
+            "music": "https://f9-stream.nixcdn.com/NhacCuaTui1017/ImaBoss-BaoUyen-7036129.mp3?st=-nwTKWHT35AdfTwO_4WdNw&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/ima-boss-bao-uyen.NR0QwqvkYGSX.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2021/07/02/7/c/6/4/1625192630110.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/09/24/a/e/d/0/1600928367614_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/06/21/f/8/4/8/1624272954909.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Hoàn Hảo",
+            "creator": "B Ray",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui1010/HoanHao-BRay-6914630.mp3?st=rK-cqCo6wX8__budmsO8kA&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/hoan-hao-b-ray.3pFBt4RVPM30.html",
+            "lyric": "https://lrc-nct.nixcdn.com/null",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/05/27/6/9/5/0/1590562104987_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/05/27/6/9/5/0/1590562104987.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Nếu Em Không Hạnh Phúc",
+            "creator": "NE Cry, Lee Su9z",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui896/NeuEmKhongHanhPhuc-NECryLeeSu9z-3906623.mp3?st=feWfztAP3cPqa8C6ra0LhQ&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/neu-em-khong-hanh-phuc-ne-cry-ft-lee-su9z.wzjlCbZooZZ7.html",
+            "lyric": "https://lrc-nct.nixcdn.com/null",
+            "bgImage": "",
+            "avatar": "https://stc-id.nixcdn.com/v11/images/df-singer-300x300.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          }
+        ]
+      },
+      {
+        "id":"top-nhung-bai-nghe-nhieu",
+        "title": "Top Những bài nghe nhiều",
+        "avatar": "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/6/e/7/b/6e7b61e952ad97d05bbadfc7b8b3f77f.jpg",
+        "songs": [
+          {
+            "title": "Blue Tequila",
+            "creator": "Táo",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui1002/BlueTequila-Tao-6558843.mp3?st=T9CUs_IBW0CgKxxPlCEeAg&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/blue-tequila-tao.xQF3YebiwOxo.html",
+            "lyric": "https://lrc-nct.nixcdn.com/null",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2018/06/26/d/8/9/2/1529998074721_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2020/08/26/d/7/6/8/1598415413811.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Ánh Chiều Tàn",
+            "creator": "D Empty, Poll",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui1012/AnhChieuTan-DEmptyPoll-6952606.mp3?st=kbZJGSQcNe55wRps0_zSDg&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/anh-chieu-tan-d-empty-ft-poll.TWiIMioIElvW.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2021/03/08/5/c/4/b/1615219186403.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2021/03/02/2/8/6/4/1614671817265_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/03/02/c/e/f/9/1614672064060.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Thương",
+            "creator": "Karik, Uyên Pím",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui951/Thuong-KarikUyenPim-4318397.mp3?st=bBbUVMwRUkDLTcHeuk_g1g&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/thuong-karik-ft-uyen-pim.onIsp6mtM9w6.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2017/12/19/e/9/4/7/1513696576214.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/06/29/0/9/e/a/1593412376912_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2017/12/19/1/e/0/d/1513679484858.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Ý Em Sao",
+            "creator": "Kay Trần, Lăng LD, Homie Boiz",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui960/YEmSao-KayTranLangLDHomieBoiz-5393919.mp3?st=d7pvJPIjDzii74eqtBpckw&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/y-em-sao-kay-tran-ft-lang-ld-ft-homie-boiz.0jwCTzZqDi2H.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2018/07/12/d/c/f/b/1531361858619.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2021/07/05/7/5/8/a/1625467381647_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2018/02/25/2/6/1/6/1519545644182.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Thương Thầm",
+            "creator": "Ricky Star, Khoa",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui1001/ThuongTham-RickyStarKhoa-6464375.mp3?st=nyLfJ8OpAk3KFTh8gbS4_g&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/thuong-tham-ricky-star-ft-khoa.XnyiHRfTaxq6.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2020/08/19/8/6/5/0/1597801898636.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2021/03/02/2/8/6/4/1614651512512_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2020/08/07/d/e/f/2/1596774147538.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Thủ Đô Cypher Remix",
+            "creator": "RPT Orijinn, Low G, RZ Mas, MCK",
+            "music": "https://f9-stream.nixcdn.com/NhacCuaTui1018/ThuDoCypher-MCKRPTRPTOrijinnRzMaLowG-6678270.mp3?st=XfnZh8fSYByHE1bqpcjdhg&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/thu-do-cypher-remix-rpt-orijinn-ft-low-g-ft-rz-mas-ft-mck.ldrXQWwsrdI9.html",
+            "lyric": "https://lrc-nct.nixcdn.com/null",
+            "bgImage": "",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/07/09/5/5/8/2/1625828697322.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "bồ em",
+            "creator": "DÍNH",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui1006/BoEm-DINH-6820879.mp3?st=1ktYwvqI04TApzMz6PSwIQ&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/bo-em-dinh.t40HitTfsjZ0.html",
+            "lyric": "https://lrc-nct.nixcdn.com/null",
+            "bgImage": "",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2020/11/17/b/e/e/2/1605591014882.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Anh Thèm Được Ngủ",
+            "creator": "Khói",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui976/AnhThemDuocNgu-Khoi-5324813.mp3?st=A_I3y7bNj0xxN7mxRhdYpA&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/anh-them-duoc-ngu-khoi.HFFGhcbiD5v7.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2019/01/23/b/8/0/b/1548260903480.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/10/27/e/b/6/8/1603769786589_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/10/27/e/b/6/8/1603769786589.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Ala Ela",
+            "creator": "G.Ducky, Ricky Star, Karik",
+            "music": "https://aredir.nixcdn.com/Warner_Audio65/AlaElaFeatGduckyRickyStarKarik-RAPVIET-6821319.mp3?st=-tSkD2VR8Jrz1qvUWzGfhg&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/ala-ela-gducky-ft-ricky-star-ft-karik.EW8C4Z4bYC4X.html",
+            "lyric": "https://lrc-nct.nixcdn.com/null",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/10/26/2/3/a/b/1603679585730_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2020/11/18/1/e/7/8/1605673795406.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Đại Gia Lo",
+            "creator": "Sĩ Chương, Đinh Trang, CM1X",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui1010/DaiGiaLo-SiChuongDinhTrangDinhThiThuyTrangCM1X-6916741.mp3?st=mQo05BilIG4Y0qZywEaCbQ&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/dai-gia-lo-si-chuong-ft-dinh-trang-ft-cm1x.l3FGQeVQbSMP.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2021/03/08/5/c/4/b/1615219764654.lrc",
+            "bgImage": "",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/01/13/b/d/d/4/1610512288227.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Chim Sẻ Và Dâu Tây",
+            "creator": "Dế Choắt, Wowy, NAOMI",
+            "music": "https://aredir.nixcdn.com/Warner_Audio65/ChimSeVaDauTayFeatDeChoatWowy-RAPVIET-6821320.mp3?st=oPMTMDVPfcxQ-BLHiCJy_g&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/chim-se-va-dau-tay-de-choat-ft-wowy-ft-naomi.fbzrJP9vgIiP.html",
+            "lyric": "https://lrc-nct.nixcdn.com/null",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/11/16/6/5/0/2/1605494004450_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2020/11/18/1/e/7/8/1605673795406.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Trơn",
+            "creator": "Bình Gold",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui1011/Tron-BinhGold-6942214.mp3?st=yUDQrjKm0AIUMe2r9QixZQ&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/tron-binh-gold.Xi9OSH5QTgL9.html",
+            "lyric": "https://lrc-nct.nixcdn.com/null",
+            "bgImage": "",
+            "avatar": "https://stc-id.nixcdn.com/v11/images/df-singer-300x300.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Thôi Anh Không Chơi",
+            "creator": "Binz",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui978/ThoiAnhKhongChoi-Binz-5908194.mp3?st=8_DgUqXDz5koYHK-CJYxpA&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/thoi-anh-khong-choi-binz.pwzO21IYntst.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2019/03/14/c/d/f/c/1552530931435.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2019/09/12/c/3/c/7/1568253936065_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2019/03/12/0/8/b/c/1552380101262.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Giản Đơn",
+            "creator": "NHA, Ry2c",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui960/GianDon-NHARy2c-5383471.mp3?st=Ot66CF50XAh918udpf_hzQ&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/gian-don-nha-ft-ry2c.5YRsklVJ9nk6.html",
+            "lyric": "https://lrc-nct.nixcdn.com/null",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/07/24/c/3/6/f/1595579546235_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/07/24/c/3/6/f/1595579546235.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Mượn Rượu Tỏ Tình",
+            "creator": "Emily, HIEUTHUHAI, Right",
+            "music": "https://aredir.nixcdn.com/Unv_Audio184/MuonRuouToTinh-EmilyHIEUTHUHAIRight-6746361.mp3?st=LeanpnWSgglhV8fwUDai5Q&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/muon-ruou-to-tinh-emily-ft-hieuthuhai-ft-right.Kw0wQciRjqFd.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2020/12/10/e/7/0/7/1607578652995.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2021/05/13/d/c/7/8/1620870903565_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2020/10/20/3/4/a/5/1603169119633.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Mình Cưới Nhau Đi",
+            "creator": "Huỳnh James, Pjnboys",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui959/MinhCuoiNhauDi-HuynhJamesPjnboys-5382380.mp3?st=k3LgxitO9h7tNySsAXwRiw&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/minh-cuoi-nhau-di-huynh-james-ft-pjnboys.QU0ByG99EQtd.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2018/08/16/5/c/1/4/1534404128610.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2018/03/14/2/f/2/4/1521007851195_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2018/02/03/9/c/7/5/1517658801202.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Bạn Tình Ơi",
+            "creator": "Yuni Boo, Goctoi Mixer",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui992/BanTinhOi-YuniBooGoctoiMixer-6137656.mp3?st=YrKkj_rYiue9myNgURX1fA&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/ban-tinh-oi-yuni-boo-ft-goctoi-mixer.ZL3N1InExMvS.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2019/10/21/5/4/4/2/1571623737221.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2021/02/22/0/9/6/7/1613968010592_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2019/11/18/b/0/e/0/1574064395799.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Con Gái Rượu",
+            "creator": "B Ray",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui995/ConGaiRuou-BRay-6223884.mp3?st=U_BkbyvSagJdzwq2KL9Mwg&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/con-gai-ruou-b-ray.wWyDZ5kQhr5u.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2020/02/15/f/a/7/5/1581748048288.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/05/27/6/9/5/0/1590562104987_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2020/02/14/a/9/d/b/1581664255543.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Sugar Mommy (Original Movie Soundtrack From \"Sugar Boy Sugar Mommy\")",
+            "creator": "Weeza",
+            "music": "https://f9-stream.nixcdn.com/NhacCuaTui1018/SugarMommyOstSugarBoySugerMommy-Weeza-7050003.mp3?st=VXM0lacE6LnssUfFh5W4Uw&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/sugar-mommy-original-movie-soundtrack-from-sugar-boy-sugar-mommy-weeza.CKJx1Az9Y5DF.html",
+            "lyric": "",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2021/04/02/b/e/0/7/1617332878984_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/07/16/f/4/9/8/1626417473738.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Làm Vì Yêu",
+            "creator": "B Ray",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui996/LamViYeu3-BRay-6236775.mp3?st=Vcgage1xriIv5ftioxt_tg&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/lam-vi-yeu-b-ray.oSwoS5iikq87.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2020/03/16/8/5/c/8/1584322044136.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2020/05/27/6/9/5/0/1590562104987_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2020/03/13/9/0/5/6/1584071955396.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Nhạc Anh",
+            "creator": "Andree, Wxrdie",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui1008/NhacAnh-AndreeWxrdie-6891586.mp3?st=T0XNLI4CaD9zBDzWpTuhiQ&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/nhac-anh-andree-ft-wxrdie.F3dZ4hMLrbfj.html",
+            "lyric": "https://lrc-nct.nixcdn.com/null",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2019/07/22/f/e/a/2/1563758784805_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2020/12/18/d/c/0/7/1608303119520.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Thiên Hà Trước Hiên Nhà",
+            "creator": "Datmaniac",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui1011/ThienHaTruocHienNha-Datmaniac-6938218.mp3?st=KLJ_AT0Z84rWy-TL2zLeQg&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/thien-ha-truoc-hien-nha-datmaniac.GkJchrBTB4rZ.html",
+            "lyric": "https://lrc-nct.nixcdn.com/2021/03/08/5/c/4/b/1615219393828.lrc",
+            "bgImage": "https://avatar-ex-swe.nixcdn.com/singer/avatar/2019/05/20/5/1/5/c/1558345158793_600.jpg",
+            "avatar": "https://avatar-ex-swe.nixcdn.com/song/2021/02/05/0/8/e/4/1612498614370.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          },
+          {
+            "title": "Breakfast",
+            "creator": "DH, G.Ducky, Minh",
+            "music": "https://aredir.nixcdn.com/NhacCuaTui1006/Breakfast-DHGDuckyMinh-6809090.mp3?st=gqEnqu4UJOsX-mnU1Me9rA&e=1628283328",
+            "url": "https://www.nhaccuatui.com/bai-hat/breakfast-dh-ft-gducky-ft-minh.NEfvhyiWZKZu.html",
+            "lyric": "https://lrc-nct.nixcdn.com/null",
+            "bgImage": "",
+            "avatar": "https://stc-id.nixcdn.com/v11/images/df-singer-300x300.jpg",
+            "coverImage": "https://avatar-ex-swe.nixcdn.com/playlist/2021/04/07/2/7/0/9/1617776161396_500.jpg"
+          }
+        ]
+      }
+    ]
+
+}

@@ -1,50 +1,47 @@
-@import '/src/assets/styles/valiable.scss';
+@import "/src/assets/styles/valiable.scss";
 .SubMusic {
-    background-color: transparent;
-    border: none;
-    
-    .ant-card-meta-title {
-        color: $colorBody;
-        margin-bottom: 0;
-    }
-    .ant-card-meta-description {
-        color: $colorBody;
-        opacity: 0.5;
-        height: 20px;
-    }
-    .ant-avatar-image {
-        width: 50px;
-        height: 50px;
-    }
- 
-}
-.SubMenu_Square {
-    &:hover {
-        cursor: pointer;
-        background-color: rgba(105, 16, 122, 0.61);
-    }
-}
-.SubMenuCircle {
+  background-color: transparent;
+  border: none;
 
-    .ant-avatar-image {
-        width: 70px;
-        height: 70px;
-        border: 2px solid $colorBodyHover;
-    }
+  .ant-card-meta-title {
+    color: $colorBody;
+    margin-bottom: 0;
+  }
+  .ant-card-meta-description {
+    color: $colorBody;
+    opacity: 0.5;
+    height: 20px;
+  }
+  .ant-avatar-image {
+    width: 50px;
+    height: 50px;
+  }
+
+}
+
+.NotHover {
+      cursor: pointer;
+      background: none !important;
+    
+  }
+.SubMenuCircle {
+  .ant-avatar-image {
+    width: 70px;
+    height: 70px;
+  }
 }
 .animateRotate {
-    .ant-avatar-image {
-        animation: rotation 10s infinite linear;
-    } 
+  img {
+    animation: rotation 10s infinite linear;
+  }
 }
-@keyframes  rotation{
-    0% {
-        transform: rotate(0deg) ;
-    }
-    100% {
-        transform: rotate(359deg) ;
-    }
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
 }
-.MusicPLaying {
-    background-color: #ae31aa;
-}
+

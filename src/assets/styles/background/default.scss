@@ -1,0 +1,55 @@
+.backgroundDefault {
+  .ant-layout {
+    background-size: cover;
+    background-image: url(https://zmp3-static.zadn.vn/skins/zmp3-v6.1/images/theme-background/zma.svg);
+  }
+  .scroll, .ant-tabs-content-top, .ant-table-body {
+    &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.6);
+      background-color: transparent !important;
+    }
+
+    &::-webkit-scrollbar {
+      width: 5px;
+      background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: rgb(121, 41, 41);
+      background-image: -webkit-linear-gradient(
+        90deg,
+        rgb(189, 58, 194) 0%,
+        rgb(168, 71, 192) 25%,
+        transparent 100%,
+        rgba(87, 25, 87, 0.26) 75%,
+        transparent
+      );
+    }
+  }
+  .musicPlay {
+    background: #37075d;
+    box-shadow: inset 0px 3px 8px 0 #6d1999;
+    .ant-avatar-image {
+      border: 2px solid $colorBodyHover;
+    }
+  }
+  .SubMenu_Square {
+    background-image: black;
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(105, 16, 122, 0.61);
+    }
+  }
+  .ant-modal-content,
+  .ant-modal-header {
+    background: #8034a0;
+  }
+  .fixDanhSach.ant-tag-pink {
+    color: #04101a;
+    background: #f8a8e7cf;
+    border-color: #ffadd2;
+  }
+  .SubMusic.MusicPLaying {
+    background-color: #ae31aa;
+  }
+}

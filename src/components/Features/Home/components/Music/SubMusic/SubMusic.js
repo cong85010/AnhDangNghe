@@ -1,51 +1,62 @@
 import { Card, Tooltip } from "antd";
 import Avatar from "antd/lib/avatar/avatar";
 import Meta from "antd/lib/card/Meta";
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect, useRef} from "react";
 import "./SubMusic.scss";
 import Default from "constants/dataDefault";
 import { MusicPlayerContext } from "components/contextAPI/context";
+import scrollIntoView from 'scroll-into-view-if-needed'
 
-const SubMusic = ({ data, circle = false, rotate = false }) => {
+const SubMusic = ({ data = {
+  title: Default.Title,
+  creator: Default.Auth,
+  avatar: Default.Url,
+}, circle = false, rotate = false, notHover=false }) => {
   const {
-    title = Default.Title,
-    creator = Default.Auth,
-    avatar = Default.Url,
+    title,
+    creator,
+    avatar,
   } = data;
-  const [activePLay, setActivePLay] = useState("");
-  const { musicPlay, saveMusic } = useContext(MusicPlayerContext);
+  const { playing, saveMusic } = useContext(MusicPlayerContext);
   const playToMusic = () => {
     // localStorage.setItem("playToMusic", JSON.stringify(data))
     console.log(data);
     saveMusic(data);
   };
-  useEffect(() => {
-    setActivePLay(`${musicPlay.music === data.music ? 'MusicPLaying':''}`)
-  }, [musicPlay]);
-
+  // useEffect(() => {
+  //   console.log(ref)
+  //     if(ref) {
+  //       scrollIntoView(ref, { block: 'nearest', inline: 'center' })
+  //     }
+  // }, [ref])
+  // setTimeout(() => {
+  //   scrollIntoView(ref, { block: 'nearest', inline: 'center' })
+  // }, 300)
   return (
-    <Tooltip placement="topLeft" mouseEnterDelay='0.7' title={title}>
+    <Tooltip 
+    placement="topLeft" mouseEnterDelay='0.7' title={title}>
       <Card
-      onClick={playToMusic}
-      className={` 
+        onClick={playToMusic}
+        className={` 
       SubMusic 
       ${circle ? "SubMenuCircle" : "SubMenu_Square"}
+      ${notHover && "NotHover"}
       ${rotate && "animateRotate"} 
-      ${!circle && activePLay}`}
-      size="small"
-    >
-      <Meta
-        avatar={
-          <Avatar
-            shape={circle ? "circle" : "square"}
-            size="large"
-            src={avatar}
-          />
-        }
-        title={title}
-        description={creator}
-      />
-    </Card>
+      ${!circle && playing.music === data.music && 'MusicPLaying'}`}
+        size="small"
+      >
+        <Meta
+          avatar={
+            <Avatar
+              shape={circle ? "circle" : "square"}
+              size="large"
+              src={avatar}
+            />
+          }
+          title={title}
+          description={creator}
+        />
+      </Card>
     </Tooltip>
   );
 };

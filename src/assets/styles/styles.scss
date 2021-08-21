@@ -1,46 +1,121 @@
-@import 'antd/dist/antd.css';
-@import 'valiable.scss';
-@import "~slick-carousel/slick/slick.css"; 
+@import "antd/dist/antd.css";
+@import "valiable.scss";
+@import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
+@import './background/default.scss';
+@import './background/eiffel.scss';
+
+
 
 .flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "PT Sans", sans-serif;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  color: $colorBody;
+  scroll-behavior: smooth;
+}
+
+.colorBody {
+  color: $colorBody;
+}
+#components-layout-demo-custom-trigger .trigger {
+  padding: 0 24px;
+  font-size: 18px;
+  line-height: 64px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+#components-layout-demo-custom-trigger .trigger:hover {
+  color: #1890ff;
+}
+
+.site-layout .site-layout-background {
+  background: #fff;
+}
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background: #986ba752 !important;
+}
+
+.scroll {
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.6);
+    background-color: transparent !important;
   }
-  body {
-    font-family: 'PT Sans', sans-serif;
-    background-image: url('../images/zma.svg');  
-    overflow-x: hidden;
-    overflow-y: hidden;
-    color: $colorBody;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
   }
-  .colorBody {
-    color: $colorBody;
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(88, 82, 82);
+    background-image: -webkit-linear-gradient(
+      197deg,
+      #aca7ac 0%,
+      #6e6e6e 52%,
+      #c0bebeb4 100%,
+      transparent
+    );
   }
-  #components-layout-demo-custom-trigger .trigger {
-    padding: 0 24px;
-    font-size: 18px;
-    line-height: 64px;
-    cursor: pointer;
-    transition: color 0.3s;
+}
+.scrollDefault {
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.6);
+    background-color: transparent !important;
   }
-  
-  #components-layout-demo-custom-trigger .trigger:hover {
-    color: #1890ff;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
   }
-  
-  .site-layout .site-layout-background {
-    background: #fff;
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(121, 41, 41);
+    background-image: -webkit-linear-gradient(
+      90deg,
+      rgb(189, 58, 194) 0%,
+      rgb(168, 71, 192) 25%,
+      transparent 100%,
+      rgba(87, 25, 87, 0.26) 75%,
+      transparent
+    );
   }
-  .ant-layout {
-      background: transparent !important;
+}
+.musicPlayeDefault {
+  background-color: #37075d;
+  box-shadow: inset 0px 3px 8px 0 #6d1999;
+  .ant-avatar-image {
+    border: 2px solid $colorBodyHover;
   }
-  .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
-      background: #986ba752 !important;
+}
+.musicPlayeEiffel {
+  background-color: #222222;
+  box-shadow: inset 0px 3px 8px 0 #535353;
+  .ant-avatar-image {
+    border: 2px solid #918f91;
   }
+}
+.SubMenu_SquareDefault {
+  &:hover {
+      cursor: pointer;
+      background-color: rgba(105, 16, 122, 0.61);
+  }
+}
+.SubMenu_SquareEiffel {
+  &:hover {
+      cursor: pointer;
+      background-color: rgba(134, 134, 134, 0.61);
+  }
+}

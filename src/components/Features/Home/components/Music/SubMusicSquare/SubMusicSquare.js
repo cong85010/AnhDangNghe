@@ -1,7 +1,7 @@
 import { Button, Card, Col, Row, Tooltip } from "antd";
 import Meta from "antd/lib/card/Meta";
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import "./SubMusicSquare.scss";
 import Default from "constants/dataDefault";
 import {
@@ -10,16 +10,22 @@ import {
   DashOutlined,
 } from "@ant-design/icons";
 import { MusicPlayerContext } from "components/contextAPI/context";
-const SubMusicSquare = ({ data }) => {
-  const {handleNewDSP} = useContext(MusicPlayerContext);
-  const { title = Default.Title, avatar = Default.Url, songs } = data;
+const SubMusicSquare = ({ data, circle = false}) => {
+  const { handleNewDSP, danhSachPhat } = useContext(MusicPlayerContext);
+  const { id, title = Default.Title, avatar = Default.Url} = data;
+  const history = useHistory()
+  const activeCircle = () => avatar === danhSachPhat.avatar?'circleImage animateRotate': ''
+  
   return (
-    <div className="SubMusicSquare">
+    <div className={`
+    SubMusicSquare 
+    ${circle && activeCircle()}
+    `}>
       <Card
         hoverable
         className="SubMusic"
         cover={<img alt={title} src={avatar} />}
-     
+        onClick={() => history.push(`/album/${id}`)}
       >
         <div className="overlay"></div>
         <div className="SubMusic__items">
@@ -42,7 +48,7 @@ const SubMusicSquare = ({ data }) => {
                   outline="true"
                   type="text"
                   icon={<PlayCircleOutlined />}
-                  onClick={() => handleNewDSP(songs)}
+                  onClick={() => handleNewDSP(data)}
                 />
               </Tooltip>
             </Col>
@@ -59,7 +65,7 @@ const SubMusicSquare = ({ data }) => {
           </Row>
         </div>
       </Card>
-      <Link to="#">
+      <Link to={`/album/${id}`}>
         <Meta title={title} />
       </Link>
     </div>

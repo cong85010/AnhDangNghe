@@ -1,0 +1,29 @@
+@import "/src/assets/styles/valiable.scss";
+
+.album {
+  margin: 24px 16px;
+  padding: 24px;
+  overflow-y: hidden;
+  .ant-table,
+  .ant-table-thead > tr > th,
+  .ant-table-tbody > tr > td {
+    background: transparent;
+    color: $colorBody;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.315);
+  }
+  .ant-table-cell-scrollbar {
+    box-shadow: none;
+  }
+  .ant-table-tbody > tr.ant-table-row:hover > td {
+    background: #f5f5dc1f;
+    cursor: pointer;
+  }
+  .ant-table-cell {
+    img {
+      width: 50px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.315);
+    }
+  }
+  
+}

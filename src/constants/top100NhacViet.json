@@ -1,6 +1,7 @@
 {
   "Top100": [
     {
+      "id":"top-100-rap-viet",
       "title": "Top 100 Rap Việt",
       "avatar": "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/7/1/7/2/7172e5eef050a364accf3109a0f7477a.jpg",
       "songs": [
@@ -167,6 +168,7 @@
       ]
     },
     {
+      "id":"top-100-rap-hot",
       "title": "Top 100 Rap hot",
       "avatar": "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/6/b/6/1/6b61578d3ea104a9b7899a98aa6da31f.jpg",
 
@@ -384,7 +386,8 @@
       ]
     },
     {
-      "title": "Top 100 POP xịn",
+      "id":"top-100-rap-xin",
+      "title": "Top 100 rap xịn",
       "avatar": "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/7/e/a/3/7ea3bcf19dbda2e651c65b31c1765e57.jpg",
       "songs": [
         {
@@ -530,6 +533,7 @@
       ]
     },
     {
+      "id":"top-100-rap-noi-nhu-con",
       "title": "Top 100 Rap nổi như cồn",
       "avatar": "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/2/4/6/3/2463b4bb0b0cbe17508c2cc63e77f807.jpg",
       "songs": [
@@ -796,6 +800,7 @@
       ]
     },
     {
+      "id":"top-nhung-bai-nghe-nhieu",
       "title": "Top Những bài nghe nhiều",
       "avatar": "https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/6/e/7/b/6e7b61e952ad97d05bbadfc7b8b3f77f.jpg",
       "songs": [

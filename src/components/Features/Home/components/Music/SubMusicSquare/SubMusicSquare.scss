@@ -71,3 +71,12 @@
     }
   }
 }
+.circleImage {
+  img {
+    padding: 5px;
+    border-radius: 50%;
+  }
+  .ant-card-meta-title {
+    text-align: center;
+  }
+}

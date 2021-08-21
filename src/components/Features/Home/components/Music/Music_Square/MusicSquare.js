@@ -16,7 +16,6 @@ const MusicSquare = ({ title = 'Top 100', dataTopMusic = []}) => {
   const previous = () => {
     ref.current.slickPrev();
   };
-  console.log(index)
   
   const settings = {
     className: "section-outstanding__slider",
@@ -44,7 +43,6 @@ const MusicSquare = ({ title = 'Top 100', dataTopMusic = []}) => {
       },
     ],
   };
-  console.log(dataTopMusic.length)
   return (
     <div className="MusicSquare">
       <h2 className='MusicSquare__title'>{title}</h2>

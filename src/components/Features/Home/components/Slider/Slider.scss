@@ -1,4 +1,4 @@
-@import '/src/assets/styles/valiable.scss';
+@import "/src/assets/styles/valiable.scss";
 
 .HomeSlider {
   .sliderItem {
@@ -22,25 +22,31 @@
   background-color: rgba(0, 0, 0, 0.623) !important;
 }
 .HomeSliderModal {
-    min-width: 400px;
-    width:  400px !important;
-    text-align: center;
-    .ant-modal-content {
-        border-radius: 25px !important;
-        background: #8034a0;
-    }
-    .ant-modal-footer {display: none; }
-    img {
-      width: 100%;
-      object-fit: contain;
-      border-radius:20px;
-    }
-    & * p {
-      font-size:16px;
-      font-weight: bold;
-      color: $colorBody;
-    }
-    .ant-spin-dot-item { background: rgb(3, 3, 3); }
-
-
+  min-width: 400px;
+  width: 400px !important;
+  text-align: center;
+.ant-card-meta-title {
+  color: $colorBody;
+}
+  .ant-modal-content,
+  .ant-modal-header {
+    border-radius: 25px !important;
+    background: #8034a0;
+  }
+  .ant-modal-footer {
+    display: none;
+  }
+  img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+  }
+  & * p {
+    font-size: 16px;
+    font-weight: bold;
+    color: $colorBody;
+  }
+  .ant-spin-dot-item {
+    background: rgb(3, 3, 3);
+  }
 }

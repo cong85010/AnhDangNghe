@@ -1,7 +1,8 @@
 import imaError from 'assets/images/error.jpg'
 const dataDefault = {
-    Title: 'Chưa xác định',
-    Auth: 'Đang cập nhật',
-    Url: imaError
+    title: 'Chưa xác định',
+    creator: 'Đang cập nhật',
+    avatar: imaError,
+    songs: []
 }
 export default dataDefault
