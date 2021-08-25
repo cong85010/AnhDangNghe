@@ -3,7 +3,7 @@
 .album {
   margin: 24px 16px;
   padding: 24px;
-  overflow-y: hidden;
+  overflow-y: auto;
   .ant-table,
   .ant-table-thead > tr > th,
   .ant-table-tbody > tr > td {

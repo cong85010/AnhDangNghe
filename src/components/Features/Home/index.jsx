@@ -1,16 +1,23 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Layout } from "antd";
 import HomeHeader from "./components/Header/Header";
 import "./index.scss";
 import Home_Slider from "./components/Slider/Slider";
-import dataBanner from "constants/fakeData";
 import MusicSquare from "./components/Music/Music_Square/MusicSquare";
 import { MusicPlayerContext } from "components/contextAPI/context";
+import axios from "axios";
+import { options } from "App";
 
 const { Content } = Layout;
 
 export default function HomeRoutes() {
-  const { listTop100 } = useContext(MusicPlayerContext);
+  const { listTop100, listTop100V2,listTop100V3 } = useContext(MusicPlayerContext);
+  const [dataBanner, setdataBanner] = useState([])
+
+  useEffect(() => {
+      axios(options("databanner")).then((response) => setdataBanner(response.data))
+  }, [])
+  console.log(listTop100V3)
   return (
     <Content
       style={{
@@ -18,10 +25,10 @@ export default function HomeRoutes() {
         padding: 24,
       }}
     >
-      <Home_Slider dataBanner={dataBanner} />
-      <MusicSquare title="Nhạc dành cho bạn" dataTopMusic={listTop100} />
-      <MusicSquare title="Nhạc dành cho Toi" dataTopMusic={listTop100} />
-      <MusicSquare title="Nhạc dành cho Nhac cho" dataTopMusic={listTop100} />
+      {dataBanner && <Home_Slider dataBanner={dataBanner} />}
+      {listTop100 && <MusicSquare title="Nhạc dành cho bạn" dataTopMusic={listTop100} />}
+      {listTop100 && <MusicSquare title="Nhạc dành cho toi" dataTopMusic={listTop100V2} />}
+      {listTop100 && <MusicSquare title="Nhạc dành cho NYC" dataTopMusic={listTop100V3} />}
     </Content>
   );
 }

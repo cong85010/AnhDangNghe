@@ -12,11 +12,11 @@ import {
 import { MusicPlayerContext } from "components/contextAPI/context";
 const SubMusicSquare = ({ data, circle = false}) => {
   const { handleNewDSP, danhSachPhat } = useContext(MusicPlayerContext);
-  const { id, title = Default.Title, avatar = Default.Url} = data;
+  const { id, title = Default.Title, avatar = Default.Url, key = ""} = data;
   const history = useHistory()
   const activeCircle = () => avatar === danhSachPhat.avatar?'circleImage animateRotate': ''
   
-  return (
+  return (  
     <div className={`
     SubMusicSquare 
     ${circle && activeCircle()}
@@ -25,7 +25,7 @@ const SubMusicSquare = ({ data, circle = false}) => {
         hoverable
         className="SubMusic"
         cover={<img alt={title} src={avatar} />}
-        onClick={() => history.push(`/album/${id}`)}
+        onClick={() => history.push(`/album/${key}=${id}`)}
       >
         <div className="overlay"></div>
         <div className="SubMusic__items">

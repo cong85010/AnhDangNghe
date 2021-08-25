@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useRef } from "react";
 import H5AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 import "./MusicPlay.scss";
@@ -9,11 +9,13 @@ import {
   HeartOutlined,
   DownloadOutlined,
   DashOutlined,
+  ToolOutlined
 } from "@ant-design/icons";
 import { MusicPlayerContext } from "components/contextAPI/context";
-export default function MusicPlay({nextPrePlayingMusic, nextWillPlay }) {
+export default function MusicPlay({ nextPrePlayingMusic, nextWillPlay, charCode }) {
 
-  const { playing, isPlay, setIsPlay} = useContext(MusicPlayerContext);
+  const { playing, isPlay, setIsPlay } = useContext(MusicPlayerContext);
+  const playerRef = useRef(null)
   const menu = (
     <Menu>
       <Menu.Item key="0">
@@ -25,6 +27,34 @@ export default function MusicPlay({nextPrePlayingMusic, nextWillPlay }) {
       <Menu.Divider />
     </Menu>
   );
+  useEffect(() => {
+    if (playerRef.current) {
+      if (charCode.code === 32) {
+        if (isPlay) {
+          playerRef.current.audio.current.pause();
+        } else {
+          playerRef.current.audio.current.play();
+        }
+      }
+      else {
+        const currentTime = playerRef.current.audio.current.currentTime;
+        const volume = playerRef.current.audio.current.volume
+        if (charCode.code === 37) {
+          playerRef.current.audio.current.currentTime = currentTime - 5;
+        }
+        if (charCode.code === 39) {
+          playerRef.current.audio.current.currentTime = currentTime + 5;
+        }
+          if(charCode.code === 189 && volume - 0.2 >= 0) {
+            playerRef.current.audio.current.volume = volume - 0.2
+          }
+          if(charCode.code === 187 && volume + 0.2 <= 1) {
+            playerRef.current.audio.current.volume = volume + 0.2
+          }
+        
+      }
+    }
+  }, [charCode.isLoad])
   const openNotification = () => {
     notification.success({
       message: 'Tải xuống ...',
@@ -81,11 +111,18 @@ export default function MusicPlay({nextPrePlayingMusic, nextWillPlay }) {
             onError={() => nextPrePlayingMusic(1)}
             onClickPrevious={() => nextPrePlayingMusic(-1)}
             onEnded={() => nextPrePlayingMusic(1)}
-
+            ref={playerRef}
           />
         </Col>
-        <Col span={1}>
+        <Col span={2}>
           <div className="musicPlay--right musicPlay--left">
+          <Tooltip title="Vol+ key +, Vol- key -, <= -5s, => +5s,  Pause/Play key space">
+              <Button shape="circle"
+                outline="true"
+                type="text"
+                icon={<ToolOutlined />} >
+              </Button>
+            </Tooltip>
             <Tooltip title="Tải nhạc">
               <Button shape="circle"
                 outline="true"
@@ -96,9 +133,9 @@ export default function MusicPlay({nextPrePlayingMusic, nextWillPlay }) {
             </Tooltip>
           </div>
         </Col>
-        <Col span={5}>
+        <Col span={4}>
           <div className="musicPlay--right">
-            <SubMusic data={nextWillPlay()} notHover= {true}/>
+            <SubMusic data={nextWillPlay()} notHover={true} />
           </div>
         </Col>
       </Row>

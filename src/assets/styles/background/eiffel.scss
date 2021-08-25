@@ -3,6 +3,10 @@
   .ant-layout {
     background-size: cover;
     background-image: url(https://zmp3-static.zadn.vn/skins/zmp3-v6.1/images/theme-background/eiffel.jpg);
+    .fixedHeader {
+      background-color: #282828 ;
+      box-shadow:  inset 0px -3px 5px 0 #5e5e5e;
+    }
   }
   .scroll, .ant-tabs-content-top, .ant-table-body {
     &::-webkit-scrollbar-track {

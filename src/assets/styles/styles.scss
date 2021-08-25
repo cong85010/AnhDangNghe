@@ -6,7 +6,15 @@
 @import './background/eiffel.scss';
 
 
-
+.nonChangeHeader {
+  transition: all 0.5s linear;
+  z-index: 99;
+}
+.fixedHeader {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
 .flex-center {
   display: flex;
   justify-content: center;

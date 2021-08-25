@@ -1,11 +1,10 @@
 @import "/src/assets/styles/valiable.scss";
 .header {
-  background-color: #37075d !important;
   padding: 0 20px !important;
-  // position: sticky;
+  position: sticky;
   background: transparent !important;
-  top: 0px;
   z-index: 999;
+  transition: all 0.3s;
   & .input {
     width: 400px !important;
     background: transparent !important;
