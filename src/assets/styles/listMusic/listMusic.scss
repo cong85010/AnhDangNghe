@@ -1,0 +1,56 @@
+@import "../valiable.scss";
+
+@mixin table {
+  @media (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+.fixed {
+  .fixedPos {
+    position: fixed;
+    top: 0px;
+    display: none;
+    z-index: 999;
+    transition: all 0.3s;
+    @include table {
+      display: block;
+    }
+  }
+  .fixMenu {
+    left: -160px;
+    max-width: 220px;
+    &--button {
+      position: absolute;
+      top: 55px;
+      right: -60px;
+    }
+    &.showMenu {
+      left: 0px;
+    }
+  }
+  
+  .fixListMusic {
+    right: -250px;
+    max-width: 250px;
+    &--button {
+      position: absolute;
+      top: 55px;
+      left: -60px;
+    }
+    .ant-tabs-content-top {
+      height: 100vh !important;
+    }
+  }
+  .showListMenu {
+    right: 0;
+  }
+    .overlay {
+    position: fixed;
+    z-index: 999;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.63);
+  }
+}

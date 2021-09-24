@@ -2,66 +2,102 @@ import { Col, Row, Table } from 'antd'
 import { options } from 'App'
 import axios from 'axios'
 import { MusicPlayerContext } from 'components/contextAPI/context'
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState, useRef } from 'react'
 import { useParams } from 'react-router-dom'
 import MusicSquare from '../Home/components/Music/Music_Square/MusicSquare'
 import SubMusicSquare from '../Home/components/Music/SubMusicSquare/SubMusicSquare'
+import Default from "constants/dataDefault";
+
 import './album.scss'
+export const Duration = function ({props}) {
+    const [duration, setDuration] = useState("00:00")
+    const audio = new Audio(props.music)
+    audio.onloadedmetadata = (e) => {
+        if (audio.readyState > 0) {
+            var minutes = "0"+parseInt(audio.duration / 60, 10);
+            var seconds = "0"+parseInt(audio.duration % 60);
+            setDuration(minutes + ":" + seconds.slice(-2))
+        }
+    }
+    return duration
+}
 export default function Album() {
     const { id } = useParams()
     const [nameValue, params] = id.split('=')
     const [ablum, setAblum] = useState({})
-    // const optionss = {
-    //     url: `http://localhost:3000/top100${'usuk'||'vn' || ''}/${id}`,
-    //     method: 'GET',
-    //     headers: {
-    //         'Accept': 'application/json',
-    //         'Content-Type': 'application/json;charset=UTF-8'
-    //     },
-    // };
+    const refTop = useRef(null)
+
     useEffect(() => {
-            axios(options(`top100${nameValue}/${params}`))
-                .then(response => {
-                    setAblum(response.data)
-                }).catch(err => {console.error(err)})
+        axios(options(`top100${nameValue}/${params}`))
+            .then(response => {
+                setAblum(response.data)
+            }).catch(err => { console.error(err) })
+        const obj = document.getElementById('scrollTop')
+        const tableScroll = obj.getElementsByClassName('ant-table-body')
+        tableScroll[0].scrollTop = 0
     }, [id])
+   
+
 
     const columns = [
         {
+            title: "No",
+            key: "index",
+            width: "50px",
+            render: (value, item, index) => index + 1
+        },
+        {
             title: 'Name',
             dataIndex: 'avatar',
-            width: 50,
-            maxWidth: 50,
-            render: (t, r) => <img src={t} alt='img' />
+            width: "70px",
+            render: (t, r) => <img src={t} alt='img' onError={(e) => { e.target.onerror = null; e.target.src = Default.avatar }} />
         },
         {
-            title: '',
-            dataIndex: 'title',
-            width: 250,
+            dataIndex: ['title', 'creator'],
+            render: (text, row) => <div>
+                <p className='m-0'>{row['title']}</p>
+                <small className='opacity-0_5'>{row['creator']}</small>
+            </div>
         },
         {
-            title: 'Creator',
-            dataIndex: 'creator',
-            width: 150,
+            title: 'Time',
+            maxWidth: '200px',
+            render: (t, r) => <Duration props={t} />
+           
         },
     ];
-    const { handleNewDSP, saveMusic, isPlay, backGrounds, listTop100 } = useContext(MusicPlayerContext);
+    const { handleNewDSP, saveMusic, isPlay, listTop100 } = useContext(MusicPlayerContext);
     const handleplay = (r, t) => {
         handleNewDSP(ablum)
         saveMusic(r)
     }
+    console.log(ablum)
     return (
         <Row
-            className={`album ${backGrounds}`}>
-            <Col className='flex-center' span={6}>
+            className="album scroll"
+            ref={refTop}
+        >
+            <Col className='flex-center'
+                xs={24}
+                sm={24}
+                md={24}
+                lg={6}
+                xl={6}
+            >
                 {ablum && <SubMusicSquare data={ablum} circle={isPlay} />}
             </Col>
-            <Col span={17} offset={1}>
+            <Col
+                xs={24}
+                sm={24}
+                md={24}
+                lg={18}
+                xl={18}>
                 <Table
+                    id="scrollTop"
                     columns={columns}
+                    // dataSource={ablum.songs}
                     dataSource={ablum.songs}
                     pagination={false}
-                    // onSelect={(r, t, d) => console.log(r, t, d)}
                     onRow={(r, t) => { return { onClick: () => handleplay(r, t) } }}
                     scroll={{ y: 'calc(100vh - 300px)' }
                     }

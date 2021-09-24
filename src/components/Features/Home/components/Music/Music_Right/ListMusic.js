@@ -18,17 +18,11 @@ export const ListMusic = ({ listData_Current, listData_History }) => {
           <div className='h-30'></div>
           <Tooltip mouseEnterDelay='0.7'
             placement="topLeft"
-            title={listData_Current.title}>
+            title={listData_Current.title}
+            >
             <Tag
               className="fixDanhSach"
               icon={<BarsOutlined />}
-              style={
-                {
-                  fontSize: 16,
-                  padding: '5px 10px',
-                  width: '100%',
-                  fontWeight: 'bold'
-                }}
               color="pink"> {listData_Current.title}</Tag></Tooltip>
           {
             listData_Current.songs.map((data, index) => (

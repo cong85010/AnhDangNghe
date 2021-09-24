@@ -1,16 +1,19 @@
-
 .backgroundEiffel {
-  .ant-layout {
+  .container {
     background-size: cover;
     background-image: url(https://zmp3-static.zadn.vn/skins/zmp3-v6.1/images/theme-background/eiffel.jpg);
-    .fixedHeader {
-      background-color: #282828 ;
-      box-shadow:  inset 0px -3px 5px 0 #5e5e5e;
+    .changeHeader {
+      background-color: #282828;
+      box-shadow: inset 0px -3px 5px 0 #5e5e5e;
     }
   }
-  .scroll, .ant-tabs-content-top, .ant-table-body {
+  .fixedPos {
+    background-color: #282828;
+  }
+  .scroll,
+  .ant-tabs-content-top,
+  .ant-table-body {
     &::-webkit-scrollbar-track {
-      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.6);
       background-color: transparent !important;
     }
 
@@ -43,16 +46,16 @@
       background-color: rgba(134, 134, 134, 0.61);
     }
   }
-    .ant-modal-content,
-    .ant-modal-header {
-      background: #3d3b3d !important;
-    }
-    .fixDanhSach.ant-tag-pink {
-      color: #f8f8f8;
-      background: #807f7fcf;
-      border-color: #949393;
-    }
-    .SubMusic.MusicPLaying {
-      background-color: #7a7a7a;
-    }
+  .ant-modal-content,
+  .ant-modal-header {
+    background: #3d3b3d !important;
+  }
+  .fixDanhSach.ant-tag-pink {
+    color: #f8f8f8;
+    background: #807f7fcf;
+    border-color: #949393;
+  }
+  .SubMusic.MusicPLaying {
+    background-color: #7a7a7a;
+  }
 }

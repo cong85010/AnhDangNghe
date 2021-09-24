@@ -1,9 +1,29 @@
 .listMusicRight {
+  width: 100% !important;
   .ant-tabs-content-top {
     height: calc(100vh - 90px);
-    max-width: 280px;
     overflow-y: auto;
     overflow-x: hidden;
+  }
+  .ant-tabs-nav-operations {
+    display: none !important;
+  }
+  .card--title {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .fixDanhSach {
+    position: absolute;
+    top: 80px;
+    z-index: 9;
+    font-size: 16px;
+    padding: 5px 10px;
+    width: 100%;
+    font-weight: bold;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    
   }
 }
 .__200px {
@@ -11,11 +31,7 @@
     height: calc(100vh - 200px) !important;
   }
 }
-.fixDanhSach {
-  position: fixed;
-  top: 80px;
-  z-index: 9;
-}
+
 .h-30 {
   height: 30px;
 }

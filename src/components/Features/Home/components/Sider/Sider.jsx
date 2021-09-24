@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   UserOutlined,
   VideoCameraOutlined,
@@ -7,33 +7,46 @@ import {
 import { Layout, Menu } from "antd";
 import "./Sider.scss";
 import { Link } from "react-router-dom";
+import { ModalTheme } from "../Header/Header";
+import { useMediaQuery } from "react-responsive";
 const { Sider } = Layout;
 
 export const Home_Sider = ({ collapsed }) => {
+  const [showModal, setShowModal] = useState(false);
+  const isTable = useMediaQuery({
+    query: "(max-width: 768px)",
+  });
   return (
     <Sider
       className="Sider"
       trigger={null}
       collapsible
-      collapsed={() => collapsed}
+      collapsed={() => collapsed || isTable}
     >
       <div className="logo flex-center">
-        <Link to="/">{collapsed ? "ADN" : "AnhDangNghe"}</Link>
+        <Link to="/">{collapsed || isTable ? "ADN" : "AnhDangNghe"}</Link>
       </div>
       <Menu className="menu" mode="inline" defaultSelectedKeys={["1"]}>
         <Menu.Item key="1" icon={<UserOutlined />}>
           <Link to="/">Trang chủ</Link>
         </Menu.Item>
-        <Menu.Item key="2" icon={<VideoCameraOutlined />}>
+        {isTable && (
+          <Menu.Item
+            key="2"
+            onClick={() => setShowModal(!showModal)}
+            icon={<VideoCameraOutlined />}
+          >
+            Chủ đề
+          </Menu.Item>
+        )}
+
+        <Menu.Item key="3" icon={<UploadOutlined />}>
           Chưa làm
         </Menu.Item>
-        <Menu.Item key="3" icon={<UploadOutlined />}>
-        Chưa làm
-        </Menu.Item>
       </Menu>
+      <ModalTheme stateShowModal={{ showModal, setShowModal }} />
     </Sider>
   );
 };
-
 
 export default Home_Sider;

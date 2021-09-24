@@ -1,20 +1,11 @@
 @import "/src/assets/styles/valiable.scss";
 
 .Sider {
+  width: 100% !important;
+  min-width: 100% !important;
   height: 100vh;
-  flex: none !important;
   background-color: transparent !important;
   box-shadow: 0px 3px 6px 0 #bababa96;
-  & .logo {
-    height: 70px;
-    font-size: 22px;
-    font-weight: bold;
-    background: linear-gradient(to right, #ffffff 0%, #cf1512 100%);
-    background: -moz-linear-gradient(to right, #ffffff 0%, #cf1512 100%);
-    background: linear-gradient(to right, #ffffff 0%, #cf1512 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
   & .menu {
     border-right: none;
     background-color: transparent !important;

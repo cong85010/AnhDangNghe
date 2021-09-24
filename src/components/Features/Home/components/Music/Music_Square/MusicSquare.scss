@@ -1,20 +1,26 @@
-@import '/src/assets/styles/valiable.scss';
+@import "/src/assets/styles/valiable.scss";
 
 .MusicSquare {
-    &__title {
-        color: $colorBody;
+    margin-bottom: 30px;
+  &__top {
+      display: flex;
+      justify-content: space-between;
+    &-title {
+      color: $colorBody;
     }
-    &__button {
-       text-align: end;
-        button {
-            background: transparent;
-            outline: none;
-            border: none;
-            color: $colorBody;
-            font-size: 20px;
-        }
-        .ant-btn-ghost[disabled], .ant-btn-ghost[disabled]:hover, .ant-btn-ghost[disabled]:focus, .ant-btn-ghost[disabled]:active {
-            background: none !important;
-        }
+
+    button {
+      background: transparent;
+      outline: none;
+      border: none;
+      color: $colorBody;
+      font-size: 20px;
     }
+    .ant-btn-ghost[disabled],
+    .ant-btn-ghost[disabled]:hover,
+    .ant-btn-ghost[disabled]:focus,
+    .ant-btn-ghost[disabled]:active {
+      background: none !important;
+    }
+  }
 }

@@ -1,11 +1,10 @@
 import { Card, Tooltip } from "antd";
 import Avatar from "antd/lib/avatar/avatar";
 import Meta from "antd/lib/card/Meta";
-import React, { useContext, useEffect, useRef} from "react";
+import React, { useContext} from "react";
 import "./SubMusic.scss";
 import Default from "constants/dataDefault";
 import { MusicPlayerContext } from "components/contextAPI/context";
-import scrollIntoView from 'scroll-into-view-if-needed'
 
 const SubMusic = ({ data = {
   title: Default.Title,

@@ -1,4 +1,4 @@
-import { Layout } from 'antd';
+import { Button, Col, Layout, Row } from 'antd';
 import { MusicProvider } from 'components/contextAPI/context';
 import MusicPlay from 'components/Features/Home/components/Music/MusicPlay/MusicPlay';
 import ListMusic from 'components/Features/Home/components/Music/Music_Right/ListMusic';
@@ -6,14 +6,24 @@ import HomeSider from 'components/Features/Home/components/Sider/Sider';
 import React, { Suspense, useEffect, useRef, useState } from 'react';
 import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
 import Home_Header from 'components/Features/Home/components/Header/Header';
-import Album from 'components/Features/Album/Album';
 import axios from 'axios';
 import dataDefault from 'constants/dataDefault';
 import './assets/styles/styles.scss'
 import pageNotFound from 'components/pageNotFound/pageNotFound';
+import {
+  AlignRightOutlined,
+  CloseSquareOutlined,
+  MenuFoldOutlined,
+  MenuUnfoldOutlined
+} from "@ant-design/icons";
+
+// const POST_URL = 'https://server-anhdangnghe.herokuapp.com/'
+
+const POST_URL = 'http://localhost:3000/'
+
 export const options = (urlLink) => {
   return {
-    url: `http://localhost:3000/${urlLink}`,
+    url: `${POST_URL + urlLink}`,
     method: 'GET',
     headers: {
       'Accept': 'application/json',
@@ -21,7 +31,9 @@ export const options = (urlLink) => {
     },
   }
 };
+
 const Home = React.lazy(() => import('./components/Features/Home/index'))
+const Album = React.lazy(() => import('./components/Features/Album/Album'))
 function App() {
   const [collapsed, setCollapsed] = useState(false);
   const clickClose = () => setCollapsed(!collapsed);
@@ -46,7 +58,7 @@ function App() {
     if (indexMusic !== -1) {
       ngheGanDay.splice(indexMusic, 1);
     }
-    localStorage.setItem("ngheganday", JSON.stringify([music, ...ngheGanDay]));
+    localStorage.setItem("ngheganday", JSON.stringify([music, ...ngheGanDay].splice(0, 50)));
     setPlaying(music);
   };
   // Promise.all
@@ -120,7 +132,16 @@ function App() {
       setoffSet(refHeader.current.offsetTop.y)
     }
   }, [offSet])
-  const check = () => setchangeHeader((refHeader.current.getBoundingClientRect().y < 0) ? 'fixedHeader' : '')
+  const changeBackgroundHeader = () => {
+    const posTop = refHeader.current.scrollTop
+    if (posTop > 100 && posTop < 200) {
+      // setchangeHeader("changeHeader")
+    }
+    else if (posTop < 100) {
+      // setchangeHeader("")
+    }
+  }
+
   // setchangeHeader((refHeader.current.getBoundingClientRect().y < 0) ? 'fixedHeader':'')
   const [charCode, setCharCode] = useState({});
   const handleKeyPess = (e) => {
@@ -152,27 +173,41 @@ function App() {
           handlebackground,
         }}>
           <div tabIndex="1" onKeyDown={handleKeyPess} className={backGrounds.className}>
-            <Layout>
-              <HomeSider collapsed={collapsed} />
-              <Layout id="changeHeader" onWheel={check}
-                className={`site-layout ${playing.music && '__100px'} scroll`}>
-                <div ref={refHeader} >
-                  <div className={`nonChangeHeader ${changeHeader}`}>
-                    <Home_Header id="headers" collapsed={collapsed} clickClose={clickClose} />
-                  </div>
-                  <Switch>
-                    <Route exact path='/' component={Home} />
-                    <Route path='/album/:id' component={Album} />
-                    <Route path='*' component={pageNotFound} />
-                  </Switch>
-                </div>
+            <Row className="container">
+              <Col xs={3} sm={3} md={5} lg={5} xl={collapsed?1:3} >
+                <HomeSider collapsed={collapsed} />
+              </Col>
+              {/* <ListMenuLeft /> */}
+              <Col xs={21} sm={21} md={19} lg={19} xl={collapsed?19:17}>
+                {/* <div className="h-64"></div> */}
+                <Layout id="changeHeader">
+                  <dispatchEvent>
+                    <div className={`nonChangeHeader ${changeHeader}`}>
+                      <Home_Header id="headers" collapsed={collapsed} clickClose={clickClose} />
+                    </div>
+                    <div
+                      ref={refHeader}
+                      onScroll={changeBackgroundHeader}
+                      className={`site-layout ${playing.music && '__100px'} scroll `}>
+                      <Switch>
+                        <Route exact path='/' component={Home} />
+                        <Route path='/album/:id' component={Album} />
+                        <Route path='*' component={pageNotFound} />
+                      </Switch>
+                    </div>
+                  </dispatchEvent>
 
-              </Layout>
-              <ListMusic
-                listData_Current={danhSachPhat}
-                listData_History={ngheGanDay}
-              />
-            </Layout>
+                </Layout>
+                {/*Screen Desktop small  */}
+                <ListMenuRight danhSachPhat={danhSachPhat} ngheGanDay={ngheGanDay} />
+              </Col>
+              <Col xs={0} sm={0} md={0} lg={0} xl={4}>
+                <ListMusic
+                  listData_Current={danhSachPhat}
+                  listData_History={ngheGanDay}
+                />
+              </Col>
+            </Row>
             <MusicPlay
               nextPrePlayingMusic={nextPrePlayingMusic}
               nextWillPlay={nextWillPlayingMusic}
@@ -185,5 +220,47 @@ function App() {
 
   );
 }
+export const ListMenuRight = ({ danhSachPhat, ngheGanDay }) => {
+  const [className, setClassName] = useState(false);
+  return (
+    <div className="fixed">
+      <div onClick={() => setClassName(false)} className={`${className && 'overlay'}`}></div>
+      <div className={`fixedPos fixListMusic ${className && 'showListMenu'}`}>
+        <Button
+          className="fixListMusic--button colorBody"
+          shape="circle"
+          outline="true"
+          type="link"
+          onClick={() => setClassName(!className)}
+          icon={className ? <CloseSquareOutlined /> : <AlignRightOutlined />}
+        ></Button>
+        <ListMusic
+          listData_Current={danhSachPhat}
+          listData_History={ngheGanDay}
+        />
+      </div>
+    </div>
 
+  )
+}
+export const ListMenuLeft = () => {
+  const [className2, setclassName2] = useState(false)
+  return (
+    <div className="fixed">
+      <div onClick={() => setclassName2(false)} className={`${className2 && 'overlay'}`}></div>
+      <div className={`fixedPos fixMenu ${className2 && 'showMenu'}`}>
+        <Button
+          className="fixMenu--button colorBody"
+          shape="circle"
+          outline="true"
+          type="link"
+          onClick={() => setclassName2(!className2)}
+          icon={className2 ? <MenuFoldOutlined /> : <MenuUnfoldOutlined />}
+        />
+        <HomeSider collapsed={false} />
+      </div>
+    </div>
+
+  )
+}
 export default App;

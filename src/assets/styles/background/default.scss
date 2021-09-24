@@ -1,15 +1,17 @@
 .backgroundDefault {
-  .ant-layout {
+  .container {
     background-size: cover;
     background-image: url(https://zmp3-static.zadn.vn/skins/zmp3-v6.1/images/theme-background/zma.svg);
-    .fixedHeader {
+    .changeHeader {
       background-color: #37075d ;
       box-shadow:  inset 0px -5px 5px 0 #631991;
     }
   }
-  .scroll, .ant-tabs-content-top, .ant-table-body {
+  .fixedPos {
+    background-color: #37075d ;
+  }
+  .scroll, .ant-tabs-content-top, .ant-table-body {    
     &::-webkit-scrollbar-track {
-      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.6);
       background-color: transparent !important;
     }
 

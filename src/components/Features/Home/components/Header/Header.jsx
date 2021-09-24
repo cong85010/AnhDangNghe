@@ -1,5 +1,14 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
-import { Button, Card, Input, Layout, Spin, Tooltip } from "antd";
+import {
+  Upload,
+  Button,
+  Card,
+  Input,
+  Layout,
+  message, 
+  Spin,
+  Tooltip,
+} from "antd";
 import { MenuUnfoldOutlined, MenuFoldOutlined } from "@ant-design/icons";
 import {
   SearchOutlined,
@@ -16,37 +25,24 @@ import axios from "axios";
 import Meta from "antd/lib/card/Meta";
 import { MusicPlayerContext } from "components/contextAPI/context";
 import { Link, useHistory, useRouteMatch } from "react-router-dom";
+import { options } from "App";
 const { Header } = Layout;
 
-const Home_Header = ({  collapsed, clickClose }) => {
-  const [visible, setVisible] = useState(false);
+export const ModalTheme = ({ stateShowModal }) => {
+  const { showModal, setShowModal } = stateShowModal;
   const [confirmLoading, setConfirmLoading] = useState(false);
   const [backGround, setBackGrounds] = useState([]);
-  const history = useHistory();
-  const refHeader = useRef(null);
-
-  useEffect(() => {}, []);
-  // useEffect(() => {
-  //     axios.get('http://localhost:3000/changeBackground').then((response) => {
-  //           setBackGrounds(response.data)
-  //     })
-  // }, [])
   const { handlebackground, backGrounds } = useContext(MusicPlayerContext);
-  const showModal = () => {
-    setVisible(true);
-    if (!backGround.length) {
-      setTimeout(() => {
-        axios.get("http://localhost:3000/changeBackground").then((response) => {
-          setBackGrounds(response.data);
-        }, 300);
-      });
-    }
-  };
+  useEffect(() => {
+    axios(options("changeBackground")).then((response) => {
+      setBackGrounds(response.data);
+    });
+  }, []);
 
   const handleOk = (bg) => {
     setConfirmLoading(true);
     setTimeout(() => {
-      setVisible(false);
+      setShowModal(false);
       setConfirmLoading(false);
       handlebackground(bg);
     }, 1000);
@@ -54,14 +50,62 @@ const Home_Header = ({  collapsed, clickClose }) => {
 
   const handleCancel = () => {
     console.log("Clicked cancel button");
-    setVisible(false);
+    setShowModal(false);
   };
-  
   return (
-    <div ref={refHeader} >
-      <Header id="header" className={`header`} >
+    <Modal
+      title="Giao diện"
+      visible={showModal}
+      onCancel={handleCancel}
+      className={`HomeSliderModal HeaderModal ${backGrounds.className}`}
+    >
+      {confirmLoading && <Spin />}
+      {!backGround.length ? (
+        <Spin />
+      ) : (
+        <div>
+          {backGround.map((bg, index) => (
+            <Card
+              hoverable
+              key={index}
+              onClick={() => handleOk(bg)}
+              cover={<img alt="example" src={bg.src} />}
+            >
+              <Meta title={bg.title} />
+            </Card>
+          ))}
+        </div>
+      )}
+    </Modal>
+  );
+};
+
+const Home_Header = ({ collapsed, clickClose }) => {
+  const history = useHistory();
+  const refHeader = useRef(null);
+  const [showModal, setShowModal] = useState(false);
+  const props = {
+    beforeUpload: (file) => {
+      if (file.type !== "audio/mpeg") {
+        message.error(`${file.name} is not a mp3 file`);
+      } else {
+         console.log(file);
+      }
+    },
+    onChange: (info) => {
+      console.log(info.fileList);
+    },
+  };
+  return (
+    <div ref={refHeader}>
+      <Header id="header" className={`header`}>
         <Row>
-          <Col span={2}>
+          <Col xs={24} sm={24} md={0} lg={0} xl={0}>
+            <div className="logo flex-center">
+              <Link to="/">{collapsed ? "ADN" : "AnhDangNghe"}</Link>
+            </div>
+          </Col>
+          <Col xs={0} sm={0} md={2} lg={2} xl={2}>
             <Tooltip title={collapsed ? "Mở rộng" : "Thu nhỏ"}>
               <Button
                 className="trigger colorBody"
@@ -73,19 +117,26 @@ const Home_Header = ({  collapsed, clickClose }) => {
               ></Button>
             </Tooltip>
           </Col>
-          <Col span={2}>
+          <Col xs={0} sm={0} md={2} lg={2} xl={2}>
             <Tooltip title="Quay lại">
               <Button
                 className="colorBody"
                 shape="circle"
                 outline="true"
                 type="ghost"
-                onClick={() => history.push("/")}
+                onClick={() => history.goBack()}
                 icon={<LeftSquareOutlined />}
               ></Button>
             </Tooltip>
           </Col>
-          <Col span={10}>
+
+          <Col
+            xs={{ span: 17, push: 3 }}
+            sm={{ span: 17, push: 3 }}
+            md={10}
+            lg={10}
+            xl={10}
+          >
             <Input
               className="colorBody"
               className="input"
@@ -93,7 +144,14 @@ const Home_Header = ({  collapsed, clickClose }) => {
               prefix={<SearchOutlined />}
             />
           </Col>
-          <Col span={4} offset={6}>
+
+          <Col
+            xs={0}
+            sm={0}
+            md={{ span: 6, offset: 4 }}
+            lg={{ span: 5, offset: 5 }}
+            xl={{ span: 4, offset: 6 }}
+          >
             <Row>
               <Col span={6}>
                 <Tooltip className="colorBody" title="Chủ đề">
@@ -102,43 +160,23 @@ const Home_Header = ({  collapsed, clickClose }) => {
                     outline="true"
                     type="ghost"
                     icon={<BoxPlotOutlined />}
-                    onClick={showModal}
+                    onClick={() => setShowModal(!showModal)}
                     className="colorBody"
                   />
                 </Tooltip>
-                <Modal
-                  title="Giao diện"
-                  visible={visible}
-                  onCancel={handleCancel}
-                  className={`HomeSliderModal HeaderModal ${backGrounds.className}`}
-                >
-                  {confirmLoading && <Spin />}
-                  {!backGround.length ? (
-                    <Spin />
-                  ) : (
-                    <div>
-                      {backGround.map((bg, index) => (
-                        <Card
-                          hoverable
-                          key={index}
-                          onClick={() => handleOk(bg)}
-                          cover={<img alt="example" src={bg.src} />}
-                        >
-                          <Meta title={bg.title} />
-                        </Card>
-                      ))}
-                    </div>
-                  )}
-                </Modal>
+                <ModalTheme stateShowModal={{ showModal, setShowModal }} />
               </Col>
               <Col span={6}>
                 <Tooltip className="colorBody" title="Tải lên">
-                  <Button
-                    shape="circle"
-                    outline="true"
-                    type="ghost"
-                    icon={<UploadOutlined />}
-                  />
+                  <Upload {...props} showUploadList={false} listType="audio">
+                    <Button
+                      shape="circle"
+                      outline="true"
+                      type="ghost"
+                      className="colorBody"
+                      icon={<UploadOutlined />}
+                    />
+                  </Upload>
                 </Tooltip>
               </Col>
               <Col span={6}>

@@ -1,12 +1,17 @@
 @import "/src/assets/styles/valiable.scss";
+@mixin table {
+  @media (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
 .header {
   padding: 0 20px !important;
-  position: sticky;
   background: transparent !important;
-  z-index: 999;
+  z-index: 99;
   transition: all 0.3s;
+  height: 100%;
   & .input {
-    width: 400px !important;
+    width: 100%;
     background: transparent !important;
     border-radius: 20px;
     .ant-input {
@@ -16,6 +21,10 @@
     .ant-input-prefix {
       color: $colorBody;
     }
+  }
+  .logo {
+    height: 30px;
+    margin-top: 10px;
   }
 }
 .ant-input-affix-wrapper:focus,
@@ -30,8 +39,24 @@
 .HeaderModal {
   min-width: 700px !important;
   width: 700px !important;
+  @include table {
+    min-width: 50% !important;
+  }
+  .ant-modal-body > div{
+      max-width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
   .ant-card {
-    display: inline-block;
+    flex: 1;
+    // display: inline-block;
+    // @include table {
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+    //   flex-direction: column;
+    // }
     background-color: transparent;
     border: none !important;
     width: 200px;

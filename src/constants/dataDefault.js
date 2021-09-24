@@ -1,4 +1,4 @@
-import imaError from 'assets/images/error.jpg'
+import imaError from 'assets/images/error.png'
 const dataDefault = {
     title: 'Chưa xác định',
     creator: 'Đang cập nhật',

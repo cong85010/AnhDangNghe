@@ -45,13 +45,13 @@ export default function MusicPlay({ nextPrePlayingMusic, nextWillPlay, charCode 
         if (charCode.code === 39) {
           playerRef.current.audio.current.currentTime = currentTime + 5;
         }
-          if(charCode.code === 189 && volume - 0.2 >= 0) {
-            playerRef.current.audio.current.volume = volume - 0.2
-          }
-          if(charCode.code === 187 && volume + 0.2 <= 1) {
-            playerRef.current.audio.current.volume = volume + 0.2
-          }
-        
+        if (charCode.code === 189 && volume - 0.2 >= 0) {
+          playerRef.current.audio.current.volume = volume - 0.2
+        }
+        if (charCode.code === 187 && volume + 0.2 <= 1) {
+          playerRef.current.audio.current.volume = volume + 0.2
+        }
+
       }
     }
   }, [charCode.isLoad])
@@ -74,31 +74,46 @@ export default function MusicPlay({ nextPrePlayingMusic, nextWillPlay, charCode 
   return (
     <div className={`musicPlay ${playing.title}`}>
       <Row>
-        <Col span={6}>
+        <Col
+          xs={5} sm={9} md={6} lg={6} xl={6}>
           <div className="musicPlay--left">
-            <SubMusic data={playing} circle={true} rotate={isPlay} />
-            <Tooltip title="Thích">
-              {" "}
-              <Button
-                shape="circle"
-                outline="true"
-                type="text"
-                icon={<HeartOutlined />}
-              />
-            </Tooltip>
-            <Tooltip title="Xem thêm">
-              <Dropdown color="primary" overlay={menu} trigger={['click']}>
+            <Col
+              xs={24} sm={24} md={16} lg={16} xl={16}>
+              <SubMusic data={playing} circle={true} rotate={isPlay} />
+            </Col>
+            <Col
+              className="flex-center"
+              xs={0} sm={0} md={4} lg={4} xl={4} >
+              <Tooltip title="Thích">
+                {" "}
                 <Button
                   shape="circle"
                   outline="true"
                   type="text"
-                  icon={<DashOutlined />}
+                  icon={<HeartOutlined />}
                 />
-              </Dropdown>
-            </Tooltip>
+              </Tooltip>
+            </Col>
+            <Col
+              className="flex-center"
+              xs={0} sm={0} md={4} lg={4} xl={4} >
+              <Tooltip title="Xem thêm">
+                <Dropdown color="primary" overlay={menu} trigger={['click']}>
+                  <Button
+                    shape="circle"
+                    outline="true"
+                    type="text"
+                    icon={<DashOutlined />}
+                  />
+                </Dropdown>
+              </Tooltip></Col>
           </div>
         </Col>
-        <Col span={12}>
+        <Col xs={19}
+          sm={15}
+          md={16}
+          lg={12}
+          xl={12}>
           <H5AudioPlayer
             src={playing.music}
             showSkipControls={true}
@@ -114,9 +129,13 @@ export default function MusicPlay({ nextPrePlayingMusic, nextWillPlay, charCode 
             ref={playerRef}
           />
         </Col>
-        <Col span={2}>
+        <Col xs={0}
+          sm={0}
+          md={0}
+          lg={2}
+          xl={2}>
           <div className="musicPlay--right musicPlay--left">
-          <Tooltip title="Vol+ key +, Vol- key -, <= -5s, => +5s,  Pause/Play key space">
+            <Tooltip title="Vol+ key +, Vol- key -, <= -5s, => +5s,  Pause/Play key space">
               <Button shape="circle"
                 outline="true"
                 type="text"
@@ -133,7 +152,11 @@ export default function MusicPlay({ nextPrePlayingMusic, nextWillPlay, charCode 
             </Tooltip>
           </div>
         </Col>
-        <Col span={4}>
+        <Col xs={0}
+          sm={0}
+          md={0}
+          lg={4}
+          xl={4}>
           <div className="musicPlay--right">
             <SubMusic data={nextWillPlay()} notHover={true} />
           </div>

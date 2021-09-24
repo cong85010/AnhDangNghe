@@ -1,51 +1,71 @@
-@import '/src/assets/styles/valiable.scss';
+@import "/src/assets/styles/valiable.scss";
 
+@mixin mobile {
+  @media (max-width: #{$mobile-width - 1px}) {
+    @content;
+  }
+}
+@mixin table-small {
+  @media (max-width: #{$tablet-small-width - 1px}) {
+    @content;
+  }
+}
 .musicPlay {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: #fff;
-    padding: 0 20px;
-    transition: 0.7s;
-   
-    .musicPlay--left {
-        display: flex;
-        align-items: center;
-        
-        .ant-btn-icon-only {
-            color: $colorBody;
-            margin-left: 10px;
-            .anticon {
-              transition: 0.3s;
-              font-size: 23px;
-              &:hover {
-                color: $colorBodyHover;
-              }
-            }
-          }
-    }
-    .musicPlay--mid {
-        background: transparent !important;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  padding: 0 20px;
+  transition: 0.7s;
 
-        .rhap_repeat-button, .rhap_main-controls-button,.rhap_volume-button,.rhap_time {
-            color: $colorBody;
+  .musicPlay--left {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    .ant-btn-icon-only {
+      color: $colorBody;
+      margin-left: 10px;
+      .anticon {
+        transition: 0.3s;
+        font-size: 23px;
+        &:hover {
+          color: $colorBodyHover;
         }
-        .rhap_progress-filled, .rhap_progress-indicator{
-            background: $colorBody;
-        }
-        .rhap_download-progress {
-            background:none !important;
-        }
+      }
     }
-    .musicPlay--right {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        height: 100%;
+  }
+  .musicPlay--mid {
+    background: transparent !important;
+
+    .rhap_repeat-button,
+    .rhap_main-controls-button,
+    .rhap_volume-button,
+    .rhap_time {
+      color: $colorBody;
     }
+    .rhap_progress-filled,
+    .rhap_progress-indicator {
+      background: $colorBody;
+    }
+    .rhap_download-progress {
+      background: none !important;
+    }
+  }
+  .musicPlay--right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+  }
+
+  //responsive
+  .rhap_volume-container {
+      @include table-small {
+          display: none;
+      }
+  }
 }
 .closeMusicPlaying {
-    transform: translateY(100px);
-    
+  transform: translateY(100px);
 }
