@@ -41,7 +41,7 @@ const SubMusic = ({ data = {
       ${circle ? "SubMenuCircle" : "SubMenu_Square"}
       ${notHover && "NotHover"}
       ${rotate && "animateRotate"} 
-      ${!circle && playing.music === data.music && 'MusicPLaying'}`}
+      ${!circle && playing?.music === data.music && 'MusicPLaying'}`}
         size="small"
       >
         <Meta

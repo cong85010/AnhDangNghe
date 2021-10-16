@@ -19,7 +19,7 @@ export default function MusicPlay({ nextPrePlayingMusic, nextWillPlay, charCode 
   const menu = (
     <Menu>
       <Menu.Item key="0">
-        <a href={playing.music} target="_blank">Tải nhạc</a>
+        <a href={playing?.music} target="_blank">Tải nhạc</a>
       </Menu.Item>
       <Menu.Item key="1">
         <a href="https://www.aliyun.com">2nd menu item</a>
@@ -72,7 +72,7 @@ export default function MusicPlay({ nextPrePlayingMusic, nextWillPlay, charCode 
     openNotification()
   }
   return (
-    <div className={`musicPlay ${playing.title}`}>
+    <div className={`musicPlay ${playing?.title}`}>
       <Row>
         <Col
           xs={5} sm={9} md={6} lg={6} xl={6}>
@@ -115,7 +115,7 @@ export default function MusicPlay({ nextPrePlayingMusic, nextWillPlay, charCode 
           lg={12}
           xl={12}>
           <H5AudioPlayer
-            src={playing.music}
+            src={playing?.music}
             showSkipControls={true}
             showJumpControls={false}
             className="musicPlay--mid"

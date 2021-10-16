@@ -24,10 +24,19 @@ import { Modal, Row, Col } from "antd";
 import axios from "axios";
 import Meta from "antd/lib/card/Meta";
 import { MusicPlayerContext } from "components/contextAPI/context";
-import { Link, useHistory, useRouteMatch } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
+
 import { options } from "App";
 const { Header } = Layout;
-
+function getBase64(file) {
+  return new Promise((resolve, reject) => {
+    console.log(file)
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = () => resolve(reader.result);
+    reader.onerror = (error) => reject(error);
+  });
+}
 export const ModalTheme = ({ stateShowModal }) => {
   const { showModal, setShowModal } = stateShowModal;
   const [confirmLoading, setConfirmLoading] = useState(false);
@@ -84,18 +93,38 @@ const Home_Header = ({ collapsed, clickClose }) => {
   const history = useHistory();
   const refHeader = useRef(null);
   const [showModal, setShowModal] = useState(false);
+  const [img, setImg] = useState(null);
+  const { saveMusic } = useContext(MusicPlayerContext);
+  const handlePreview = async (file) => {
+      console.log(file);
+
+    if (!file.url && !file.preview) {
+      file.preview = await getBase64(file.originFileObj);
+    }
+
+    setImg({
+      previewImage: file.url || file.preview,
+      previewVisible: true,
+      previewTitle:
+        file.name || file.url.substring(file.url.lastIndexOf("/") + 1),
+    });
+  };
+  console.log(img)
   const props = {
     beforeUpload: (file) => {
-      if (file.type !== "audio/mpeg") {
-        message.error(`${file.name} is not a mp3 file`);
-      } else {
+      // if (file.type !== "audio/mpeg") {
+      //   message.error(`${file.name} is not a mp3 file`);
+      // } else {
          console.log(file);
-      }
+         handlePreview(file);
+        //  saveMusic(file.name);
+      // }
     },
     onChange: (info) => {
       console.log(info.fileList);
     },
   };
+  
   return (
     <div ref={refHeader}>
       <Header id="header" className={`header`}>
@@ -168,7 +197,11 @@ const Home_Header = ({ collapsed, clickClose }) => {
               </Col>
               <Col span={6}>
                 <Tooltip className="colorBody" title="Tải lên">
-                  <Upload {...props} showUploadList={false} listType="audio">
+                  <Upload
+                    {...props}
+                    showUploadList={false}
+                    listType="audio"
+                  >
                     <Button
                       shape="circle"
                       outline="true"

@@ -32,8 +32,10 @@ export const options = (urlLink) => {
   }
 };
 
-const Home = React.lazy(() => import('./components/Features/Home/index'))
-const Album = React.lazy(() => import('./components/Features/Album/Album'))
+const Home = React.lazy(() => import('components/Features/Home/index'))
+const Album = React.lazy(() => import('components/Features/Album/Album'))
+const Chart = React.lazy(() => import('components/Features/Chart/Chart'))
+const MAX_LATELY_MUSIC = 20
 function App() {
   const [collapsed, setCollapsed] = useState(false);
   const clickClose = () => setCollapsed(!collapsed);
@@ -58,7 +60,7 @@ function App() {
     if (indexMusic !== -1) {
       ngheGanDay.splice(indexMusic, 1);
     }
-    localStorage.setItem("ngheganday", JSON.stringify([music, ...ngheGanDay].splice(0, 50)));
+    localStorage.setItem("ngheganday", JSON.stringify([music, ...ngheGanDay].splice(0, MAX_LATELY_MUSIC)));
     setPlaying(music);
   };
   // Promise.all
@@ -81,6 +83,11 @@ function App() {
       });
 
   }, [])
+  const scrollToTop = () => {
+    const objScroll = document.getElementById('scrollTop')
+    console.log(objScroll)
+    objScroll.scrollTop = 0
+  }
   useEffect(() => {
     setngheGanDay(JSON.parse(localStorage.getItem("ngheganday")) || []);
   }, [playing]);
@@ -103,7 +110,7 @@ function App() {
   const nextWillPlayingMusic = () => {
     if (danhSachPhat.songs.length > 0) {
       const indexMusic = danhSachPhat.songs.findIndex(
-        (music) => music.music === playing.music
+        (music) => music.music === playing?.music
       );
       return indexMusic >= danhSachPhat.songs.length - 1
         ? danhSachPhat.songs[0]
@@ -171,6 +178,7 @@ function App() {
           danhSachPhat,
           backGrounds,
           handlebackground,
+          scrollToTop
         }}>
           <div tabIndex="1" onKeyDown={handleKeyPess} className={backGrounds.className}>
             <Row className="container">
@@ -188,10 +196,12 @@ function App() {
                     <div
                       ref={refHeader}
                       onScroll={changeBackgroundHeader}
-                      className={`site-layout ${playing.music && '__100px'} scroll `}>
+                      id="scrollTop"
+                      className={`site-layout ${playing?.music && '__100px'} scroll `}>
                       <Switch>
                         <Route exact path='/' component={Home} />
                         <Route path='/album/:id' component={Album} />
+                        <Route path='/top-chart' component={Chart} />
                         <Route path='*' component={pageNotFound} />
                       </Switch>
                     </div>
@@ -238,26 +248,6 @@ export const ListMenuRight = ({ danhSachPhat, ngheGanDay }) => {
           listData_Current={danhSachPhat}
           listData_History={ngheGanDay}
         />
-      </div>
-    </div>
-
-  )
-}
-export const ListMenuLeft = () => {
-  const [className2, setclassName2] = useState(false)
-  return (
-    <div className="fixed">
-      <div onClick={() => setclassName2(false)} className={`${className2 && 'overlay'}`}></div>
-      <div className={`fixedPos fixMenu ${className2 && 'showMenu'}`}>
-        <Button
-          className="fixMenu--button colorBody"
-          shape="circle"
-          outline="true"
-          type="link"
-          onClick={() => setclassName2(!className2)}
-          icon={className2 ? <MenuFoldOutlined /> : <MenuUnfoldOutlined />}
-        />
-        <HomeSider collapsed={false} />
       </div>
     </div>
 

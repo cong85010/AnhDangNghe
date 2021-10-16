@@ -25,16 +25,21 @@ export default function Album() {
     const { id } = useParams()
     const [nameValue, params] = id.split('=')
     const [ablum, setAblum] = useState({})
-    const refTop = useRef(null)
-
+    const { handleNewDSP, saveMusic, isPlay, scrollToTop } = useContext(MusicPlayerContext);
+    const [moreAlbum, setMoreAlbum] = useState([])
     useEffect(() => {
         axios(options(`top100${nameValue}/${params}`))
             .then(response => {
                 setAblum(response.data)
             }).catch(err => { console.error(err) })
+        axios(options(`top100${nameValue}`))
+            .then(response => {
+                setMoreAlbum(response.data)
+            })
         const obj = document.getElementById('scrollTop')
         const tableScroll = obj.getElementsByClassName('ant-table-body')
         tableScroll[0].scrollTop = 0
+        scrollToTop()
     }, [id])
    
 
@@ -66,17 +71,12 @@ export default function Album() {
            
         },
     ];
-    const { handleNewDSP, saveMusic, isPlay, listTop100 } = useContext(MusicPlayerContext);
     const handleplay = (r, t) => {
         handleNewDSP(ablum)
         saveMusic(r)
     }
-    console.log(ablum)
     return (
-        <Row
-            className="album scroll"
-            ref={refTop}
-        >
+        <Row className="album">
             <Col className='flex-center'
                 xs={24}
                 sm={24}
@@ -95,7 +95,6 @@ export default function Album() {
                 <Table
                     id="scrollTop"
                     columns={columns}
-                    // dataSource={ablum.songs}
                     dataSource={ablum.songs}
                     pagination={false}
                     onRow={(r, t) => { return { onClick: () => handleplay(r, t) } }}
@@ -104,7 +103,7 @@ export default function Album() {
                 />
             </Col>
             <Col span={24}>
-                <MusicSquare title="Liên quan" dataTopMusic={listTop100} />
+                <MusicSquare title="Liên quan" dataTopMusic={moreAlbum} />
             </Col>
         </Row>
     )

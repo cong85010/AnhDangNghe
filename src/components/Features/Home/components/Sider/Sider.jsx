@@ -41,7 +41,7 @@ export const Home_Sider = ({ collapsed }) => {
         )}
 
         <Menu.Item key="3" icon={<UploadOutlined />}>
-          Chưa làm
+          <Link to="/top-chart">Đồ thị xếp hạng</Link>
         </Menu.Item>
       </Menu>
       <ModalTheme stateShowModal={{ showModal, setShowModal }} />

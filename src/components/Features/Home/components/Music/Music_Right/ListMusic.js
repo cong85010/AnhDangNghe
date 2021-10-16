@@ -12,7 +12,7 @@ export const ListMusic = ({ listData_Current, listData_History }) => {
   const { playing } = useContext(MusicPlayerContext);
 
   return (
-    <div className={`card-container listMusicRight ${playing.music && '__200px'}`} >
+    <div className={`card-container listMusicRight ${playing?.music && '__200px'}`} >
       <Tabs type="card" className="scroll">
         <TabPane tab="Danh sách phát" key="1">
           <div className='h-30'></div>

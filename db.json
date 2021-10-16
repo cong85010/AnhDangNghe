@@ -1,4 +1,276 @@
 {
+  "chart": [
+    {
+      "date": "2021-10-01",
+      "title": "Muộn rồi mà sao còn",
+      "type": "top1",
+      "value": 4623
+    },
+    {
+      "date": "2021-10-01",
+      "title": "Thê lương",
+      "type": "top2",
+      "value": 2208
+    },
+    {
+      "date": "2021-10-01",
+      "title": "Trắc trở",
+      "type": "top3",
+      "value": 1382
+    },
+    {
+      "date": "2021-10-02",
+      "title": "Muộn rồi mà sao còn",
+      "type": "top1",
+      "value": 6145
+    },
+    {
+      "date": "2021-10-02",
+      "title": "Thê lương",
+      "type": "top2",
+      "value": 2016
+    },
+    {
+      "date": "2021-10-02",
+      "title": "Trắc trở",
+      "type": "top3",
+      "value": 2537
+    },
+    {
+      "date": "2021-10-03",
+      "title": "Muộn rồi mà sao còn",
+      "type": "top1",
+      "value": 5510
+    },
+    {
+      "date": "2021-10-03",
+      "title": "Thê lương",
+      "type": "top2",
+      "value": 2916
+    },
+    {
+      "date": "2021-10-03",
+      "title": "Trắc trở",
+      "type": "top3",
+      "value": 2839
+    },
+    {
+      "date": "2021-10-04",
+      "title": "Muộn rồi mà sao còn",
+      "type": "top1",
+      "value": 6268
+    },
+    {
+      "date": "2021-10-04",
+      "title": "Thê lương",
+      "type": "top2",
+      "value": 4512
+    },
+    {
+      "date": "2021-10-04",
+      "title": "Trắc trở",
+      "type": "top3",
+      "value": 3238
+    },
+    {
+      "date": "2021-10-05",
+      "title": "Muộn rồi mà sao còn",
+      "type": "top1",
+      "value": 4411
+    },
+    {
+      "date": "2021-10-05",
+      "title": "Thê lương",
+      "type": "top2",
+      "value": 2281
+    },
+    {
+      "date": "2021-10-05",
+      "title": "Trắc trở",
+      "type": "top3",
+      "value": 3139
+    },
+    {
+      "date": "2021-10-06",
+      "title": "Muộn rồi mà sao còn",
+      "type": "top1",
+      "value": 4890
+    },
+    {
+      "date": "2021-10-06",
+      "title": "Thê lương",
+      "type": "top2",
+      "value": 2010
+    },
+    {
+      "date": "2021-10-06",
+      "title": "Trắc trở",
+      "type": "top3",
+      "value": 837
+    },
+    {
+      "date": "2021-10-07",
+      "title": "Muộn rồi mà sao còn",
+      "type": "top1",
+      "value": 4251
+    },
+    {
+      "date": "2021-10-07",
+      "title": "Thê lương",
+      "type": "top2",
+      "value": 1963
+    },
+    {
+      "date": "2021-10-07",
+      "title": "Trắc trở",
+      "type": "top3",
+      "value": 1106
+    },
+    {
+      "date": "2021-10-08",
+      "title": "Muộn rồi mà sao còn",
+      "type": "top1",
+      "value": 2978
+    },
+    {
+      "date": "2021-10-08",
+      "title": "Thê lương",
+      "type": "top2",
+      "value": 2367
+    },
+    {
+      "date": "2021-10-08",
+      "title": "Trắc trở",
+      "type": "top3",
+      "value": 1317
+    },
+    {
+      "date": "2021-10-09",
+      "title": "Muộn rồi mà sao còn",
+      "type": "top1",
+      "value": 3880
+    },
+    {
+      "date": "2021-10-09",
+      "title": "Thê lương",
+      "type": "top2",
+      "value": 2956
+    },
+    {
+      "date": "2021-10-09",
+      "title": "Trắc trở",
+      "type": "top3",
+      "value": 2822
+    },
+    {
+      "date": "2021-10-10",
+      "title": "Muộn rồi mà sao còn",
+      "type": "top1",
+      "value": 3606
+    },
+    {
+      "date": "2021-10-10",
+      "title": "Thê lương",
+      "type": "top2",
+      "value": 2378
+    },
+    {
+      "date": "2021-10-10",
+      "title": "Trắc trở",
+      "type": "top3",
+      "value": 1207
+    },
+    {
+      "date": "2021-10-11",
+      "title": "Muộn rồi mà sao còn",
+      "type": "top1",
+      "value": 4311
+    },
+    {
+      "date": "2021-10-11",
+      "title": "Thê lương",
+      "type": "top2",
+      "value": 3188
+    },
+    {
+      "date": "2021-10-11",
+      "title": "Trắc trở",
+      "type": "top3",
+      "value": 948
+    },
+    {
+      "date": "2021-10-12",
+      "title": "Muộn rồi mà sao còn",
+      "type": "top1",
+      "value": 4116
+    },
+    {
+      "date": "2021-10-12",
+      "title": "Thê lương",
+      "type": "top2",
+      "value": 3491
+    },
+    {
+      "date": "2021-10-12",
+      "title": "Trắc trở",
+      "type": "top3",
+      "value": 856
+    },
+    {
+      "date": "2021-10-13",
+      "title": "Muộn rồi mà sao còn",
+      "type": "top1",
+      "value": 6419
+    },
+    {
+      "date": "2021-10-13",
+      "title": "Thê lương",
+      "type": "top2",
+      "value": 2852
+    },
+    {
+      "date": "2021-10-13",
+      "title": "Trắc trở",
+      "type": "top3",
+      "value": 689
+    },
+    {
+      "date": "2021-10-14",
+      "title": "Muộn rồi mà sao còn",
+      "type": "top1",
+      "value": 4643
+    },
+    {
+      "date": "2021-10-14",
+      "title": "Thê lương",
+      "type": "top2",
+      "value": 4788
+    },
+    {
+      "date": "2021-10-14",
+      "title": "Trắc trở",
+      "type": "top3",
+      "value": 780
+    },
+    {
+      "date": "2021-10-15",
+      "title": "Muộn rồi mà sao còn",
+      "type": "top1",
+      "value": 4445
+    },
+    {
+      "date": "2021-10-15",
+      "title": "Thê lương",
+      "type": "top2",
+      "value": 4919
+    },
+    {
+      "date": "2021-10-15",
+      "title": "Trắc trở",
+      "type": "top3",
+      "value": 976
+    }
+  ],
   "changeBackground": [
     {
       "title": "Mặc định",
