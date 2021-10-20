@@ -5,17 +5,20 @@ import axios from 'axios';
 import { options } from 'App';
 import moment from 'moment';
 import { List, Avatar, Button, Skeleton } from 'antd';
+import { Duration } from 'components/Features/Album/Album';
 import { MusicPlayerContext } from "components/contextAPI/context";
-
+const colorTop1 = 'rgb(235, 57, 57)'
+const colorTop2 = 'rgb(62, 247, 155)'
+const colorTop3 = 'rgb(230, 198, 14)'
 export default function Chart() {
     const COUNT = 10
-    const [initLoading, setInitLoading] = useState(true)
+    // const [initLoading, setInitLoading] = useState(true)
     const [loading, setLoading] = useState(false)
     const [data, setData] = useState([]);
     const THREE_LINE = 3 // 3 songs
-    const { danhSachPhat } = useContext(MusicPlayerContext)
+    const { danhSachPhat, saveMusic } = useContext(MusicPlayerContext)
     const [list, setList] = useState(danhSachPhat.songs)
-
+    const [showMusic, setShowMusic] = useState(COUNT)
     useEffect(() => {
         axios(options("chart")).then((response) => {
             const arr = response.data
@@ -32,8 +35,86 @@ export default function Chart() {
         }
         );
     }, []);
+    let viewDown = 0
+    const sumViewTop = (index) => {
+        let sum = 0
+        if (index <= 3) {
+            const top = 'top' + index;
+            sum = data.reduce((sum, cur) => {
+                return cur.type === top ? sum + cur.value : sum;
+            }, 0)
+        } else {
+            sum = Math.max(viewDown - Math.floor(Math.random() * 3000), 0)
+        }
+        viewDown = sum
+        return sum;
+    }
 
-    var config = {
+
+
+    const onLoadMore = () => {
+        setLoading(true);
+        setTimeout(() => {
+            setShowMusic((e) => e + 10)
+            setLoading(false)
+        }, 1000)
+    };
+    const loadMore =
+        !loading ? (
+            <div
+                style={{
+                    textAlign: 'center',
+                    marginTop: 12,
+                    height: 32,
+                    lineHeight: '32px',
+                }}
+            >
+                <Button type="primary" onClick={onLoadMore}>Xem thêm</Button>
+            </div>
+        ) : null;
+    return (
+        <div className="chart">
+
+            <ChartLine data={data} />
+            <List
+                className="demo-loadmore-list chart__rank"
+                loading={loading}
+                itemLayout="horizontal"
+                loadMore={loadMore}
+                dataSource={list?.slice(0, showMusic)}
+                renderItem={(item, index) => (
+                    <List.Item
+                        size="large"
+                        actions={[<a key="list-loadmore-edit" onClick={() => saveMusic(item)}>Nghe ngay</a>]}
+                    >
+                        <Skeleton avatar title={false} loading={loading} active>
+                            <div className="rank flex-center">
+                                <h2 className={index < 3 ? `top${index + 1}` : ''}>{index + 1}</h2>
+                            </div>
+                            <List.Item.Meta
+                                className="flex-center listItem"
+                                avatar={
+                                    <Avatar size="large" className="ant-avatar-50px" src={item.avatar} />
+                                }
+                                title={<h5 className={`title ${index < 3 ? `title${index + 1}` : ''}`}>{item.title}</h5>}
+                                description={item.creator}
+                            />
+                            <div className="duration"><Duration props={item} /></div>
+                            <div className="duration">
+                                {
+                                    sumViewTop(index + 1)
+                                }
+
+                            </div>
+                        </Skeleton>
+                    </List.Item>
+                )}
+            />
+        </div>
+    )
+}
+const ChartLine = React.memo(function line({ data }) {
+    const config = {
         data: data,
         xField: 'date',
         yField: 'value',
@@ -51,7 +132,9 @@ export default function Chart() {
         seriesField: 'title',
         color: function color(_ref) {
             const { title } = _ref;
-            return title === 'Muộn rồi mà sao còn' ? '#F4664A' : title === 'Thê lương' ? '#30BF78' : '#FAAD14';
+            return title === 'Muộn rồi mà sao còn' ?
+                colorTop1 : title === 'Thê lương' ?
+                    colorTop2 : colorTop3;
         },
         smooth: true,
         animation: {
@@ -61,68 +144,5 @@ export default function Chart() {
             },
         },
     };
-    const onLoadMore = () => {
-        setLoading(true);
-        setList(list.concat([...new Array(COUNT)].map(() => ({ loading: true, name: {} }))));
-        this.getData(res => {
-            const data = this.state.data.concat(res.results);
-            this.setState(
-                {
-                    data,
-                    list: data,
-                    loading: false,
-                },
-                () => {
-                    // Resetting window's offsetTop so as to display react-virtualized demo underfloor.
-                    // In real scene, you can using public method of react-virtualized:
-                    // https://stackoverflow.com/questions/46700726/how-to-use-public-method-updateposition-of-react-virtualized
-                    window.dispatchEvent(new Event('resize'));
-                },
-            );
-        });
-    };
-    const loadMore =
-        !initLoading && !loading ? (
-            <div
-                style={{
-                    textAlign: 'center',
-                    marginTop: 12,
-                    height: 32,
-                    lineHeight: '32px',
-                }}
-            >
-                <Button onClick={onLoadMore}>loading more</Button>
-            </div>
-        ) : null;
-
-    return (
-        <div className="album">
-            <Line {...config} />
-
-            <List
-                className="demo-loadmore-list"
-                // loading={initLoading}
-                itemLayout="horizontal"
-                // loadMore={loadMore}
-                dataSource={list}
-                renderItem={item => (
-                    <List.Item
-                        size="large"
-                        actions={[<a key="list-loadmore-edit">edit</a>, <a key="list-loadmore-more">more</a>]}
-                    >
-                        <Skeleton avatar title={false} loading={item.loading} active>
-                            <List.Item.Meta
-                                avatar={
-                                    <Avatar src={item.avatar} />
-                                }
-                                title={<h5 href="https://ant.design">{item.title}</h5>}
-                                description={item.creator}
-                            />
-                            <div>content</div>
-                        </Skeleton>
-                    </List.Item>
-                )}
-            />
-        </div>
-    )
-}
+    return <Line {...config} />
+})

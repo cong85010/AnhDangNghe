@@ -9,13 +9,13 @@ import SubMusicSquare from '../Home/components/Music/SubMusicSquare/SubMusicSqua
 import Default from "constants/dataDefault";
 
 import './album.scss'
-export const Duration = function ({props}) {
+export const Duration = function ({ props }) {
     const [duration, setDuration] = useState("00:00")
     const audio = new Audio(props.music)
     audio.onloadedmetadata = (e) => {
         if (audio.readyState > 0) {
-            var minutes = "0"+parseInt(audio.duration / 60, 10);
-            var seconds = "0"+parseInt(audio.duration % 60);
+            var minutes = "0" + parseInt(audio.duration / 60, 10);
+            var seconds = "0" + parseInt(audio.duration % 60);
             setDuration(minutes + ":" + seconds.slice(-2))
         }
     }
@@ -41,7 +41,7 @@ export default function Album() {
         tableScroll[0].scrollTop = 0
         scrollToTop()
     }, [id])
-   
+
 
 
     const columns = [
@@ -68,7 +68,7 @@ export default function Album() {
             title: 'Time',
             maxWidth: '200px',
             render: (t, r) => <Duration props={t} />
-           
+
         },
     ];
     const handleplay = (r, t) => {

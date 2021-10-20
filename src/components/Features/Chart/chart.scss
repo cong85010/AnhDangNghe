@@ -1,1 +1,59 @@
-@import '../Album/album.scss';
+@import "../Album/album.scss";
+@import "/src/assets/styles/valiable.scss";
+
+.chart {
+  padding: 20px 30px 50px 30px;
+  &__rank {
+    padding: 20px 50px;
+    .rank {
+      min-width: 50px;
+      font-size: 20px;
+      h2 {
+        margin: 0;
+        color: rgba(74, 144, 226, 0);
+        font-weight: 900;
+        -webkit-text-stroke: 1px rgb(180, 178, 178);
+      }
+      h2.top1 {
+        -webkit-text-stroke: 1px $text-top1;
+      }
+      h2.top2 {
+        -webkit-text-stroke: 1px $text-top2;
+      }
+      h2.top3 {
+        -webkit-text-stroke: 1px $text-top3;
+      }
+    }
+    .duration {
+      flex: 1 1;
+      color: rgb(180, 178, 178);
+    }
+    .listItem {
+      flex: 2 1;
+      .title {
+        color: $colorBody;
+        font-size: 15px;
+        opacity: 0.8;
+        &1 {
+          color: $text-top1;
+          opacity: 1;
+        }
+        &2 {
+          color: $text-top2;
+          opacity: 1;
+        }
+        &3 {
+          color: $text-top3;
+          opacity: 1;
+        }
+      }
+      .ant-list-item-meta-description {
+        color: #898989;
+      }
+    }
+    .ant-avatar-50px {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}

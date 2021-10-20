@@ -109,16 +109,15 @@ const Home_Header = ({ collapsed, clickClose }) => {
         file.name || file.url.substring(file.url.lastIndexOf("/") + 1),
     });
   };
-  console.log(img)
   const props = {
     beforeUpload: (file) => {
-      // if (file.type !== "audio/mpeg") {
-      //   message.error(`${file.name} is not a mp3 file`);
-      // } else {
+      if (file.type !== "audio/mpeg") {
+        message.error(`${file.name} is not a mp3 file`);
+      } else {
          console.log(file);
          handlePreview(file);
-        //  saveMusic(file.name);
-      // }
+         saveMusic(file.name);
+      }
     },
     onChange: (info) => {
       console.log(info.fileList);
@@ -201,6 +200,7 @@ const Home_Header = ({ collapsed, clickClose }) => {
                     {...props}
                     showUploadList={false}
                     listType="audio"
+                    
                   >
                     <Button
                       shape="circle"

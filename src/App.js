@@ -31,7 +31,6 @@ export const options = (urlLink) => {
     },
   }
 };
-
 const Home = React.lazy(() => import('components/Features/Home/index'))
 const Album = React.lazy(() => import('components/Features/Album/Album'))
 const Chart = React.lazy(() => import('components/Features/Chart/Chart'))
@@ -182,11 +181,11 @@ function App() {
         }}>
           <div tabIndex="1" onKeyDown={handleKeyPess} className={backGrounds.className}>
             <Row className="container">
-              <Col xs={3} sm={3} md={5} lg={5} xl={collapsed?1:3} >
+              <Col xs={3} sm={3} md={5} lg={5} xl={collapsed ? 1 : 3} >
                 <HomeSider collapsed={collapsed} />
               </Col>
               {/* <ListMenuLeft /> */}
-              <Col xs={21} sm={21} md={19} lg={19} xl={collapsed?19:17}>
+              <Col xs={21} sm={21} md={19} lg={19} xl={collapsed ? 19 : 17}>
                 {/* <div className="h-64"></div> */}
                 <Layout id="changeHeader">
                   <dispatchEvent>

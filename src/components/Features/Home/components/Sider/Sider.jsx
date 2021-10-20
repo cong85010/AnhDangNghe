@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import {
-  UserOutlined,
+  HomeOutlined,
   VideoCameraOutlined,
-  UploadOutlined,
+  LineChartOutlined,
 } from "@ant-design/icons";
 import { Layout, Menu } from "antd";
 import "./Sider.scss";
@@ -26,8 +26,12 @@ export const Home_Sider = ({ collapsed }) => {
       <div className="logo flex-center">
         <Link to="/">{collapsed || isTable ? "ADN" : "AnhDangNghe"}</Link>
       </div>
-      <Menu className="menu" mode="inline" defaultSelectedKeys={["1"]}>
-        <Menu.Item key="1" icon={<UserOutlined />}>
+      <Menu
+        className="menu"
+        mode="inline"
+        defaultSelectedKeys={[window.location.pathname]}
+      >
+        <Menu.Item key="/" icon={<HomeOutlined />}>
           <Link to="/">Trang chủ</Link>
         </Menu.Item>
         {isTable && (
@@ -40,7 +44,7 @@ export const Home_Sider = ({ collapsed }) => {
           </Menu.Item>
         )}
 
-        <Menu.Item key="3" icon={<UploadOutlined />}>
+        <Menu.Item key="/top-chart" icon={<LineChartOutlined />}>
           <Link to="/top-chart">Đồ thị xếp hạng</Link>
         </Menu.Item>
       </Menu>
