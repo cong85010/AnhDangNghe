@@ -1,13 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import {
   HomeOutlined,
   VideoCameraOutlined,
   LineChartOutlined,
+  UserOutlined,
 } from "@ant-design/icons";
 import { Layout, Menu } from "antd";
 import "./Sider.scss";
 import { Link } from "react-router-dom";
 import { ModalTheme } from "../Header/Header";
+import { MusicPlayerContext } from "components/contextAPI/context";
 import { useMediaQuery } from "react-responsive";
 const { Sider } = Layout;
 
@@ -16,6 +18,7 @@ export const Home_Sider = ({ collapsed }) => {
   const isTable = useMediaQuery({
     query: "(max-width: 768px)",
   });
+  const { username } = useContext(MusicPlayerContext);
   return (
     <Sider
       className="Sider"
@@ -31,6 +34,9 @@ export const Home_Sider = ({ collapsed }) => {
         mode="inline"
         defaultSelectedKeys={[window.location.pathname]}
       >
+        <Menu.Item key="/my-music" icon={<UserOutlined />}>
+          <Link to="/my-music">Cá nhân</Link>
+        </Menu.Item>
         <Menu.Item key="/" icon={<HomeOutlined />}>
           <Link to="/">Trang chủ</Link>
         </Menu.Item>

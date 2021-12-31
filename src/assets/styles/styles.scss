@@ -5,6 +5,7 @@
 @import "./background/default.scss";
 @import "./background/eiffel.scss";
 @import "./listMusic/listMusic.scss";
+@import "react-toastify/dist/ReactToastify.css";
 
 .w-100-important {
   width: 100% !important;
@@ -14,6 +15,14 @@
 }
 .opacity-0_5 {
   opacity: 0.5;
+}
+.toast_custom_error {
+  background-color: #000000c0 !important;
+  color: #ee6840 !important;
+}
+.toast_custom_succes {
+  background-color: #000000c0 !important;
+  color: #24c024 !important;
 }
 .logo {
   height: 70px;

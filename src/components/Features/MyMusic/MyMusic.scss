@@ -1,0 +1,47 @@
+@import "/src/assets/styles/valiable.scss";
+@import '/src/components/Features/Album/album.scss';
+.myMusic {
+  &__margin {
+    margin: 50px 0;
+    position: relative;
+    .myMusic__margin__logout {
+      position: absolute;
+      right: 50px;
+      top: 30px;
+    }
+  }
+  &__avatar {
+    height: 100%;
+    margin: 30px 0;
+    position: relative;
+    .avatar,
+    .avatar_upload {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-50%);
+    }
+    .avatar_upload {
+      z-index: 5;
+      background-color: transparent;
+      border: none;
+      width: 100%;
+      height: 100%;
+    }
+    .ant-upload.ant-upload-select-picture-card {
+      background-color: transparent;
+      border: none;
+      .ant-upload {
+        font-size: 0;
+      }
+      transform: translateX(-50%);
+    }
+    .ant-upload-list-picture-card-container {
+      display: none;
+    }
+  }
+  .big_title {
+    font-size: 50px;
+    text-shadow: 0 5px black;
+  }
+}

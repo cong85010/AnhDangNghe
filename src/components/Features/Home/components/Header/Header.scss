@@ -26,6 +26,13 @@
     height: 30px;
     margin-top: 10px;
   }
+  .buttonUser {
+    img {
+      transform: translateY(-3px);
+      width: 100%;
+      border-radius: 50%;
+    }
+  }
 }
 .ant-input-affix-wrapper:focus,
 .ant-input-affix-wrapper-focused,
@@ -42,11 +49,11 @@
   @include table {
     min-width: 50% !important;
   }
-  .ant-modal-body > div{
-      max-width: 100%;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
+  .ant-modal-body > div {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   .ant-card {
     flex: 1;

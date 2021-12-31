@@ -1,4 +1,10 @@
 {
+  "users": [
+    {
+      "userName": "cong85010",
+      "password": "Cong85010"
+    }
+  ],
   "chart": [
     {
       "date": "2021-10-01",

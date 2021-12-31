@@ -5,7 +5,7 @@ import {
   Card,
   Input,
   Layout,
-  message, 
+  message,
   Spin,
   Tooltip,
 } from "antd";
@@ -30,7 +30,7 @@ import { options } from "App";
 const { Header } = Layout;
 function getBase64(file) {
   return new Promise((resolve, reject) => {
-    console.log(file)
+    console.log(file);
     const reader = new FileReader();
     reader.readAsDataURL(file);
     reader.onload = () => resolve(reader.result);
@@ -94,14 +94,11 @@ const Home_Header = ({ collapsed, clickClose }) => {
   const refHeader = useRef(null);
   const [showModal, setShowModal] = useState(false);
   const [img, setImg] = useState(null);
-  const { saveMusic } = useContext(MusicPlayerContext);
+  const { saveMusic, user } = useContext(MusicPlayerContext);
   const handlePreview = async (file) => {
-      console.log(file);
-
     if (!file.url && !file.preview) {
       file.preview = await getBase64(file.originFileObj);
     }
-
     setImg({
       previewImage: file.url || file.preview,
       previewVisible: true,
@@ -114,16 +111,16 @@ const Home_Header = ({ collapsed, clickClose }) => {
       if (file.type !== "audio/mpeg") {
         message.error(`${file.name} is not a mp3 file`);
       } else {
-         console.log(file);
-         handlePreview(file);
-         saveMusic(file.name);
+        console.log(file);
+        handlePreview(file);
+        saveMusic(file.name);
       }
     },
     onChange: (info) => {
       console.log(info.fileList);
     },
   };
-  
+
   return (
     <div ref={refHeader}>
       <Header id="header" className={`header`}>
@@ -166,8 +163,7 @@ const Home_Header = ({ collapsed, clickClose }) => {
             xl={10}
           >
             <Input
-              className="colorBody"
-              className="input"
+              className="colorBody input"
               placeholder="Nhập tên bài hát, ca sĩ..."
               prefix={<SearchOutlined />}
             />
@@ -196,12 +192,7 @@ const Home_Header = ({ collapsed, clickClose }) => {
               </Col>
               <Col span={6}>
                 <Tooltip className="colorBody" title="Tải lên">
-                  <Upload
-                    {...props}
-                    showUploadList={false}
-                    listType="audio"
-                    
-                  >
+                  <Upload {...props} showUploadList={false} listType="audio">
                     <Button
                       shape="circle"
                       outline="true"
@@ -223,13 +214,16 @@ const Home_Header = ({ collapsed, clickClose }) => {
                 </Tooltip>
               </Col>
               <Col span={6}>
-                <Tooltip className="colorBody" title="Người dùng">
-                  <Button
-                    shape="circle"
-                    outline="true"
-                    type="ghost"
-                    icon={<UserOutlined />}
-                  />
+                <Tooltip className="colorBody" title={user.username}>
+                  <Link to={user.status ? "/my-music" : "/login"}>
+                    <Button
+                      shape="circle"
+                      outline="true"
+                      type="ghost"
+                      className="buttonUser"
+                      icon={<img src={user.avatar} alt="avt" />}
+                    ></Button>
+                  </Link>
                 </Tooltip>
               </Col>
             </Row>

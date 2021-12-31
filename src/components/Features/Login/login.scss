@@ -1,0 +1,28 @@
+@import "/src/assets/styles/valiable.scss";
+
+.login {
+  margin-top: 140px;
+  .form {
+    &_input {
+      .ant-form-item-label * {
+        color: $colorBody;
+      }
+      .input {
+        width: 100%;
+        background: transparent !important;
+        border-radius: 5px;
+        .ant-input {
+          color: $colorBody;
+          background: transparent !important;
+        }
+        .ant-input-prefix,
+        .ant-input-password-icon {
+          color: $colorBody;
+        }
+      }
+      .ant-checkbox-wrapper span {
+        color: $colorBody;
+      }
+    }
+  }
+}
