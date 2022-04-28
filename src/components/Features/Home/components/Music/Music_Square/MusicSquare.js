@@ -1,14 +1,20 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import SubMusicSquare from "../SubMusicSquare/SubMusicSquare";
 import Slider from "react-slick";
-import { LeftOutlined, RightOutlined } from '@ant-design/icons';
+import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 
-import './MusicSquare.scss'
+import "./MusicSquare.scss";
 import { Button } from "antd";
+import NhacCuaTui from "nhaccuatui-api-full";
 
-const MusicSquare = ({ title = 'Top 100', dataTopMusic = [] }) => {
+const MusicSquare = ({ title = "Top 100", dataTopMusic = [], keyFetch }) => {
   const ref = useRef({});
-  const [index, setindex] = useState(0)
+  const [index, setindex] = useState(0);
+  const [data, setData] = useState({});
+  console.log(keyFetch);
+  useEffect(() => {
+    NhacCuaTui.getTopicDetail(keyFetch).then((res) => setData(res.topic));
+  }, []);
   const next = () => {
     ref.current.slickNext();
   };
@@ -16,7 +22,7 @@ const MusicSquare = ({ title = 'Top 100', dataTopMusic = [] }) => {
   const previous = () => {
     ref.current.slickPrev();
   };
-  const dataLoading = [1,2,3,4]
+  const dataLoading = [1, 2, 3, 4];
   const settings = {
     className: "section-outstanding__slider",
     slidesToShow: 4,
@@ -50,23 +56,31 @@ const MusicSquare = ({ title = 'Top 100', dataTopMusic = [] }) => {
   };
   return (
     <div className="MusicSquare">
-      <div className='MusicSquare__top'>
-        <h2 className='MusicSquare__top-title'>{title}</h2>
-        <div className='MusicSquare__top-button'>
-          <Button type='ghost' disabled={index === 0} className="button" onClick={previous}>
+      <div className="MusicSquare__top">
+        <h2 className="MusicSquare__top-title">{title}</h2>
+        <div className="MusicSquare__top-button">
+          <Button
+            type="ghost"
+            disabled={index === 0}
+            className="button"
+            onClick={previous}
+          >
             <LeftOutlined />
           </Button>
-          <Button type='ghost' disabled={index === dataTopMusic.length - 4} className="button" onClick={next}>
+          <Button
+            type="ghost"
+            disabled={index === dataTopMusic.length - 4}
+            className="button"
+            onClick={next}
+          >
             <RightOutlined />
           </Button>
         </div>
       </div>
       <Slider ref={ref} {...settings}>
-        {
-          dataTopMusic.length?
-          dataTopMusic.map((data, index) => <SubMusicSquare data={data} key={index} index={index} />)
-            : dataLoading.map((data, index) => <SubMusicSquare data={data} key={index}  index={index} />)
-       }
+        {data?.playlist?.map((list, index) => (
+          <SubMusicSquare data={list} key={index} index={index} />
+        ))}
       </Slider>
     </div>
   );

@@ -11,6 +11,11 @@
     color: $colorBody;
     opacity: 0.5;
     height: 20px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    width: 100%;
   }
   .ant-avatar-image {
     width: 50px;

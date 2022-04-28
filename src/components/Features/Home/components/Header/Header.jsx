@@ -27,6 +27,8 @@ import { MusicPlayerContext } from "components/contextAPI/context";
 import { Link, useHistory } from "react-router-dom";
 
 import { options } from "App";
+import H5AudioPlayer from "react-h5-audio-player";
+import dataDefault from "constants/dataDefault";
 const { Header } = Layout;
 function getBase64(file) {
   return new Promise((resolve, reject) => {
@@ -90,34 +92,26 @@ export const ModalTheme = ({ stateShowModal }) => {
 };
 
 const Home_Header = ({ collapsed, clickClose }) => {
-  const history = useHistory();
   const refHeader = useRef(null);
   const [showModal, setShowModal] = useState(false);
-  const [img, setImg] = useState(null);
   const { saveMusic, user } = useContext(MusicPlayerContext);
-  const handlePreview = async (file) => {
-    if (!file.url && !file.preview) {
-      file.preview = await getBase64(file.originFileObj);
-    }
-    setImg({
-      previewImage: file.url || file.preview,
-      previewVisible: true,
-      previewTitle:
-        file.name || file.url.substring(file.url.lastIndexOf("/") + 1),
-    });
-  };
   const props = {
     beforeUpload: (file) => {
       if (file.type !== "audio/mpeg") {
         message.error(`${file.name} is not a mp3 file`);
-      } else {
-        console.log(file);
-        handlePreview(file);
-        saveMusic(file.name);
+        return;
       }
     },
     onChange: (info) => {
-      console.log(info.fileList);
+      var file = URL.createObjectURL(info.fileList[0].originFileObj); 
+      const audio = new Audio(file)
+      const dataAfter  = {
+        title: dataDefault.title,
+        creator: dataDefault.creator,
+        avatar: dataDefault.avatar,
+        music: audio.src
+      }
+      saveMusic(dataAfter)
     },
   };
 
@@ -126,6 +120,7 @@ const Home_Header = ({ collapsed, clickClose }) => {
       <Header id="header" className={`header`}>
         <Row>
           <Col xs={24} sm={24} md={0} lg={0} xl={0}>
+          
             <div className="logo flex-center">
               <Link to="/">{collapsed ? "ADN" : "AnhDangNghe"}</Link>
             </div>
@@ -143,16 +138,6 @@ const Home_Header = ({ collapsed, clickClose }) => {
             </Tooltip>
           </Col>
           <Col xs={0} sm={0} md={2} lg={2} xl={2}>
-            <Tooltip title="Quay lại">
-              <Button
-                className="colorBody"
-                shape="circle"
-                outline="true"
-                type="ghost"
-                onClick={() => history.goBack()}
-                icon={<LeftSquareOutlined />}
-              ></Button>
-            </Tooltip>
           </Col>
 
           <Col
@@ -192,7 +177,7 @@ const Home_Header = ({ collapsed, clickClose }) => {
               </Col>
               <Col span={6}>
                 <Tooltip className="colorBody" title="Tải lên">
-                  <Upload {...props} showUploadList={false} listType="audio">
+                  <Upload {...props} showUploadList={false} listType="audio" maxCount={1} >
                     <Button
                       shape="circle"
                       outline="true"

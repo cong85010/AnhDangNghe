@@ -1,39 +1,30 @@
 import { Card, Tooltip } from "antd";
 import Avatar from "antd/lib/avatar/avatar";
 import Meta from "antd/lib/card/Meta";
-import React, { useContext} from "react";
+import React, { useContext } from "react";
 import "./SubMusic.scss";
 import Default from "constants/dataDefault";
 import { MusicPlayerContext } from "components/contextAPI/context";
 
-const SubMusic = ({ data = {
-  title: Default.Title,
-  creator: Default.Auth,
-  avatar: Default.Url,
-}, circle = false, rotate = false, notHover=false }) => {
-  const {
-    title,
-    creator,
-    avatar,
-  } = data;
+const SubMusic = ({
+  data,
+  circle = false,
+  rotate = false,
+  notHover = false,
+}) => {
+  const dataAfter  = {
+    title: Default.title,
+    creator: Default.creator,
+    thumbnail: Default.avatar,
+    ...data
+  }
+  const { title, artists, thumbnail } = dataAfter;
   const { playing, saveMusic } = useContext(MusicPlayerContext);
   const playToMusic = () => {
-    // localStorage.setItem("playToMusic", JSON.stringify(data))
-    console.log(data);
-    saveMusic(data);
+    saveMusic(dataAfter);
   };
-  // useEffect(() => {
-  //   console.log(ref)
-  //     if(ref) {
-  //       scrollIntoView(ref, { block: 'nearest', inline: 'center' })
-  //     }
-  // }, [ref])
-  // setTimeout(() => {
-  //   scrollIntoView(ref, { block: 'nearest', inline: 'center' })
-  // }, 300)
   return (
-    <Tooltip 
-    placement="topLeft" mouseEnterDelay='0.7' title={title}>
+    <Tooltip placement="topLeft" mouseEnterDelay="0.7" title={title}>
       <Card
         onClick={playToMusic}
         className={` 
@@ -41,7 +32,7 @@ const SubMusic = ({ data = {
       ${circle ? "SubMenuCircle" : "SubMenu_Square"}
       ${notHover && "NotHover"}
       ${rotate && "animateRotate"} 
-      ${!circle && playing?.music === data.music && 'MusicPLaying'}`}
+      ${!circle && playing?.key === dataAfter.key && "MusicPLaying"}`}
         size="small"
       >
         <Meta
@@ -49,11 +40,11 @@ const SubMusic = ({ data = {
             <Avatar
               shape={circle ? "circle" : "square"}
               size="large"
-              src={avatar}
+              src={thumbnail}
             />
           }
           title={title}
-          description={creator}
+          description={artists?.map(({name}) => name).join(", ")}
         />
       </Card>
     </Tooltip>

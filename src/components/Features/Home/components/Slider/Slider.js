@@ -1,8 +1,9 @@
 import { Modal, Button } from "antd";
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Slider from "react-slick";
 import { Spin } from "antd";
 import { ShimmerThumbnail } from "react-shimmer-effects";
+import NhacCuaTui from "nhaccuatui-api-full";
 
 import { PlayCircleOutlined } from "@ant-design/icons";
 import "./Slider.scss";
@@ -36,7 +37,7 @@ const Home_Slider = ({ dataBanner }) => {
   const [modal, setModal] = useState({});
   const [visible, setVisible] = React.useState(false);
   const [confirmLoading, setConfirmLoading] = React.useState(false);
-
+  const [data, setData] = useState([]);
   const showModal = (item) => {
     setVisible(true);
     setModal(item);
@@ -54,13 +55,14 @@ const Home_Slider = ({ dataBanner }) => {
   const handleCancel = () => {
     setVisible(false);
   };
+
   return (
     <div className="HomeSlider">
       <Slider {...settings}>
-        {dataBanner.length
-          ? dataBanner.map((item, index) => (
+        {dataBanner
+          ? dataBanner?.song.map((item, index) => (
               <div className="sliderItem" key={index}>
-                <img src={item.avatar} alt={item.title} />
+                <img src={item.thumbnail} alt={item.title} />
                 <Button
                   onClick={() => showModal(item)}
                   className="sliderItem_button"
@@ -81,7 +83,7 @@ const Home_Slider = ({ dataBanner }) => {
         onCancel={handleCancel}
       >
         <p>Bạn có muốn phát bài hát này?</p>
-        <img src={modal.avatar} alt={modal.title} />
+        <img src={modal.thumbnail} alt={modal.title} />
         <p>
           {modal.title}
           <p>{modal.creator}</p>

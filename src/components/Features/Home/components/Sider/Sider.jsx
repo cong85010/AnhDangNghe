@@ -34,9 +34,6 @@ export const Home_Sider = ({ collapsed }) => {
         mode="inline"
         defaultSelectedKeys={[window.location.pathname]}
       >
-        <Menu.Item key="/my-music" icon={<UserOutlined />}>
-          <Link to="/my-music">Cá nhân</Link>
-        </Menu.Item>
         <Menu.Item key="/" icon={<HomeOutlined />}>
           <Link to="/">Trang chủ</Link>
         </Menu.Item>
@@ -52,6 +49,9 @@ export const Home_Sider = ({ collapsed }) => {
 
         <Menu.Item key="/top-chart" icon={<LineChartOutlined />}>
           <Link to="/top-chart">Đồ thị xếp hạng</Link>
+        </Menu.Item>
+        <Menu.Item key="/my-music" icon={<UserOutlined />}>
+          <Link to="/my-music">Cá nhân</Link>
         </Menu.Item>
       </Menu>
       <ModalTheme stateShowModal={{ showModal, setShowModal }} />

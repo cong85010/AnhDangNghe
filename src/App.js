@@ -1,8 +1,6 @@
 import { Button, Col, Layout, Row } from "antd";
 import { MusicProvider } from "components/contextAPI/context";
-import MusicPlay from "components/Features/Home/components/Music/MusicPlay/MusicPlay";
-import ListMusic from "components/Features/Home/components/Music/Music_Right/ListMusic";
-import HomeSider from "components/Features/Home/components/Sider/Sider";
+
 import React, {
   Suspense,
   useCallback,
@@ -22,6 +20,7 @@ import {
   MenuFoldOutlined,
   MenuUnfoldOutlined,
 } from "@ant-design/icons";
+import NhacCuaTui from "nhaccuatui-api-full";
 
 //export const POST_URL = 'https://server-anhdangnghe.herokuapp.com/'
 
@@ -37,12 +36,26 @@ export const options = (urlLink) => {
     },
   };
 };
+export const USER_DEFAULT = {
+  status: false,
+  username: "Khách",
+  avatar: "https://cdn-icons-png.flaticon.com/512/4333/4333609.png",
+};
 const Home = React.lazy(() => import("components/Features/Home/index"));
 const Album = React.lazy(() => import("components/Features/Album/Album"));
 const Chart = React.lazy(() => import("components/Features/Chart/Chart"));
 const Login = React.lazy(() => import("components/Features/Login/Login"));
+const MusicPlay = React.lazy(() =>
+  import("components/Features/Home/components/Music/MusicPlay/MusicPlay")
+);
+const ListMusic = React.lazy(() =>
+  import("components/Features/Home/components/Music/Music_Right/ListMusic")
+);
 const Register = React.lazy(() =>
   import("components/Features/Register/Register")
+);
+const HomeSider = React.lazy(() =>
+  import("components/Features/Home/components/Sider/Sider")
 );
 const MyMusic = React.lazy(() => import("components/Features/MyMusic/MyMusic"));
 const MAX_LATELY_MUSIC = 20;
@@ -51,47 +64,34 @@ function App() {
   const clickClose = () => setCollapsed(!collapsed);
   const [danhSachPhat, setdanhSachPhat] = useState(dataDefault);
   const [listTop100, setlistTop100] = useState([]);
-  const [listTop100V2, setlistTop100V2] = useState([]);
   const [listTop100V3, setlistTop100V3] = useState([]);
   const [ngheGanDay, setngheGanDay] = useState([]);
   const [playing, setPlaying] = useState({ title: "closeMusicPlaying" });
   const [isPlay, setIsPlay] = useState(false);
-  const [user, setUser] = useState({
-    status: false,
-    username: "Khách",
-    avatar: "https://cdn-icons-png.flaticon.com/512/4333/4333609.png",
-  });
+  const [user, setUser] = useState(USER_DEFAULT);
   const refHeader = useRef(null);
   const [changeHeader, setchangeHeader] = useState("");
   const [backGrounds, setBackGrounds] = useState({
     className: "backgroundDefault",
     src: "https://zmp3-static.zadn.vn/skins/zmp3-v6.1/images/theme-background/zma.svg",
   });
-
   const saveMusic = (music) => {
-    const indexMusic = ngheGanDay.findIndex(
-      (item) => item.music === music.music
-    );
+    const indexMusic = ngheGanDay.findIndex((item) => item?.key === music?.key);
     if (indexMusic !== -1) {
       ngheGanDay.splice(indexMusic, 1);
     }
     localStorage.setItem(
       "ngheganday",
-      JSON.stringify({title: 'default', songs: [music, ...ngheGanDay].splice(0, MAX_LATELY_MUSIC)})
+      JSON.stringify([music, ...ngheGanDay].splice(0, MAX_LATELY_MUSIC))
     );
     setPlaying(music);
   };
   // Promise.all
   useEffect(() => {
-    axios(options("dataDefault")).then((response) => {
-      setdanhSachPhat(response.data);
-    });
     axios(options("top100vn1")).then((response) => {
       setlistTop100(response.data);
     });
-    axios(options("top100vn2")).then((response) => {
-      setlistTop100V2(response.data);
-    });
+
     axios(options("top100usuk")).then((response) => {
       setlistTop100V3(response.data);
     });
@@ -105,25 +105,28 @@ function App() {
     setngheGanDay(JSON.parse(localStorage.getItem("ngheganday")) || []);
   }, [playing]);
   const nextPrePlayingMusic = (num) => {
+    console.log(num);
     const indexMusic = danhSachPhat.songs.findIndex(
-      (music) => music.music === playing.music
+      (music) => music?.key === playing?.key
     );
     if (indexMusic === 0 && num === -1) {
       num = 0;
     }
+    console.log(indexMusic);
 
     indexMusic >= 0 && indexMusic < danhSachPhat.songs.length - 1
       ? setPlaying(danhSachPhat.songs[indexMusic + num])
       : setPlaying(danhSachPhat.songs[0]);
+    console.log(danhSachPhat.songs[indexMusic + num]);
   };
   const getTop100OfList100 = (id) => {
     const object100 = listTop100.filter((item) => item.id === id);
     return object100;
   };
   const nextWillPlayingMusic = () => {
-    if (danhSachPhat.songs.length > 0) {
-      const indexMusic = danhSachPhat.songs.findIndex(
-        (music) => music.music === playing?.music
+    if (danhSachPhat?.songs.length > 0) {
+      const indexMusic = danhSachPhat?.songs.findIndex(
+        (music) => music?.key === playing?.key
       );
       return indexMusic >= danhSachPhat.songs.length - 1
         ? danhSachPhat.songs[0]
@@ -132,7 +135,8 @@ function App() {
     return {};
   };
   const handleNewDSP = (newDanhSachPhat) => {
-    saveMusic(newDanhSachPhat.songs[0]);
+    console.log(newDanhSachPhat);
+    saveMusic(newDanhSachPhat?.songs[0] || null);
     setdanhSachPhat(newDanhSachPhat);
   };
   const handlebackground = (bg) => {
@@ -153,7 +157,7 @@ function App() {
   useEffect(() => {
     if (refHeader.current) {
       console.log(refHeader.current);
-      setoffSet(refHeader.current.offsetTop.y);
+      // setoffSet(refHeader.current.offsetTop.y);
     }
   }, [offSet]);
   const changeBackgroundHeader = () => {
@@ -179,7 +183,6 @@ function App() {
   };
   const handleUser = useCallback(
     (value) => {
-      console.log(value);
       setUser(value);
     },
     [user]
@@ -197,7 +200,6 @@ function App() {
             handleNewDSP,
             clickClose,
             listTop100,
-            listTop100V2,
             listTop100V3,
             collapsed,
             danhSachPhat,
@@ -206,7 +208,7 @@ function App() {
             scrollToTop,
             user,
             handleUser,
-            ngheGanDay
+            nextPrePlayingMusic,
           }}
         >
           <div
@@ -264,7 +266,6 @@ function App() {
               </Col>
             </Row>
             <MusicPlay
-              nextPrePlayingMusic={nextPrePlayingMusic}
               nextWillPlay={nextWillPlayingMusic}
               charCode={charCode}
             />

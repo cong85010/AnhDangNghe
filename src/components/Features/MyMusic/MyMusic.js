@@ -3,13 +3,14 @@ import Avatar from "antd/lib/avatar/avatar";
 import React, { useCallback, useContext, useEffect, useState } from "react";
 import "./MyMusic.scss";
 import { MusicPlayerContext } from "components/contextAPI/context";
-import { LoadingOutlined } from "@ant-design/icons";
+import { LoadingOutlined, LoginOutlined } from "@ant-design/icons";
 import axios from "axios";
-import { options, POST_URL } from "App";
+import { options, POST_URL, USER_DEFAULT } from "App";
 import { toast, ToastContainer } from "react-toastify";
 import avatarUser from "assets/images/gamer.png";
 import { LogoutOutlined } from "@ant-design/icons";
 import { Duration } from "../Album/Album";
+import { useHistory } from "react-router-dom";
 
 function getBase64(file) {
   return new Promise((resolve, reject) => {
@@ -21,33 +22,37 @@ function getBase64(file) {
 }
 
 export default function MyMusic() {
-  const { user, handleUser, saveMusic, handleNewDSP, ngheGanDay } =
+  const { user, handleUser, saveMusic, handleNewDSP, playing } =
     useContext(MusicPlayerContext);
   const [loading, setLoading] = useState(false);
   const [file, setfile] = useState(null);
-  const [ablum, setAblum] = useState({});
+  const [ablum, setAblum] = useState({ title: "default", songs: [] });
+  const history = useHistory();
   useEffect(() => {
-    setAblum(ngheGanDay);
-  }, []);
+    setAblum({
+      title: "default",
+      songs: JSON.parse(localStorage.getItem("ngheganday")) || [],
+    });
+  }, [playing]);
   const handlePreview = async () => {
     if (!file.url && !file.preview) {
       const preview = await getBase64(file.originFileObj);
       const obj = { ...user, avatar: preview };
       handleUser(obj);
       setLoading(true);
-
       setTimeout(() => {
         if (user.status) {
-          axios.put(`${POST_URL}users/${user.id}`, { ...obj }).then(
-            (e) =>
-              e &&
-              toast.success("Thay đổi anh thành công", {
+          axios.put(`${POST_URL}users/${user.id}`, { ...obj }).then((e) => {
+            if (e.status) {
+              toast.success("Thay đổi ảnh thành công", {
                 className: "toast_custom_succes",
-              })
-          );
+              });
+              localStorage.setItem("user", JSON.stringify(obj) || USER_DEFAULT);
+            }
+          });
         } else {
-          localStorage.setItem("user", JSON.stringify(obj));
-          toast.success("Thay đổi anh thành công", {
+          localStorage.setItem("user", JSON.stringify(obj) || USER_DEFAULT);
+          toast.success("Thay đổi ảnh thành công", {
             className: "toast_custom_succes",
           });
         }
@@ -108,22 +113,41 @@ export default function MyMusic() {
     handleNewDSP(ablum);
     saveMusic(r);
   };
-  console.log(ablum);
+  const handleLogOut = () => {
+    handleUser(USER_DEFAULT);
+    setfile(null);
+    toast.success("Đăng xuất thành công", {
+      className: "toast_custom_succes",
+    });
+  };
   return (
     <div className="myMusic">
       <ToastContainer />
-      {/* <Row justify="center">
+      <Row justify="center">
         <Col span={24} className="flex-center myMusic__margin">
-          <Tooltip title="Đăng xuất">
-            <Button
-              className="myMusic__margin__logout colorBody"
-              shape="circle"
-              outline="true"
-              type="ghost"
-              onClick={() => localStorage.setItem("user", "")}
-              icon={<LogoutOutlined />}
-            />
-          </Tooltip>
+          {user.status ? (
+            <Tooltip title="Đăng xuất">
+              <Button
+                className="myMusic__margin__logout colorBody"
+                shape="circle"
+                outline="true"
+                type="ghost"
+                onClick={handleLogOut}
+                icon={<LogoutOutlined />}
+              />
+            </Tooltip>
+          ) : (
+            <Tooltip title="Đăng nhập">
+              <Button
+                className="myMusic__margin__logout colorBody"
+                shape="circle"
+                outline="true"
+                type="ghost"
+                onClick={() => history.push("/login")}
+                icon={<LoginOutlined />}
+              />
+            </Tooltip>
+          )}
           <div className="myMusic__avatar">
             <Tooltip title="Thay đổi ảnh">
               <Avatar
@@ -159,7 +183,7 @@ export default function MyMusic() {
           <Table
             id="scrollTop"
             columns={columns}
-            dataSource={ablum}
+            dataSource={ablum.songs}
             pagination={false}
             onRow={(r, t) => {
               return { onClick: () => handleplay(r, t) };
@@ -167,7 +191,7 @@ export default function MyMusic() {
             scroll={{ y: "50%" }}
           />
         </Col>
-      </Row> */}
+      </Row>
     </div>
   );
 }

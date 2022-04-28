@@ -2,7 +2,7 @@
   width: 100% !important;
   .ant-tabs-content-top {
     height: calc(100vh - 90px);
-    overflow-y: auto;
+    overflow-y: hidden;
     overflow-x: hidden;
   }
   .ant-tabs-nav-operations {
@@ -21,15 +21,12 @@
     padding: 5px 10px;
     width: 100%;
     font-weight: bold;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
-.__200px {
-  .ant-tabs-content-top {
-    height: calc(100vh - 200px) !important;
-  }
+.h__200px {
+  height: calc(100vh - 200px) !important;
 }
 
 .h-30 {
